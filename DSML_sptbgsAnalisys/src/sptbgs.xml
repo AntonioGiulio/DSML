@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1561460403964" analysisTimestamp="1561460403453" release="">
+  <Project projectName="DSML_sptbgsAnalisys">
+    <Jar>C:\Users\Antonio\eclipse-workspace\DSML_sptbgsAnalisys\bin\AndreaGay.class</Jar>
+    <AuxClasspathEntry>C:\Users\Antonio\eclipse-workspace\DSML_sptbgsAnalisys\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\Downloads\jdom-2.0.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\Downloads\opencsv-4.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\DSML_sptbgsAnalisys\src</SrcDir>
+  </Project>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS" first="1">
+    <Class classname="AndreaGay">
+      <SourceLine classname="AndreaGay" sourcefile="AndreaGay.java" sourcepath="AndreaGay.java"/>
+    </Class>
+    <Method classname="AndreaGay" name="test" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="AndreaGay" start="6" end="6" startBytecode="0" endBytecode="57" sourcefile="AndreaGay.java" sourcepath="AndreaGay.java"/>
+    </Method>
+    <SourceLine classname="AndreaGay" start="6" end="6" startBytecode="2" endBytecode="2" sourcefile="AndreaGay.java" sourcepath="AndreaGay.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 25 Jun 2019 12:35:48 +0200" total_classes="1" referenced_classes="10" total_bugs="1" total_size="5" num_packages="1" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="4.16" clock_seconds="14.05" peak_mbytes="534.24" alloc_mbytes="1024.00" gc_seconds="0.12" priority_1="1">
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="5" priority_1="1">
+      <ClassStats class="AndreaGay" sourceFile="AndreaGay.java" interface="false" size="5" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="170" invocations="2" avgMicrosecondsPerInvocation="85170" maxMicrosecondsPerInvocation="142732" standardDeviationMicrosecondsPerInvocation="57562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="128" invocations="302" avgMicrosecondsPerInvocation="426" maxMicrosecondsPerInvocation="8651" standardDeviationMicrosecondsPerInvocation="869"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="58" invocations="302" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="3578" standardDeviationMicrosecondsPerInvocation="208"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="38" invocations="269" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="18181" standardDeviationMicrosecondsPerInvocation="1107"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1561460403963" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
