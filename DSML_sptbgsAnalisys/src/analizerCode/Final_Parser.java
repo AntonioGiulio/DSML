@@ -73,10 +73,6 @@ public class Final_Parser {
 		}
 		System.out.println(line);
 		System.out.println("]");
+		reader.close();
 	}
-	
-	
-	
-	
-
 }
