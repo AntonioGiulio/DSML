@@ -83,8 +83,6 @@ public class Final_Parser {
 	}
 	
 	public void csvWriter(CSVWriter writer, String vul, String code) throws IOException {
-		//String[] header = { "Vulnerability", "Code" };
-		//writer.writeNext(header);
 		String[] data = {code, vul};
 		writer.writeNext(data);
 	}
