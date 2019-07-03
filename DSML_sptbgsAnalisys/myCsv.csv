@@ -1,0 +1,2 @@
+"Vulnerability","Code"
+"IL_INFINITE_RECURSIVE_LOOP","	public String test(String x) {		System.out.print(""gay"");		return test(x);	}	}"
