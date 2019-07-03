@@ -1,38 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1561460403964" analysisTimestamp="1561460403453" release="">
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1562154759800" analysisTimestamp="1562154756216" release="">
   <Project projectName="DSML_sptbgsAnalisys">
-    <Jar>C:\Users\Antonio\eclipse-workspace\DSML_sptbgsAnalisys\bin\AndreaGay.class</Jar>
-    <AuxClasspathEntry>C:\Users\Antonio\eclipse-workspace\DSML_sptbgsAnalisys\bin</AuxClasspathEntry>
+    <Jar>C:\Users\Antonio\git\eclipseProjectRepo\DSML_sptbgsAnalisys\bin</Jar>
+    <AuxClasspathEntry>C:\Users\Antonio\git\eclipseProjectRepo\DSML_sptbgsAnalisys\bin</AuxClasspathEntry>
     <AuxClasspathEntry>C:\Users\Antonio\Downloads\jdom-2.0.6.jar</AuxClasspathEntry>
     <AuxClasspathEntry>C:\Users\Antonio\Downloads\opencsv-4.6.jar</AuxClasspathEntry>
     <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\rt.jar</AuxClasspathEntry>
     <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\jce.jar</AuxClasspathEntry>
-    <SrcDir>C:\Users\Antonio\eclipse-workspace\DSML_sptbgsAnalisys\src</SrcDir>
+    <SrcDir>C:\Users\Antonio\git\eclipseProjectRepo\DSML_sptbgsAnalisys\src</SrcDir>
   </Project>
   <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS" first="1">
     <Class classname="AndreaGay">
       <SourceLine classname="AndreaGay" sourcefile="AndreaGay.java" sourcepath="AndreaGay.java"/>
     </Class>
     <Method classname="AndreaGay" name="test" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="AndreaGay" start="6" end="6" startBytecode="0" endBytecode="57" sourcefile="AndreaGay.java" sourcepath="AndreaGay.java"/>
+      <SourceLine classname="AndreaGay" start="5" end="7" startBytecode="0" endBytecode="69" sourcefile="AndreaGay.java" sourcepath="AndreaGay.java"/>
     </Method>
-    <SourceLine classname="AndreaGay" start="6" end="6" startBytecode="2" endBytecode="2" sourcefile="AndreaGay.java" sourcepath="AndreaGay.java"/>
+    <SourceLine classname="AndreaGay" start="7" end="7" startBytecode="10" endBytecode="10" sourcefile="AndreaGay.java" sourcepath="AndreaGay.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="analizerCode.Final_Parser">
+      <SourceLine classname="analizerCode.Final_Parser" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Class>
+    <Method classname="analizerCode.Final_Parser" name="csvWriter" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="analizerCode.Final_Parser" start="85" end="93" startBytecode="0" endBytecode="224" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter"/>
+    </Method>
+    <SourceLine classname="analizerCode.Final_Parser" start="86" end="86" startBytecode="15" endBytecode="15" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    <SourceLine classname="analizerCode.Final_Parser" start="86" end="86" startBytecode="15" endBytecode="15" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="analizerCode.Final_Parser">
+      <SourceLine classname="analizerCode.Final_Parser" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Class>
+    <Method classname="analizerCode.Final_Parser" name="printBugMethod" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="analizerCode.Final_Parser" start="68" end="81" startBytecode="0" endBytecode="354" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="analizerCode.Final_Parser" start="68" end="68" startBytecode="29" endBytecode="29" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    <SourceLine classname="analizerCode.Final_Parser" start="68" end="68" startBytecode="29" endBytecode="29" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" first="1">
+    <Class classname="analizerCode.Final_Parser">
+      <SourceLine classname="analizerCode.Final_Parser" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Class>
+    <Method classname="analizerCode.Final_Parser" name="printBugMethod" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="analizerCode.Final_Parser" start="68" end="81" startBytecode="0" endBytecode="354" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Method>
+    <LocalVariable name="?" register="-1" pc="54" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="analizerCode.Final_Parser" start="71" end="71" startBytecode="54" endBytecode="54" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    <SourceLine classname="analizerCode.Final_Parser" start="71" end="71" startBytecode="54" endBytecode="54" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" first="1">
+    <Class classname="analizerCode.Final_Parser">
+      <SourceLine classname="analizerCode.Final_Parser" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Class>
+    <Method classname="analizerCode.Final_Parser" name="printBugMethod" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="analizerCode.Final_Parser" start="68" end="81" startBytecode="0" endBytecode="354" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Method>
+    <LocalVariable name="line" register="5" pc="89" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="analizerCode.Final_Parser" start="75" end="75" startBytecode="122" endBytecode="122" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    <SourceLine classname="analizerCode.Final_Parser" start="75" end="75" startBytecode="122" endBytecode="122" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="analizerCode.Final_Parser">
+      <SourceLine classname="analizerCode.Final_Parser" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Class>
+    <Method classname="analizerCode.Final_Parser" name="printBugMethod" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="analizerCode.Final_Parser" start="68" end="81" startBytecode="0" endBytecode="354" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+    </Method>
+    <SourceLine classname="analizerCode.Final_Parser" start="77" end="77" startBytecode="91" endBytecode="91" sourcefile="Final_Parser.java" sourcepath="analizerCode/Final_Parser.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="analizerCode.mainTestClass">
+      <SourceLine classname="analizerCode.mainTestClass" start="10" end="24" sourcefile="mainTestClass.java" sourcepath="analizerCode/mainTestClass.java"/>
+    </Class>
   </BugInstance>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 25 Jun 2019 12:35:48 +0200" total_classes="1" referenced_classes="10" total_bugs="1" total_size="5" num_packages="1" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="4.16" clock_seconds="14.05" peak_mbytes="534.24" alloc_mbytes="1024.00" gc_seconds="0.12" priority_1="1">
-    <PackageStats package="" total_bugs="1" total_types="1" total_size="5" priority_1="1">
-      <ClassStats class="AndreaGay" sourceFile="AndreaGay.java" interface="false" size="5" bugs="1" priority_1="1"/>
+  <FindBugsSummary timestamp="Wed, 3 Jul 2019 13:49:28 +0200" total_classes="3" referenced_classes="31" total_bugs="7" total_size="75" num_packages="2" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="13.33" clock_seconds="27.01" peak_mbytes="519.59" alloc_mbytes="1024.00" gc_seconds="0.10" priority_2="4" priority_1="3">
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="6" priority_1="1">
+      <ClassStats class="AndreaGay" sourceFile="AndreaGay.java" interface="false" size="6" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="analizerCode" total_bugs="6" total_types="2" total_size="69" priority_2="4" priority_1="2">
+      <ClassStats class="analizerCode.Final_Parser" sourceFile="Final_Parser.java" interface="false" size="55" bugs="5" priority_2="3" priority_1="2"/>
+      <ClassStats class="analizerCode.mainTestClass" sourceFile="mainTestClass.java" interface="false" size="14" bugs="1" priority_2="1"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="170" invocations="2" avgMicrosecondsPerInvocation="85170" maxMicrosecondsPerInvocation="142732" standardDeviationMicrosecondsPerInvocation="57562"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="128" invocations="302" avgMicrosecondsPerInvocation="426" maxMicrosecondsPerInvocation="8651" standardDeviationMicrosecondsPerInvocation="869"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="58" invocations="302" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="3578" standardDeviationMicrosecondsPerInvocation="208"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="38" invocations="269" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="18181" standardDeviationMicrosecondsPerInvocation="1107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="778" invocations="438" avgMicrosecondsPerInvocation="1777" maxMicrosecondsPerInvocation="82981" standardDeviationMicrosecondsPerInvocation="6696"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="752" invocations="2" avgMicrosecondsPerInvocation="376275" maxMicrosecondsPerInvocation="463120" standardDeviationMicrosecondsPerInvocation="86846"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="445" invocations="438" avgMicrosecondsPerInvocation="1018" maxMicrosecondsPerInvocation="67421" standardDeviationMicrosecondsPerInvocation="4690"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="126" invocations="125" avgMicrosecondsPerInvocation="1014" maxMicrosecondsPerInvocation="19481" standardDeviationMicrosecondsPerInvocation="2516"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="117" invocations="31" avgMicrosecondsPerInvocation="3794" maxMicrosecondsPerInvocation="21917" standardDeviationMicrosecondsPerInvocation="5171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="102" invocations="31" avgMicrosecondsPerInvocation="3296" maxMicrosecondsPerInvocation="32689" standardDeviationMicrosecondsPerInvocation="5930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="75" invocations="31" avgMicrosecondsPerInvocation="2449" maxMicrosecondsPerInvocation="58255" standardDeviationMicrosecondsPerInvocation="10222"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="60" invocations="11" avgMicrosecondsPerInvocation="5522" maxMicrosecondsPerInvocation="57612" standardDeviationMicrosecondsPerInvocation="16474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="54" invocations="11" avgMicrosecondsPerInvocation="4999" maxMicrosecondsPerInvocation="45409" standardDeviationMicrosecondsPerInvocation="12811"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="54" invocations="3" avgMicrosecondsPerInvocation="18002" maxMicrosecondsPerInvocation="53680" standardDeviationMicrosecondsPerInvocation="25228"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
   <History>
-    <AppVersion sequence="0" timestamp="1561460403963" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="0" timestamp="1562154759770" release="" codeSize="0" numClasses="0"/>
   </History>
 </BugCollection>

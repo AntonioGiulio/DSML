@@ -1,2 +1,46 @@
-"Vulnerability","Code"
-"IL_INFINITE_RECURSIVE_LOOP","	public String test(String x) {		System.out.print(""gay"");		return test(x);	}	}"
+Column1;Column2
+"	public String test(String x) {
+		System.out.print(""gay,"");
+		
+		return test(x);
+	}
+	}";IL_INFINITE_RECURSIVE_LOOP
+"	public void csvWriter(CSVWriter writer, String vul, String code) throws IOException {
+		//String[] header = { ""Vulnerability"", ""Code"" };
+		//writer.writeNext(header);
+		String[] data = {code, vul};
+		writer.writeNext(data);
+	}
+	}";DM_DEFAULT_ENCODING
+"	public String printBugMethod(String className, String methodName) throws IOException {
+		BufferedReader reader = new BufferedReader(new FileReader(""src/"" + className));
+		String retString;
+		String line = reader.readLine();
+		while (!line.contains(methodName)) {
+			line = reader.readLine();
+		}
+		}";DM_DEFAULT_ENCODING
+"	public String printBugMethod(String className, String methodName) throws IOException {
+		BufferedReader reader = new BufferedReader(new FileReader(""src/"" + className));
+		String retString;
+		String line = reader.readLine();
+		while (!line.contains(methodName)) {
+			line = reader.readLine();
+		}
+		}";NP_DEREFERENCE_OF_READLINE_VALUE
+"	public String printBugMethod(String className, String methodName) throws IOException {
+		BufferedReader reader = new BufferedReader(new FileReader(""src/"" + className));
+		String retString;
+		String line = reader.readLine();
+		while (!line.contains(methodName)) {
+			line = reader.readLine();
+		}
+		}";NP_DEREFERENCE_OF_READLINE_VALUE
+"	public String printBugMethod(String className, String methodName) throws IOException {
+		BufferedReader reader = new BufferedReader(new FileReader(""src/"" + className));
+		String retString;
+		String line = reader.readLine();
+		while (!line.contains(methodName)) {
+			line = reader.readLine();
+		}
+		}";SBSC_USE_STRINGBUFFER_CONCATENATION

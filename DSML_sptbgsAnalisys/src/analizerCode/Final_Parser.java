@@ -46,7 +46,8 @@ public class Final_Parser {
 		while (itr.hasNext()) {
 			Element e = (Element) itr.next();
 			if (e.getName() == "BugInstance") {
-				list.add(e);
+				if(e.getChild("Method") != null)
+					list.add(e);
 			}			
 		}
 		return list;
@@ -65,31 +66,27 @@ public class Final_Parser {
 	}
 	
 	public String printBugMethod(String className, String methodName) throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader("src/" + className + ".java"));
+		BufferedReader reader = new BufferedReader(new FileReader("src/" + className));
 		String retString;
 		String line = reader.readLine();
 		while (!line.contains(methodName)) {
 			line = reader.readLine();
 		}
-		retString = line;
+		retString = line +  "\n";
 		while (!line.contains("\t}")) {
 			line = reader.readLine();
-			retString += line;
+			retString += line + "\n";
 		}
 		retString += line;
 		reader.close();
 		return retString;
 	}
 	
-	public void csvWriter(String vul, String code) throws IOException {
-		File file = new File("myCsv.csv");
-		FileWriter outputFile = new FileWriter(file);
-		CSVWriter writer = new CSVWriter(outputFile);
-		String[] header = { "Vulnerability", "Code" };
-		writer.writeNext(header);
-		String[] data = {vul, code};
+	public void csvWriter(CSVWriter writer, String vul, String code) throws IOException {
+		//String[] header = { "Vulnerability", "Code" };
+		//writer.writeNext(header);
+		String[] data = {code, vul};
 		writer.writeNext(data);
-		writer.close();
 	}
 	
 }
