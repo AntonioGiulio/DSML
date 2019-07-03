@@ -1,7 +1,9 @@
 package analizerCode;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,6 +12,8 @@ import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
+
+import com.opencsv.CSVWriter;
 
 public class Final_Parser {
 	
@@ -60,19 +64,32 @@ public class Final_Parser {
 		return e.getChild("SourceLine");
 	}
 	
-	public void printBugMethod(String className, String methodName) throws IOException {
+	public String printBugMethod(String className, String methodName) throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader("src/" + className + ".java"));
+		String retString;
 		String line = reader.readLine();
 		while (!line.contains(methodName)) {
 			line = reader.readLine();
 		}
-		System.out.print("[");
+		retString = line;
 		while (!line.contains("\t}")) {
-			System.out.println(line);
 			line = reader.readLine();
+			retString += line;
 		}
-		System.out.println(line);
-		System.out.println("]");
+		retString += line;
 		reader.close();
+		return retString;
 	}
+	
+	public void csvWriter(String vul, String code) throws IOException {
+		File file = new File("myCsv.csv");
+		FileWriter outputFile = new FileWriter(file);
+		CSVWriter writer = new CSVWriter(outputFile);
+		String[] header = { "Vulnerability", "Code" };
+		writer.writeNext(header);
+		String[] data = {vul, code};
+		writer.writeNext(data);
+		writer.close();
+	}
+	
 }

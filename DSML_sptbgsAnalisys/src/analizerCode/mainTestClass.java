@@ -15,7 +15,10 @@ public class mainTestClass {
 		for (Element e: bugList) {
 			String className = parser.getBugClass(e).getAttributeValue("classname");
 			String methodName = parser.getBugMethod(e).getAttributeValue("name");
-			parser.printBugMethod(className, methodName);
+			String vulnerability = e.getAttributeValue("type");
+			System.out.println(vulnerability);
+			System.out.println(parser.printBugMethod(className, methodName));
+			parser.csvWriter(vulnerability, parser.printBugMethod(className, methodName));
 		}
 
 	}
