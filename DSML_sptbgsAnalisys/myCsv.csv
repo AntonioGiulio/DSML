@@ -1,46 +1,248 @@
-Column1;Column2
-"	public String test(String x) {
-		System.out.print(""gay,"");
-		
-		return test(x);
-	}
-	}";IL_INFINITE_RECURSIVE_LOOP
-"	public void csvWriter(CSVWriter writer, String vul, String code) throws IOException {
-		//String[] header = { ""Vulnerability"", ""Code"" };
-		//writer.writeNext(header);
-		String[] data = {code, vul};
-		writer.writeNext(data);
-	}
-	}";DM_DEFAULT_ENCODING
-"	public String printBugMethod(String className, String methodName) throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader(""src/"" + className));
-		String retString;
-		String line = reader.readLine();
-		while (!line.contains(methodName)) {
-			line = reader.readLine();
-		}
-		}";DM_DEFAULT_ENCODING
-"	public String printBugMethod(String className, String methodName) throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader(""src/"" + className));
-		String retString;
-		String line = reader.readLine();
-		while (!line.contains(methodName)) {
-			line = reader.readLine();
-		}
-		}";NP_DEREFERENCE_OF_READLINE_VALUE
-"	public String printBugMethod(String className, String methodName) throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader(""src/"" + className));
-		String retString;
-		String line = reader.readLine();
-		while (!line.contains(methodName)) {
-			line = reader.readLine();
-		}
-		}";NP_DEREFERENCE_OF_READLINE_VALUE
-"	public String printBugMethod(String className, String methodName) throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader(""src/"" + className));
-		String retString;
-		String line = reader.readLine();
-		while (!line.contains(methodName)) {
-			line = reader.readLine();
-		}
-		}";SBSC_USE_STRINGBUFFER_CONCATENATION
+"    Function<Integer, Flowable<Integer>> toJust = new Function<Integer, Flowable<Integer>>() {
+        @Override
+        public Flowable<Integer> apply(Integer t) {
+            return Flowable.just(t);
+        }
+    };
+    };","NM_METHOD_NAMING_CONVENTION"
+"    public void ObservableCapacityHint() {
+        Flowable<Integer> source = Flowable.just(1);
+        TestSubscriber<Integer> ts = TestSubscriber.create();
+
+        Flowable.concatEager(Flowable.just(source, source, source), 1, 1).subscribe(ts);
+
+        ts.assertValues(1, 1, 1);
+        ts.assertNoErrors();
+        ts.assertComplete();
+    }
+    }","NM_METHOD_NAMING_CONVENTION"
+"        public Integer next() {
+            return count++;
+        }
+        }","IT_NO_SUCH_ELEMENT"
+"        public Integer next() {
+            return count++;
+        }
+        }","IT_NO_SUCH_ELEMENT"
+"        .concatMapEager(new Function<Integer, ObservableSource<Integer>>() {
+            @Override
+            public ObservableSource<Integer> apply(Integer t) {
+                return Observable.range(t, 2);
+            }
+        })
+        })","NM_METHOD_NAMING_CONVENTION"
+"    public void ObservableCapacityHint() {
+        Observable<Integer> source = Observable.just(1);
+        TestObserver<Integer> to = TestObserver.create();
+
+        Observable.concatEager(Observable.just(source, source, source), 1, 1).subscribe(to);
+
+        to.assertValues(1, 1, 1);
+        to.assertNoErrors();
+        to.assertComplete();
+    }
+    }","NM_METHOD_NAMING_CONVENTION"
+"        public Integer next() {
+            return count++;
+        }
+        }","IT_NO_SUCH_ELEMENT"
+"    @Override protected Scheduler getScheduler() {
+        return Schedulers.single();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    static List<String> readAllLines(File f) {
+        List<String> result = new ArrayList<String>();
+        try {
+            BufferedReader in = new BufferedReader(new FileReader(f));
+            try {
+                String line;
+
+                while ((line = in.readLine()) != null) {
+                    result.add(line);
+                }
+            } finally 
+            {
+                in.close();
+            }
+        } catch 
+        (IOException ex) {
+            ex.printStackTrace();
+        }
+        return result;
+    }
+    }","DM_DEFAULT_ENCODING"
+"    static void list(String basepath, String basepackage) throws Exception {
+        File[] observables = new File(basepath + ""observable/"").listFiles();
+
+        int count = 0;
+
+        for (File f : observables) {
+            if (!f.getName().endsWith("".java"")) {
+                continue;
+            }
+            Class<?> clazz = Class.forName(basepackage + ""observable."" + f.getName().replace("".java"", """"));
+
+            String cn = f.getName().replace("".java"", """").replace(""Observable"", ""Flowable"");
+
+            File f2 = new File(basepath + ""/flowable/"" + cn + "".java"");
+
+            if (!f2.exists()) {
+                continue;
+            }
+
+            Class<?> clazz2 = Class.forName(basepackage + ""flowable."" + cn);
+
+            Set<String> methods2 = new HashSet<String>();
+
+            for (Method m : clazz2.getMethods()) {
+                methods2.add(m.getName());
+            }
+
+            for (Method m : clazz.getMethods()) {
+                if (!methods2.contains(m.getName()) && !methods2.contains(m.getName().replace(""Observable"", ""Flowable""))) {
+                    count++;
+                    System.out.println();
+                    System.out.print(""java.lang.RuntimeException: missing > "");
+                    System.out.println(m.getName());
+                    System.out.print("" at "");
+                    System.out.print(clazz.getName());
+                    System.out.print("" ("");
+                    System.out.print(clazz.getSimpleName());
+                    System.out.print("".java:"");
+
+                    List<String> lines = readAllLines(f);
+
+                    int j = 1;
+                    for (int i = 1; i <= lines.size(); i++) {
+                        if (lines.get(i - 1).contains(""public void "" + m.getName() + ""("")) {
+                            j = i;
+                        }
+                    }
+                    System.out.print(j);
+                    System.out.println("")"");
+
+                    System.out.print("" at "");
+                    System.out.print(clazz2.getName());
+                    System.out.print("" ("");
+                    System.out.print(clazz2.getSimpleName());
+
+                    lines = readAllLines(f2);
+
+                    System.out.print("".java:"");
+                    System.out.print(lines.size() - 1);
+                    System.out.println("")"");
+                }
+            }
+        }
+
+        System.out.println();
+        System.out.println(count);
+    }
+    }","NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE"
+"    protected FlowableProcessor<Object> create() {
+        return AsyncProcessor.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected FlowableProcessor<Object> create() {
+        return BehaviorProcessor.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected FlowableProcessor<Object> create() {
+        return PublishProcessor.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected FlowableProcessor<Object> create() {
+        return ReplayProcessor.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected FlowableProcessor<Object> create() {
+        return UnicastProcessor.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected Scheduler getScheduler() {
+        return Schedulers.io();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected Scheduler getScheduler() {
+        // this is an implementation of ExecutorScheduler
+        return Schedulers.computation();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected Scheduler getScheduler() {
+        return Schedulers.newThread();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected Scheduler getScheduler() {
+        return Schedulers.trampoline();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected Subject<Integer> create() {
+        return AsyncSubject.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected Subject<Integer> create() {
+        return BehaviorSubject.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected Subject<Integer> create() {
+        return PublishSubject.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected Subject<Integer> create() {
+        return ReplaySubject.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    protected Subject<Integer> create() {
+        return UnicastSubject.create();
+    }
+    }","IL_INFINITE_RECURSIVE_LOOP"
+"    static void findPattern(String pattern) throws Exception {
+        findPattern(pattern, false);
+    }
+    }","DM_DEFAULT_ENCODING"
+"    static List<String> readFile(File u) throws Exception {
+        List<String> lines = new ArrayList<String>();
+
+        BufferedReader in = new BufferedReader(new FileReader(u));
+        try {
+            for (;;) {
+                String line = in.readLine();
+                if (line == null) {
+                    break;
+                }
+
+                lines.add(line);
+            }
+        } finally {
+            in.close();
+        }
+        return lines;
+    }
+
+    @Test
+    public void observableNoSubscriber() throws Exception {
+        checkInternalOperatorNaming(""Observable"", ""Subscriber"",
+                ""ObservableFromPublisher""
+        );
+    }
+
+    @Test
+    public void observableNoSubscribers() throws Exception {
+        checkInternalOperatorNaming(""Observable"", ""subscribers"");
+    }
+
+    @Test
+    public void observableNoSubscription() throws Exception {
+        checkInternalOperatorNaming(""Observable"", ""Subscription"",
+                ""ObservableFromPublisher"", ""ObservableDelaySubscriptionOther"");
+    }
+
+    @Test
+    public void observableNoPublisher() throws Exception {
+        checkInternalOperatorNaming(""Observable"", ""Publisher"",
+                ""ObservableFromPublisher"");
+    }
+
+    @Test
+    public void observableNoFlowable() throws Exception {
+     

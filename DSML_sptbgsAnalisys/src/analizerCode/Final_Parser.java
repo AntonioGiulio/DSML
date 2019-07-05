@@ -66,15 +66,30 @@ public class Final_Parser {
 	}
 	
 	public String printBugMethod(String className, String methodName) throws IOException {
-		BufferedReader reader = new BufferedReader(new FileReader("src/" + className));
+		BufferedReader reader;
+		reader = new BufferedReader(new FileReader("C:\\Users\\andre\\eclipse-workspace\\RxJava-3.x (1).zip_expanded\\RxJava-3.x\\src\\test\\java\\" + className));
+		
+		
 		String retString;
 		String line = reader.readLine();
-		while (!line.contains(methodName)) {
+		int count = 0;
+		while (!(line.contains(methodName) && line.contains("{") && line.contains("(") && line.contains(")"))) {
 			line = reader.readLine();
 		}
+		System.out.println(line);
 		retString = line +  "\n";
-		while (!line.contains("\t}")) {
+		if(line.contains("{")) {
+			count++;
+		}
+		
+		while (count != 0) {
 			line = reader.readLine();
+			if(line.contains("{")) {
+				count++;
+			}else if(line.contains("}")) {
+				count--;
+			}
+			
 			retString += line + "\n";
 		}
 		retString += line;
