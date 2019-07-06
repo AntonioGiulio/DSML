@@ -1,10 +1,11 @@
+Column1;Column2
 "    Function<Integer, Flowable<Integer>> toJust = new Function<Integer, Flowable<Integer>>() {
         @Override
         public Flowable<Integer> apply(Integer t) {
             return Flowable.just(t);
         }
     };
-    };","NM_METHOD_NAMING_CONVENTION"
+    };";NM_METHOD_NAMING_CONVENTION
 "    public void ObservableCapacityHint() {
         Flowable<Integer> source = Flowable.just(1);
         TestSubscriber<Integer> ts = TestSubscriber.create();
@@ -15,22 +16,22 @@
         ts.assertNoErrors();
         ts.assertComplete();
     }
-    }","NM_METHOD_NAMING_CONVENTION"
+    }";NM_METHOD_NAMING_CONVENTION
 "        public Integer next() {
             return count++;
         }
-        }","IT_NO_SUCH_ELEMENT"
+        }";IT_NO_SUCH_ELEMENT
 "        public Integer next() {
             return count++;
         }
-        }","IT_NO_SUCH_ELEMENT"
+        }";IT_NO_SUCH_ELEMENT
 "        .concatMapEager(new Function<Integer, ObservableSource<Integer>>() {
             @Override
             public ObservableSource<Integer> apply(Integer t) {
                 return Observable.range(t, 2);
             }
         })
-        })","NM_METHOD_NAMING_CONVENTION"
+        })";NM_METHOD_NAMING_CONVENTION
 "    public void ObservableCapacityHint() {
         Observable<Integer> source = Observable.just(1);
         TestObserver<Integer> to = TestObserver.create();
@@ -41,15 +42,15 @@
         to.assertNoErrors();
         to.assertComplete();
     }
-    }","NM_METHOD_NAMING_CONVENTION"
+    }";NM_METHOD_NAMING_CONVENTION
 "        public Integer next() {
             return count++;
         }
-        }","IT_NO_SUCH_ELEMENT"
+        }";IT_NO_SUCH_ELEMENT
 "    @Override protected Scheduler getScheduler() {
         return Schedulers.single();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    static List<String> readAllLines(File f) {
         List<String> result = new ArrayList<String>();
         try {
@@ -70,7 +71,7 @@
         }
         return result;
     }
-    }","DM_DEFAULT_ENCODING"
+    }";DM_DEFAULT_ENCODING
 "    static void list(String basepath, String basepackage) throws Exception {
         File[] observables = new File(basepath + ""observable/"").listFiles();
 
@@ -138,68 +139,68 @@
         System.out.println();
         System.out.println(count);
     }
-    }","NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE"
+    }";NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE
 "    protected FlowableProcessor<Object> create() {
         return AsyncProcessor.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected FlowableProcessor<Object> create() {
         return BehaviorProcessor.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected FlowableProcessor<Object> create() {
         return PublishProcessor.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected FlowableProcessor<Object> create() {
         return ReplayProcessor.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected FlowableProcessor<Object> create() {
         return UnicastProcessor.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected Scheduler getScheduler() {
         return Schedulers.io();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected Scheduler getScheduler() {
         // this is an implementation of ExecutorScheduler
         return Schedulers.computation();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected Scheduler getScheduler() {
         return Schedulers.newThread();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected Scheduler getScheduler() {
         return Schedulers.trampoline();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected Subject<Integer> create() {
         return AsyncSubject.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected Subject<Integer> create() {
         return BehaviorSubject.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected Subject<Integer> create() {
         return PublishSubject.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected Subject<Integer> create() {
         return ReplaySubject.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    protected Subject<Integer> create() {
         return UnicastSubject.create();
     }
-    }","IL_INFINITE_RECURSIVE_LOOP"
+    }";IL_INFINITE_RECURSIVE_LOOP
 "    static void findPattern(String pattern) throws Exception {
         findPattern(pattern, false);
     }
-    }","DM_DEFAULT_ENCODING"
+    }";DM_DEFAULT_ENCODING
 "    static List<String> readFile(File u) throws Exception {
         List<String> lines = new ArrayList<String>();
 
@@ -245,4 +246,212 @@
 
     @Test
     public void observableNoFlowable() throws Exception {
-     
+        checkInternalOperatorNaming(""Observable"", ""Flowable"", ""ObservableFromPublisher"");
+    }
+
+    @Test
+    public void observableProducer() throws Exception {
+        checkInternalOperatorNaming(""Observable"", ""Producer"");
+    }
+
+    @Test
+    public void observableProducers() throws Exception {
+        checkInternalOperatorNaming(""Observable"", ""producers"");
+    }
+
+    @Test
+    public void flowableNoProducer() throws Exception {
+        checkInternalOperatorNaming(""Flowable"", ""Producer"");
+    }
+
+    @Test
+    public void flowableNoProducers() throws Exception {
+        checkInternalOperatorNaming(""Flowable"", ""producers"");
+    }
+
+    @Test
+    public void flowableNoUnsubscrib() throws Exception {
+        checkInternalOperatorNaming(""Flowable"", ""unsubscrib"");
+    }
+
+    @Test
+    public void observableNoUnsubscrib() throws Exception {
+        checkInternalOperatorNaming(""Observable"", ""unsubscrib"");
+    }
+
+    @Test
+    public void flowableNoObserver() throws Exception {
+        checkInternalOperatorNaming(""Flowable"", ""Observer"",
+                ""FlowableFromObservable"",
+                ""FlowableLastSingle"",
+                ""FlowableAnySingle"",
+                ""FlowableAllSingle"",
+                ""FlowableToListSingle"",
+                ""FlowableCollectSingle"",
+                ""FlowableCountSingle"",
+                ""FlowableElementAtMaybe"",
+                ""FlowableElementAtSingle"",
+                ""FlowableSingleSingle"",
+                ""FlowableSingleMaybe"",
+                ""FlowableLastMaybe"",
+                ""FlowableIgnoreElementsCompletable"",
+                ""FlowableReduceMaybe"",
+                ""FlowableReduceWithSingle"",
+                ""FlowableReduceSeedSingle"",
+                ""FlowableFlatMapCompletable"",
+                ""FlowableFlatMapCompletableCompletable"",
+                ""FlowableFlatMapSingle"",
+                ""FlowableFlatMapMaybe"",
+                ""FlowableSequenceEqualSingle"",
+                ""FlowableConcatWithSingle"",
+                ""FlowableConcatWithMaybe"",
+                ""FlowableConcatWithCompletable"",
+                ""FlowableMergeWithSingle"",
+                ""FlowableMergeWithMaybe"",
+                ""FlowableMergeWithCompletable""
+        );
+    }
+}
+}";DM_DEFAULT_ENCODING
+"    static String readFile(File f) throws IOException {
+        StringBuilder b = new StringBuilder((int)f.length());
+        BufferedReader in = new BufferedReader(new FileReader(f));
+        try {
+            String line = null;
+
+            while ((line = in.readLine()) != null) {
+                b.append(line).append(""\n"");
+            }
+
+        } finally {
+            in.close();
+        }
+        return b.toString();
+    }
+}
+}";DM_DEFAULT_ENCODING
+"    public static StringBuilder readFile(File f) throws Exception {
+        StringBuilder b = new StringBuilder();
+
+        BufferedReader in = new BufferedReader(new FileReader(f));
+        try {
+            for (;;) {
+                String line = in.readLine();
+
+                if (line == null) {
+                    break;
+                }
+
+                b.append(line).append('\n');
+            }
+        } 
+        finally {
+            in.close();
+        }
+
+        return b;
+    }
+    }";DM_DEFAULT_ENCODING
+"    static void findPattern(int newLines) throws Exception {
+        File f = MaybeNo2Dot0Since.findSource(""Flowable"");
+        if (f == null) {
+            System.out.println(""Unable to find sources of RxJava"");
+            return;
+        }
+
+        Queue<File> dirs = new ArrayDeque<File>();
+
+        StringBuilder fail = new StringBuilder();
+        fail.append(""The following code pattern was found: "");
+        fail.append(""\\}\\R"");
+        fail.append(""\\}\\R"");";DM_DEFAULT_ENCODING
+"    static void findPattern(int newLines) throws Exception {
+        File f = MaybeNo2Dot0Since.findSource(""Flowable"");
+        if (f == null) {
+            System.out.println(""Unable to find sources of TestHelper.findSourceDir()"");
+            return;
+        }
+
+        Queue<File> dirs = new ArrayDeque<File>();
+
+        StringBuilder fail = new StringBuilder();
+        fail.append(""The following code pattern was found: "");
+        fail.append(""\\R"");
+        for (int i = 0; i < newLines; i++) {
+            fail.append(""\\R"");
+        }
+        fail.append(""\n"");
+
+        File parent = f.getParentFile();
+
+        dirs.offer(new File(parent.getAbsolutePath().replace('\\', '/')));
+        dirs.offer(new File(parent.getAbsolutePath().replace('\\', '/').replace(""src/main/java"", ""src/test/java"")));
+
+        int total = 0;
+
+        while (!dirs.isEmpty()) {
+            f = dirs.poll();
+
+            File[] list = f.listFiles();
+            if (list != null && list.length != 0) {
+
+                for (File u : list) {
+                    if (u.isDirectory()) {
+                        dirs.offer(u);
+                    } 
+                    else {
+                        String fname = u.getName();
+                        if (fname.endsWith("".java"")) {
+
+                            List<String> lines = new ArrayList<String>();
+                            BufferedReader in = new BufferedReader(new FileReader(u));
+                            try {
+                                for (;;) {
+                                    String line = in.readLine();
+                                    if (line == null) {
+                                        break;
+                                    }
+                                    lines.add(line);
+                                }
+                            } 
+                            finally {
+                                in.close();
+                            }
+
+                            for (int i = 0; i < lines.size() - newLines; i++) {
+                                String line1 = lines.get(i);
+                                if (line1.isEmpty()) {
+                                    int c = 1;
+                                    for (int j = i + 1; j < lines.size(); j++) {
+                                        if (lines.get(j).isEmpty()) {
+                                            c++;
+                                        } 
+                                        else {
+                                            break;
+                                        }
+                                    }
+
+                                    if (c == newLines) {
+                                        fail
+                                        .append(fname)
+                                        .append(""#L"").append(i + 1)
+                                        .append(""\n"");
+                                        total++;
+                                        i += c;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        if (total != 0) {
+            fail.append(""Found "")
+            .append(total)
+            .append("" instances"");
+            System.out.println(fail);
+            throw new AssertionError(fail.toString());
+        }
+    }
+    }";DM_DEFAULT_ENCODING

@@ -19,9 +19,9 @@ public class mainTestClass {
 		int count = 0;
 		for (Element e: bugList) {
 			count++;
-			System.out.println(e.toString());
+			//System.out.println(e.toString());
 		}
-		System.out.println(count);
+		//System.out.println(count);
 		
 		
 		for (Element e: bugList) {
