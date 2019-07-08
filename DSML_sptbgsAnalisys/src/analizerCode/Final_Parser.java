@@ -1,10 +1,14 @@
 package analizerCode;
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -65,9 +69,9 @@ public class Final_Parser {
 		return e.getChild("SourceLine");
 	}
 	
-	public String printBugMethod(String className, String methodName) throws IOException {
+	public String printBugMethod(String className, String methodName, String sourceFile) throws IOException {
 		BufferedReader reader;
-		reader = new BufferedReader(new FileReader("C:\\Users\\andre\\eclipse-workspace\\RxJava-3.x (1).zip_expanded\\RxJava-3.x\\src\\test\\java\\" + className));
+		reader = new BufferedReader(new FileReader("C:\\Users\\andre\\git\\DSML\\DSML_sptbgsAnalisys\\src\\prova\\" + sourceFile));
 		
 		
 		String retString;
@@ -75,7 +79,7 @@ public class Final_Parser {
 		int count = 0;
 		while (!(line.contains(methodName) && line.contains("{") && line.contains("(") && line.contains(")"))) {
 			line = reader.readLine();
-		}
+		} 
 		System.out.println(line);
 		retString = line +  "\n";
 		if(line.contains("{")) {
@@ -100,6 +104,43 @@ public class Final_Parser {
 	public void csvWriter(CSVWriter writer, String vul, String code) throws IOException {
 		String[] data = {code, vul};
 		writer.writeNext(data);
+	}
+	
+	public void copyFiles(String folder) throws IOException {
+	    File folderFile=new File(folder);
+	    if (folderFile.isDirectory()) {
+	    File[] files=folderFile.listFiles();
+	    for (File file2 : files) {
+			if (file2.isDirectory()) {
+				copyFiles(file2.getAbsolutePath());
+			}
+			else {
+				if (file2.getAbsolutePath().contains(".java")) {
+					InputStream inStream = null;
+			        OutputStream outStream = null;
+
+			        File inputFile=new File(file2.getAbsolutePath());
+			        File outputFile =new File("C:\\Users\\andre\\OneDrive\\Desktop\\prova\\"+file2.getName());
+
+			        inStream = new FileInputStream(inputFile);
+			        outStream = new FileOutputStream(outputFile);
+
+			        byte[] buffer = new byte[1024];
+
+
+			        int fileLength;
+			        while ((fileLength = inStream.read(buffer)) > 0){
+
+			              outStream.write(buffer, 0, fileLength );
+
+			              }
+
+			        inStream.close();
+			        outStream.close();
+				}
+			}
+		}
+	    }
 	}
 	
 }
