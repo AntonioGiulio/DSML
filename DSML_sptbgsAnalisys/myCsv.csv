@@ -1,11 +1,10 @@
-Column1;Column2
 "    Function<Integer, Flowable<Integer>> toJust = new Function<Integer, Flowable<Integer>>() {
         @Override
         public Flowable<Integer> apply(Integer t) {
             return Flowable.just(t);
         }
     };
-    };";NM_METHOD_NAMING_CONVENTION
+    };","NM_METHOD_NAMING_CONVENTION"
 "    public void ObservableCapacityHint() {
         Flowable<Integer> source = Flowable.just(1);
         TestSubscriber<Integer> ts = TestSubscriber.create();
@@ -16,22 +15,22 @@ Column1;Column2
         ts.assertNoErrors();
         ts.assertComplete();
     }
-    }";NM_METHOD_NAMING_CONVENTION
+    }","NM_METHOD_NAMING_CONVENTION"
 "        public Integer next() {
             return count++;
         }
-        }";IT_NO_SUCH_ELEMENT
+        }","IT_NO_SUCH_ELEMENT"
 "        public Integer next() {
             return count++;
         }
-        }";IT_NO_SUCH_ELEMENT
+        }","IT_NO_SUCH_ELEMENT"
 "        .concatMapEager(new Function<Integer, ObservableSource<Integer>>() {
             @Override
             public ObservableSource<Integer> apply(Integer t) {
                 return Observable.range(t, 2);
             }
         })
-        })";NM_METHOD_NAMING_CONVENTION
+        })","NM_METHOD_NAMING_CONVENTION"
 "    public void ObservableCapacityHint() {
         Observable<Integer> source = Observable.just(1);
         TestObserver<Integer> to = TestObserver.create();
@@ -42,15 +41,15 @@ Column1;Column2
         to.assertNoErrors();
         to.assertComplete();
     }
-    }";NM_METHOD_NAMING_CONVENTION
+    }","NM_METHOD_NAMING_CONVENTION"
 "        public Integer next() {
             return count++;
         }
-        }";IT_NO_SUCH_ELEMENT
+        }","IT_NO_SUCH_ELEMENT"
 "    @Override protected Scheduler getScheduler() {
         return Schedulers.single();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    static List<String> readAllLines(File f) {
         List<String> result = new ArrayList<String>();
         try {
@@ -71,7 +70,7 @@ Column1;Column2
         }
         return result;
     }
-    }";DM_DEFAULT_ENCODING
+    }","DM_DEFAULT_ENCODING"
 "    static void list(String basepath, String basepackage) throws Exception {
         File[] observables = new File(basepath + ""observable/"").listFiles();
 
@@ -139,68 +138,68 @@ Column1;Column2
         System.out.println();
         System.out.println(count);
     }
-    }";NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE
+    }","NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE"
 "    protected FlowableProcessor<Object> create() {
         return AsyncProcessor.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected FlowableProcessor<Object> create() {
         return BehaviorProcessor.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected FlowableProcessor<Object> create() {
         return PublishProcessor.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected FlowableProcessor<Object> create() {
         return ReplayProcessor.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected FlowableProcessor<Object> create() {
         return UnicastProcessor.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected Scheduler getScheduler() {
         return Schedulers.io();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected Scheduler getScheduler() {
         // this is an implementation of ExecutorScheduler
         return Schedulers.computation();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected Scheduler getScheduler() {
         return Schedulers.newThread();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected Scheduler getScheduler() {
         return Schedulers.trampoline();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected Subject<Integer> create() {
         return AsyncSubject.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected Subject<Integer> create() {
         return BehaviorSubject.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected Subject<Integer> create() {
         return PublishSubject.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected Subject<Integer> create() {
         return ReplaySubject.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    protected Subject<Integer> create() {
         return UnicastSubject.create();
     }
-    }";IL_INFINITE_RECURSIVE_LOOP
+    }","IL_INFINITE_RECURSIVE_LOOP"
 "    static void findPattern(String pattern) throws Exception {
         findPattern(pattern, false);
     }
-    }";DM_DEFAULT_ENCODING
+    }","DM_DEFAULT_ENCODING"
 "    static List<String> readFile(File u) throws Exception {
         List<String> lines = new ArrayList<String>();
 
@@ -312,7 +311,7 @@ Column1;Column2
         );
     }
 }
-}";DM_DEFAULT_ENCODING
+}","DM_DEFAULT_ENCODING"
 "    static String readFile(File f) throws IOException {
         StringBuilder b = new StringBuilder((int)f.length());
         BufferedReader in = new BufferedReader(new FileReader(f));
@@ -329,7 +328,7 @@ Column1;Column2
         return b.toString();
     }
 }
-}";DM_DEFAULT_ENCODING
+}","DM_DEFAULT_ENCODING"
 "    public static StringBuilder readFile(File f) throws Exception {
         StringBuilder b = new StringBuilder();
 
@@ -351,7 +350,7 @@ Column1;Column2
 
         return b;
     }
-    }";DM_DEFAULT_ENCODING
+    }","DM_DEFAULT_ENCODING"
 "    static void findPattern(int newLines) throws Exception {
         File f = MaybeNo2Dot0Since.findSource(""Flowable"");
         if (f == null) {
@@ -364,7 +363,7 @@ Column1;Column2
         StringBuilder fail = new StringBuilder();
         fail.append(""The following code pattern was found: "");
         fail.append(""\\}\\R"");
-        fail.append(""\\}\\R"");";DM_DEFAULT_ENCODING
+        fail.append(""\\}\\R"");","DM_DEFAULT_ENCODING"
 "    static void findPattern(int newLines) throws Exception {
         File f = MaybeNo2Dot0Since.findSource(""Flowable"");
         if (f == null) {
@@ -454,4 +453,4 @@ Column1;Column2
             throw new AssertionError(fail.toString());
         }
     }
-    }";DM_DEFAULT_ENCODING
+    }","DM_DEFAULT_ENCODING"
