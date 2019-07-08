@@ -65,82 +65,90 @@ public class Final_Parser {
 		return e.getChild("Method");
 	}	
 	
+	public Element getBugReturnField(Element e) {
+		return e.getChild("Field");
+	}
+	
 	public Element getBugSourceLine(Element e) {
 		return e.getChild("SourceLine");
 	}
 	
-	public String printBugMethod(String className, String methodName, String sourceFile) throws IOException {
+	public String printBugMethod(String classPath, String methodName) throws IOException {
 		BufferedReader reader;
-		reader = new BufferedReader(new FileReader("C:\\Users\\andre\\git\\DSML\\DSML_sptbgsAnalisys\\src\\prova\\" + sourceFile));
+		try {
+			reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\"+classPath));
+		}catch(FileNotFoundException e) {
+			try {
+				reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\CrawlDouyuDanmu\\src\\main\\java\\"+classPath));
+			}catch (FileNotFoundException e2){
+				try {
+					reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\CrawlPandaDanmu\\src\\main\\java\\"+classPath));
+				}catch (FileNotFoundException e3){
+					try {
+						reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\InsulinPump\\"+classPath));
+					}catch (FileNotFoundException e4){
+						try {
+							reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\medical_question\\"+classPath));
+						}catch (FileNotFoundException e5){
+							try {
+								reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\MicroWave\\"+classPath));
+							}catch (FileNotFoundException e6){
+								try {
+									reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\PullBookinfo\\"+classPath));
+								}catch (FileNotFoundException e7){
+									try {
+										reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\Struts2FileUpAndDown\\src\\"+classPath));
+									}catch (FileNotFoundException e8){
+										reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\西邮导游系统源码\\源码\\"+classPath));
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}		
 		
-		
-		String retString;
+		String retString = "";
 		String line = reader.readLine();
 		int count = 0;
-		while (!(line.contains(methodName) && line.contains("{") && line.contains("(") && line.contains(")"))) {
-			line = reader.readLine();
-		} 
-		System.out.println(line);
-		retString = line +  "\n";
-		if(line.contains("{")) {
-			count++;
-		}
-		
-		while (count != 0) {
-			line = reader.readLine();
-			if(line.contains("{")) {
-				count++;
-			}else if(line.contains("}")) {
-				count--;
+		try {
+			/*
+			while (!line.matches("(public|protected|private).+" + methodName + ".+")){
+				line = reader.readLine();
+			}*/
+			while (!(line.contains(methodName) && line.contains("{") && line.contains("(") && line.contains(")") && !line.contains("*") && line.contains("public"))) {
+				line = reader.readLine();
 			}
+			System.out.println(line);
+			retString = line +  "\n";
+			count++;
 			
-			retString += line + "\n";
+			while (count != 0) {
+				line = reader.readLine();
+				if(line.contains("{")) {
+					if(!line.contains("}")) {
+						count++;
+					}
+				}else if(line.contains("}")){
+					count--;
+				}
+				
+				retString += line + "\n";
+			}
+		}catch(NullPointerException e) {
+			retString += null;
 		}
+		System.out.println(line);
 		retString += line;
 		reader.close();
+		System.out.println("ho finito");
 		return retString;
 	}
 	
 	public void csvWriter(CSVWriter writer, String vul, String code) throws IOException {
 		String[] data = {code, vul};
 		writer.writeNext(data);
-	}
-	
-	public void copyFiles(String folder) throws IOException {
-	    File folderFile=new File(folder);
-	    if (folderFile.isDirectory()) {
-	    File[] files=folderFile.listFiles();
-	    for (File file2 : files) {
-			if (file2.isDirectory()) {
-				copyFiles(file2.getAbsolutePath());
-			}
-			else {
-				if (file2.getAbsolutePath().contains(".java")) {
-					InputStream inStream = null;
-			        OutputStream outStream = null;
-
-			        File inputFile=new File(file2.getAbsolutePath());
-			        File outputFile =new File("C:\\Users\\andre\\OneDrive\\Desktop\\prova\\"+file2.getName());
-
-			        inStream = new FileInputStream(inputFile);
-			        outStream = new FileOutputStream(outputFile);
-
-			        byte[] buffer = new byte[1024];
-
-
-			        int fileLength;
-			        while ((fileLength = inStream.read(buffer)) > 0){
-
-			              outStream.write(buffer, 0, fileLength );
-
-			              }
-
-			        inStream.close();
-			        outStream.close();
-				}
-			}
-		}
-	    }
-	}
+	} 	
 	
 }

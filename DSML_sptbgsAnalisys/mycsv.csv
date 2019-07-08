@@ -1,0 +1,1641 @@
+Column1;Column2
+nullnull;DM_DEFAULT_ENCODING
+"    public String read() throws IOException {
+        int msgSize = ByteBuffer.wrap(getBytes(4)).order(ByteOrder.LITTLE_ENDIAN).getInt();
+        byte[] msgBytes =getBytes(msgSize);
+
+        return new String(msgBytes, 8, msgSize - 9);
+    }
+    }";DM_DEFAULT_ENCODING
+"    public List<String> read() throws IOException {
+        if (inputStream == null) {
+            inputStream = socket.getInputStream();
+        }
+        byte[] typeBytes = new byte[4];
+
+        //è¯»å?–å‰?4ä¸ªå­—èŠ‚ï¼Œå¾—åˆ°æ•°æ?®ç±»åž‹ä¿¡æ?¯
+        for (int i = 0;i < 4;i++) {
+            int tmp = inputStream.read();
+            typeBytes[i] = (byte) tmp;
+        }
+
+        //æœ€ç»ˆçš„ç»“æžœ
+        List<String> result = new LinkedList<String>();
+        //è¿™æ˜¯ä¸€æ?¡å¼¹å¹•ä¿¡æ?¯
+        if (typeBytes[0] == 0x00 && typeBytes[1] == 0x06 && typeBytes[2] == 0x00 && typeBytes[3] == 0x03) {
+            //è¶Šè¿‡å‰?é?¢æ²¡ç”¨çš„å­—èŠ‚ï¼Œè·³åˆ°æ ‡è®°å†…å®¹é•¿åº¦çš„å­—èŠ‚
+            inputStream.skip(7);
+            //ä¸‹æ?¡å†…å®¹çš„é•¿åº¦
+            int contentLen = 0;
+            //è¯»å?–4ä¸ªå­—èŠ‚ï¼Œå¾—åˆ°æ•°æ?®é•¿åº¦
+            for (int i = 3;i >= 0;i--) {
+                int tmp = inputStream.read();
+                contentLen += tmp * Math.pow(16,2 * i);
+            }
+
+            int len;
+            int readLen = 0;
+            byte[] bytes = new byte[contentLen];
+            ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
+            while ((len = inputStream.read(bytes,0,contentLen - readLen)) != -1) {
+                byteArray.write(bytes,0,len);
+                readLen += len;
+                if (readLen == contentLen) {
+                    break;
+                }
+            }
+
+            bytes = byteArray.toByteArray();
+            byte[] b = Arrays.copyOfRange(bytes, 8, 12);
+            //æ‰¾åˆ°äººå?¯è¯†åˆ«çš„å­—ç¬¦ä¸²æ”¾å…¥ç»“æžœé›†ä¸­
+            for (int i = 0;i < bytes.length;) {
+                //ä¸€æ®µå¼¹å¹•å†…å®¹çš„å¼€å¤´
+                if (bytes[i] == b[0] && bytes[i+1] == b[1] && bytes[i+2] == b[2] && bytes[i+3] == b[3]) {
+                    i += 4;
+                    //ä¸€æ®µå¼¹å¹•jsonå­—ç¬¦ä¸²çš„é•¿åº¦
+                    int length = 0;
+                    //è¯»å?–4ä¸ªå­—èŠ‚ï¼Œå¾—åˆ°å¼¹å¹•æ•°æ?®é•¿åº¦
+                    for (int j = 0,k = 3;j < 4;j++,k--) {
+                        int n = bytes[i + j];
+                        /*
+                          åŽŸæ•°æ?®ä¸€ä¸ªå­—èŠ‚å?¯ä¿?å­˜0~255çš„æ•°,ä½†æ˜¯byteèŒƒå›´æ˜¯-128~127,æ‰€ä»¥è¦?å?˜å›žåŽŸæ?¥çš„çœŸå®žæ•°æ?®
+                          å?Žé?¢çš„æ•°æ?®ä¸?å?˜æ˜¯å› ä¸ºå?Žé?¢çš„å­—ç¬¦ä¸²éƒ½æ˜¯asciiå­—ç¬¦,éƒ½åœ¨0~127ä¹‹å†…
+                         */
+                        if (n < 0) {
+                            n = 256 + bytes[i + j];
+                        }
+
+                        length += n * Math.pow(16,2 * k);
+                    }
+                    i += 4;
+
+                    result.add(Utils.unicode2String(new String(Arrays.copyOfRange(bytes,i,i + length))));
+                    i += length;
+                } else {
+                    i++;
+                }
+            }
+
+        } else if ((typeBytes[0] == 0x00 && typeBytes[1] == 0x06 && typeBytes[2] == 0x00 && typeBytes[3] == 0x06)) {
+            //ä¸‹æ?¡å†…å®¹çš„é•¿åº¦
+            int contentLen = 0;
+            //è¯»å?–2ä¸ªå­—èŠ‚ï¼Œå¾—åˆ°æ•°æ?®é•¿åº¦
+            for (int i = 1;i >= 0;i--) {
+                int tmp = inputStream.read();
+                contentLen += tmp * Math.pow(16,2 * i);
+            }
+
+            inputStream.skip(contentLen);
+        }
+
+        return result;
+    }
+    }";DM_DEFAULT_ENCODING
+"    public List<String> read() throws IOException {
+        if (inputStream == null) {
+            inputStream = socket.getInputStream();
+        }
+        byte[] typeBytes = new byte[4];
+
+        //è¯»å?–å‰?4ä¸ªå­—èŠ‚ï¼Œå¾—åˆ°æ•°æ?®ç±»åž‹ä¿¡æ?¯
+        for (int i = 0;i < 4;i++) {
+            int tmp = inputStream.read();
+            typeBytes[i] = (byte) tmp;
+        }
+
+        //æœ€ç»ˆçš„ç»“æžœ
+        List<String> result = new LinkedList<String>();
+        //è¿™æ˜¯ä¸€æ?¡å¼¹å¹•ä¿¡æ?¯
+        if (typeBytes[0] == 0x00 && typeBytes[1] == 0x06 && typeBytes[2] == 0x00 && typeBytes[3] == 0x03) {
+            //è¶Šè¿‡å‰?é?¢æ²¡ç”¨çš„å­—èŠ‚ï¼Œè·³åˆ°æ ‡è®°å†…å®¹é•¿åº¦çš„å­—èŠ‚
+            inputStream.skip(7);
+            //ä¸‹æ?¡å†…å®¹çš„é•¿åº¦
+            int contentLen = 0;
+            //è¯»å?–4ä¸ªå­—èŠ‚ï¼Œå¾—åˆ°æ•°æ?®é•¿åº¦
+            for (int i = 3;i >= 0;i--) {
+                int tmp = inputStream.read();
+                contentLen += tmp * Math.pow(16,2 * i);
+            }
+
+            int len;
+            int readLen = 0;
+            byte[] bytes = new byte[contentLen];
+            ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
+            while ((len = inputStream.read(bytes,0,contentLen - readLen)) != -1) {
+                byteArray.write(bytes,0,len);
+                readLen += len;
+                if (readLen == contentLen) {
+                    break;
+                }
+            }
+
+            bytes = byteArray.toByteArray();
+            byte[] b = Arrays.copyOfRange(bytes, 8, 12);
+            //æ‰¾åˆ°äººå?¯è¯†åˆ«çš„å­—ç¬¦ä¸²æ”¾å…¥ç»“æžœé›†ä¸­
+            for (int i = 0;i < bytes.length;) {
+                //ä¸€æ®µå¼¹å¹•å†…å®¹çš„å¼€å¤´
+                if (bytes[i] == b[0] && bytes[i+1] == b[1] && bytes[i+2] == b[2] && bytes[i+3] == b[3]) {
+                    i += 4;
+                    //ä¸€æ®µå¼¹å¹•jsonå­—ç¬¦ä¸²çš„é•¿åº¦
+                    int length = 0;
+                    //è¯»å?–4ä¸ªå­—èŠ‚ï¼Œå¾—åˆ°å¼¹å¹•æ•°æ?®é•¿åº¦
+                    for (int j = 0,k = 3;j < 4;j++,k--) {
+                        int n = bytes[i + j];
+                        /*
+                          åŽŸæ•°æ?®ä¸€ä¸ªå­—èŠ‚å?¯ä¿?å­˜0~255çš„æ•°,ä½†æ˜¯byteèŒƒå›´æ˜¯-128~127,æ‰€ä»¥è¦?å?˜å›žåŽŸæ?¥çš„çœŸå®žæ•°æ?®
+                          å?Žé?¢çš„æ•°æ?®ä¸?å?˜æ˜¯å› ä¸ºå?Žé?¢çš„å­—ç¬¦ä¸²éƒ½æ˜¯asciiå­—ç¬¦,éƒ½åœ¨0~127ä¹‹å†…
+                         */
+                        if (n < 0) {
+                            n = 256 + bytes[i + j];
+                        }
+
+                        length += n * Math.pow(16,2 * k);
+                    }
+                    i += 4;
+
+                    result.add(Utils.unicode2String(new String(Arrays.copyOfRange(bytes,i,i + length))));
+                    i += length;
+                } else {
+                    i++;
+                }
+            }
+
+        } else if ((typeBytes[0] == 0x00 && typeBytes[1] == 0x06 && typeBytes[2] == 0x00 && typeBytes[3] == 0x06)) {
+            //ä¸‹æ?¡å†…å®¹çš„é•¿åº¦
+            int contentLen = 0;
+            //è¯»å?–2ä¸ªå­—èŠ‚ï¼Œå¾—åˆ°æ•°æ?®é•¿åº¦
+            for (int i = 1;i >= 0;i--) {
+                int tmp = inputStream.read();
+                contentLen += tmp * Math.pow(16,2 * i);
+            }
+
+            inputStream.skip(contentLen);
+        }
+
+        return result;
+    }
+    }";SR_NOT_CHECKED
+"    public static void main(String[] args) {
+        final MicroWave microWave = new MicroWave();
+        final MicroWaveWindow microWaveWindow = new MicroWaveWindow(microWave);
+
+        microWave.run();
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                microWaveWindow.setTimeLable(microWave.getHour(), microWave.getMinutes(),microWave.getSecond());
+                microWaveWindow.pack();//åŠ¨æ€?è°ƒæ•´çª—å?£å¤§å°?
+            }
+        },0,50);
+    }
+    }";RU_INVOKE_RUN
+nullnull;OBL_UNSATISFIED_OBLIGATION
+nullnull;NM_METHOD_NAMING_CONVENTION
+nullnull;NM_METHOD_NAMING_CONVENTION
+"	public static Integer[] Dijkstra(int start,int end,int count,Map<Integer,Vertex> map) {
+		if (start == end) {
+			return null;
+		}
+		
+		class LengthAndRoad{
+			int length;
+			List<Integer> road = new LinkedList<Integer>();
+		}
+		LengthAndRoad[] temp= new LengthAndRoad[count + 1];//Ëã·¨ÖÐÁÙÊ±ÓÃµ½µÄÄÇ¸öÊý×é,Êý×éÏÂ±ê¶ÔÓ¦½ÚµãÐòºÅ
+		Set<Integer> alreadyFind = new HashSet<Integer>();//ÒÑ¾­ÕÒµ½×î¶ÌÂ·¾¶µÄÄÇÐ©µãµÄ¼¯ºÏ
+		
+//		===============================================
+//		³õÊ¼»¯Õâ¸öÊý×é
+		Vertex tmpVex = map.get(start);
+		Set<Integer> point = tmpVex.pointNum.keySet();//Õâ¸öÆðÊ¼µãÖ¸ÏòµÄÄÇÐ©µãµÄÐòºÅ
+		for (Integer i:point) {
+			temp[i] = new LengthAndRoad();
+			temp[i].length = tmpVex.pointNum.get(i);
+			temp[i].road = new LinkedList<Integer>();
+			temp[i].road.add(start);
+			temp[i].road.add(i);
+		}
+		alreadyFind.add(start);
+//		===============================================
+		int currentStart = 0;//Ã¿´ÎÑ­»·Ê±ÆðÊ¼µãµÄÐòºÅ,Ñ­»·½øÈ¥µÚÒ»²½¾ÍÊÇÑ¡ÔñÕâ¸öµã£¨Â·¾¶³¤¶È×î¶ÌµÄÄÇ¸öµã£©
+		int MAX = 2147483647;
+		for (int k = 1;k <= count;k++) {
+			long endTime = System.currentTimeMillis();
+			
+			int minLength = MAX;
+			int n = -1;//ÏÂÃæÕâ¸ötempÊý×é¼ÆÊý
+			for (LengthAndRoad l:temp) {
+				n++;
+				if (l == null || alreadyFind.contains(n)) {
+					continue;
+				}
+				if (minLength > l.length) {
+					minLength = l.length;
+					currentStart = n;
+				}
+			}
+			if (currentStart == end) {
+				break;
+			}
+			alreadyFind.add(currentStart);
+			
+			Vertex currentVex = map.get(currentStart);//µ±Ç°ÆðÊ¼µã
+			List<Integer> currentStartRoad = new LinkedList<Integer>(temp[currentStart].road);//µ±Ç°Â·¾¶(°ÑÆðÊ¼µãÂ·¾¶¸´ÖÆ¹ýÀ´)
+			
+			Set<Integer> currentPoint = currentVex.pointNum.keySet();//»ñµÃµ±Ç°µãÖ¸ÏòÄÄÐ©µã
+			for (Integer i:currentPoint) {
+				if (alreadyFind.contains(i)) {
+					continue;
+				}
+				if ((temp[i] == null) || (temp[currentStart].length + currentVex.pointNum.get(i) < temp[i].length)) {
+					LengthAndRoad newRoad = new LengthAndRoad();
+					newRoad.length = temp[currentStart].length + currentVex.pointNum.get(i);
+					newRoad.road = new LinkedList<Integer>(currentStartRoad);
+					newRoad.road.add(i);
+					temp[i] = newRoad;
+				}
+			}
+		}
+		
+		if (currentStart != end) {
+			return null;
+		}
+		
+		Integer[] result = new Integer[temp[currentStart].road.size()];
+		int n = 0;
+		for (Integer i:temp[currentStart].road) {
+			result[n++] = i;
+		}
+		return result;
+	}
+	}";NM_METHOD_NAMING_CONVENTION
+nullnull;DMI_HARDCODED_ABSOLUTE_FILENAME
+nullnull;DMI_HARDCODED_ABSOLUTE_FILENAME
+nullnull;WMI_WRONG_MAP_ITERATOR
+"public void paint(Graphics g) {
+		
+		super.paint(g);
+		Color c = g.getColor();
+		g.setColor(Color.RED);
+		float lineWidth = 4.0f;//ÏßÌõ¿í¶È
+	    ((Graphics2D)g).setStroke(new BasicStroke(lineWidth));
+		
+	    //°´ÏÂµÄÊÇÂ·¾­²éÑ¯
+	    if (clickedButton == rightBut1 ||
+	    	clickedButton == firstPanelDownBut1) {
+	    	if (paintVertex == null) {
+				return;
+			}
+			
+		    for (int i = 0;i + 1 < paintVertex.length;i++) {
+		    	g.drawLine(	map.get(paintVertex[i]).x + borderWidth, 
+		    				map.get(paintVertex[i]).y + borderHeight, 
+		    				map.get(paintVertex[i+1]).x + borderWidth, 
+		    				map.get(paintVertex[i+1]).y + borderHeight);
+		    }
+		    g.setFont(new Font(""Î¢ÈíÑÅºÚ"", Font.BOLD, 15));
+		    g.setColor(Color.YELLOW);
+		    g.drawString(""Æðµã"", 	map.get(paintVertex[0]).x + borderWidth, 
+		    					map.get(paintVertex[0]).y + borderHeight);
+		    g.drawString(""ÖÕµã"", 	map.get(paintVertex[paintVertex.length - 1]).x + borderWidth, 
+		    					map.get(paintVertex[paintVertex.length - 1]).y + borderHeight);
+	    } else if (	clickedButton == rightBut3 || 
+	    			clickedButton == rightBut4 || 
+	    			clickedButton == rightBut5 ||
+	    			clickedButton == rightBut6 ||
+	    			clickedButton == fourthPanelDownButton || 
+	    			clickedButton == thirdPanelDownButton1 ||
+	    			clickedButton == fifthPanelDownButton  ||
+	    			clickedButton == sixthPanelDownButton) {
+	    	Set<Integer> vexNum = map.keySet();
+	    	Set<String> viewName = view.keySet();
+	    	Set<Integer> viewNum = new HashSet<Integer>();//´æ´¢¾°µãµÄ±àºÅ£¬¾°µãµÄµãÑÕÉ«ÒªÇø·Ö³öÀ´
+	    	
+	    	for (String s:viewName) {
+	    		String introduce = view.get(s);
+	    		viewNum.add(Integer.valueOf(introduce.split("" "")[0]));
+	    	}
+	    	
+	    	Vertex t;
+	    	int r = 3;//µãÔ²µÄ°ë¾¶
+	    	//±éÀúÍ¼µÄ½Úµã£¬ÔÚÃ¿¸ö½ÚµãÉÏ»­Ò»¸öµã
+	    	for (Integer i:vexNum) {
+	    		t = map.get(i);
+	    		if (viewNum.contains(i)) {
+	    			g.setColor(Color.YELLOW);
+	    		} else {
+	    			g.setColor(Color.RED);
+	    		}
+	    		g.fillOval(t.x + borderWidth - r, t.y + borderHeight - r, 2 * r, 2 * r);
+	    	}
+	    	g.setFont(new Font(""Î¢ÈíÑÅºÚ"", Font.BOLD, 12));
+		    g.setColor(Color.BLACK);
+		    
+		    //µãµÄÉÏÃæ´òÓ¡µãµÄÐòºÅ
+		    for (Integer i:vexNum) {
+	    		t = map.get(i);
+	    		g.drawString(String.valueOf(i), t.x + borderWidth, t.y + borderHeight);
+	    	}
+	    }
+	    
+		g.setColor(c);
+		
+	}
+	}";WMI_WRONG_MAP_ITERATOR
+"		public void actionPerformed(ActionEvent e) {
+
+			clickedButton = (JButton) e.getSource();
+			if (clickedButton == firstPanelDownBut1) {
+				/**
+				 * ×î¶ÌÂ·¾¶µÄ°´Å¥
+				 */
+				int numStart = getStartNum();
+				int numEnd = getEndNum();
+				int count = getMaxNum();//ÒòÎªÊý×éÏÂ±êºÍÂ·¾¶ÐòºÅÏà¶ÔÓ¦£¬ËùÒÔ½¨Á¢µÄÊý×éµÄ´óÐ¡Ó¦¸Ã°üÀ¨×î´óµÄÐòºÅ
+				paintVertex = GuideAlgorithm.Dijkstra(numStart, numEnd, count,map);
+				
+				if (paintVertex == null) {
+					JOptionPane.showMessageDialog(null, ""Ã»ÓÐÂ·¾¶¿ÉÒÔµ½´ï»òÕßÆðµãÓëÖÕµãÏàÍ¬£¡ÇëÈ·¶¨ËùÓÐ½Úµã¶¼Á¬Í¨¡£"");
+				}
+				
+				repaint();
+			} else if (clickedButton == firstPanelDownBut2) {
+				/**
+				 * ²Á³öÂ·Ïß°´Å¥
+				 */
+				paintVertex = null;
+				repaint();
+			} else if (clickedButton == thirdPanelDownButton1) {
+				/**
+				 * È·ÈÏÌí¼Ó½ÚµãµÄ°´Å¥
+				 */
+				
+				String xy = thirdPanelDownLab2.getText();
+				String relationNum = thirdPanelDownText1.getText();
+				if (xy.equals("""") || relationNum.equals("""")) {
+					JOptionPane.showMessageDialog(null, ""ÓÐÊý¾ÝÎ´ÊäÈë!"");
+					return;
+				}
+				
+				Set<Integer> relationNumSet = new HashSet<Integer>();
+				String[] relationNumArray = relationNum.split("","");
+				for (int i = 0;i < relationNumArray.length;i++) {
+					try {
+						relationNumSet.add(Integer.valueOf(relationNumArray[i]));
+					} catch (NumberFormatException e1) {
+						JOptionPane.showMessageDialog(null, ""ÊäÈë²»ÕýÈ·£¬Ö»ÄÜÊäÈëÊý×Ö!"");
+						return;
+					}
+				}
+				
+				//Èç¹ûÓÃ»§Ð´µÄµã²»´æÔÚ£¬ÄÇÃ´²»ÄÜÊ¹Ö®Ìí¼Ó³É¹¦
+				for (Integer i:relationNumSet) {
+					if (!map.containsKey(i)) {
+						JOptionPane.showMessageDialog(null, ""ÄúÊäÈëÁËµØÍ¼ÉÏ²»´æÔÚµÄµã!"");
+						return;
+					}
+				}
+				thirdPanelDownText1.setText("""");
+				
+				int vexNum;//¼´½«Ìí¼Óµ½Í¼ÖÐµÄ½ÚµãÐòºÅ
+				for (vexNum = 1;map.containsKey(vexNum);vexNum++);//Ñ¡ÔñÒ»¸ö×îÐ¡µÄ²¢ÇÒÎ´¼ÓÈëÍ¼µÄ½ÚµãÐòºÅ
+				
+				Vertex newVex = new Vertex();
+				newVex.num = vexNum;
+				newVex.x = Integer.parseInt(xy.split("","")[0]);
+				newVex.y = Integer.parseInt(xy.split("","")[1]);
+				newVex.pointNum = new HashMap<Integer, Integer>();
+				
+				//¹¹½¨ÐÂ¼ÓÈëµÄµãµÄÐÅÏ¢
+				for (Integer i:relationNumSet) {
+					int x = map.get(i).x;
+					int y = map.get(i).y;
+					int distance = (int) Math.sqrt((x-newVex.x) * (x-newVex.x) + (y-newVex.y) * (y-newVex.y));
+					newVex.pointNum.put(i, distance);
+				}
+				map.put(newVex.num, newVex);
+				
+				//ÐÞ¸ÄÓëÐÂ¼ÓµÄµãÓÐ¹ØÏµµÄµãµÄÐÅÏ¢£¬ÄÇÐ©µãÒ²ÓëÐÂ¼ÓµÄµãÓÐ¹ØÏµ
+				for (Integer i:relationNumSet) {
+					Vertex t = map.get(i);
+					t.pointNum.put(newVex.num, newVex.pointNum.get(i));
+					map.put(i, t);
+				}
+				
+				GuideUtil.setVertex(map, vertexPath);
+				repaint();
+			} else if (clickedButton == fourthPanelDownButton) {
+				/**
+				 * È·ÈÏÉ¾³ý½Úµã°´Å¥
+				 */
+				
+				if (fourthPanelDownText.getText().equals("""")) {
+					return;
+				}
+				
+				String[] deleteNumStr = fourthPanelDownText.getText().split("","");
+				Set<Integer> deleteNum = new HashSet<Integer>();
+				for (String s:deleteNumStr) {
+					try{
+						deleteNum.add(Integer.valueOf(s));
+					} catch (NumberFormatException e1) {
+						JOptionPane.showMessageDialog(null, ""ÊäÈë²»ÕýÈ·£¬Ö»ÄÜÊäÈëÊý×ÖºÍ¶ººÅ!"");
+						return;
+					}
+				}
+				fourthPanelDownText.setText("""");
+				
+//				É¾³ýÕâ¸öµãµÄÐÅÏ¢,±éÀú¼´½«±»É¾³ýµÄµãµÄÐòºÅµÄ¼¯ºÏ
+				for (Integer i:deleteNum) {
+					//Í¼ÖÐÉ¾³ýÕâ¸öµã
+					if (map.containsKey(i)) {
+						map.remove(i);
+					}
+				}
+				
+				Set<Integer> vexNum = map.keySet();//Í¼ÖÐµÄµãµÄÐòºÅ
+				Map<Integer,Integer> pointNum;//Ä³¸ö½ÚµãÖ¸ÏòÊ²Ã´µã
+				for (Integer i:vexNum) {
+					pointNum = map.get(i).pointNum;
+					for (Integer j:deleteNum) {
+						if (pointNum.containsKey(j)) {
+							pointNum.remove(j);
+						}
+					}
+				}
+				GuideUtil.setVertex(map, vertexPath);
+				
+				//Õâ¸ö½Úµã¿ÉÄÜÊÇÒ»¸ö¾°µã£¬¿ÉÄÜÓÐ½éÉÜÐÅÏ¢£¬Ò²ÒªÉ¾³ý
+				Set<String> viewName = view.keySet();
+				String t;
+				for (Iterator<String> it = viewName.iterator();it.hasNext();) {
+					t = view.get(it.next()).split("" "")[0];//µÃµ½Õâ¸ö¾°µãµÄÐòºÅ
+					if (deleteNum.contains(Integer.valueOf(t))) {
+						it.remove();
+					}
+				}
+				GuideUtil.setView(view, viewPath);
+				
+				setViewBox();//ÖØÐÂÏÔÊ¾¾°µãBOX
+				setViewNameList();//ÖØÐÂÏÔÊ¾Ñ¡ÔñµØµãµÄÄÇÁ½¸öÏÂÀ­¿ò
+				
+				paintVertex = null;//É¾³ý½Úµãºó¾Í²»ÏÔÊ¾Â·¾¶ÁË£¬¼´Ê±Ô­À´Ñ¡ÔñµÄÂ·¾¶µÄÆðµãºÍÖÕµã»¹ÔÚ
+				
+				repaint();
+			} else if (clickedButton == fifthPanelDownButton) {
+				/**
+				 * È·¶¨Ìí¼Ó¾°µã°´Å¥
+				 */
+				
+				String viewNum = fifthPanelDownText1.getText();
+				String viewName = fifthPanelDownText2.getText();
+				String viewIntroduce = fifthPanelDownText3.getText();
+				if (viewNum.equals("""") || viewName.equals("""") || viewIntroduce.equals("""")) {
+					JOptionPane.showMessageDialog(null, ""ÓÐÊý¾ÝÎ´ÊäÈë!"");
+					return;
+				}
+				
+				//µã²»´æÔÚ²»¼ÓÈë
+				try {
+					if (!map.containsKey(Integer.valueOf(viewNum))) {
+						JOptionPane.showMessageDialog(null, ""½Úµã²»´æÔÚ!"");
+						return;
+					}
+				} catch (NumberFormatException e1) {
+					JOptionPane.showMessageDialog(null, ""½ÚµãÐòºÅÊäÈë²»ÕýÈ·£¬Ö»ÄÜÊäÈëÊý×Ö!"");
+					return;
+				}
+				
+				Set<String> viewNameSet = view.keySet();
+				for (String name:viewNameSet) {
+					if (view.get(name).split("" "")[0].equals(viewNum)) {
+						JOptionPane.showMessageDialog(null, ""´Ë½ÚµãÒÑÊÇ¾°µã£¬Òª¸ü¸ÄÇëÉ¾³ýºóÔÙÌí¼Ó!"");
+						return;
+					}
+				}
+				
+				fifthPanelDownText1.setText("""");
+				fifthPanelDownText2.setText("""");
+				fifthPanelDownText3.setText("""");
+				
+				view.put(viewName, viewNum + "" "" +viewIntroduce);
+				
+				GuideUtil.setView(view, viewPath);
+				
+				setViewBox();//ÖØÐÂÏÔÊ¾¾°µãBOX
+				setViewNameList();//ÖØÐÂÏÔÊ¾Ñ¡ÔñµØµãµÄÄÇÁ½¸öÏÂÀ­¿ò
+				
+				repaint();
+			} else if (clickedButton == sixthPanelDownButton) {
+				/**
+				 * È·¶¨É¾³ý¾°µã°´Å¥
+				 */
+				
+				String inputText = sixthPanelDownText.getText();
+				if (inputText.equals("""")) {
+					JOptionPane.showMessageDialog(null, ""Êý¾ÝÎ´ÊäÈë!"");
+					return;
+				}
+				
+				Set<Integer> deleteNumSet = new HashSet<Integer>();
+				String[] deleteNumArray = inputText.split("","");
+				for (int i = 0;i < deleteNumArray.length;i++) {
+					try {
+						deleteNumSet.add(Integer.valueOf(deleteNumArray[i]));
+					} catch (NumberFormatException e1) {
+						JOptionPane.showMessageDialog(null, ""Ö»ÄÜÊäÈëÊý×ÖºÍ¶ººÅ!"");
+						return;
+					}
+				}
+				
+				Set<Integer> viewNumSet = new HashSet<Integer>();//´æ´¢¾°µãµÄ±àºÅ,ÅÐ¶ÏÊÇ·ñÒªÉ¾³ýµÄµãÊÇ·ñÊÇÒ»¸ö¾°µã
+				Set<String> viewNameSet = view.keySet();
+				for (String viewName:viewNameSet) {
+					viewNumSet.add(Integer.valueOf(view.get(viewName).split("" "")[0]));
+				}
+				for (Integer i:deleteNumSet) {
+					if (!viewNumSet.contains(i)) {
+						JOptionPane.showMessageDialog(null, ""ÄúÊäÈëµÄµãÖÐ°üÀ¨²»ÊÇ¾°µãµÄµã!"");
+						return;
+					}
+				}
+				sixthPanelDownText.setText("""");
+				
+				for (Iterator<String> it = viewNameSet.iterator();it.hasNext();) {
+					if (deleteNumSet.contains(Integer.valueOf(view.get(it.next()).split("" "")[0]))) {
+						it.remove();
+					}
+				}
+				
+				setViewBox();
+				setViewNameList();
+				GuideUtil.setView(view, viewPath);
+				
+				repaint();
+			} else if (	clickedButton == sevenPanelBfsButton ||
+						clickedButton == sevenPanelDfsButton) {
+				/**
+				 * Ëã·¨ÄÇÒ»Ûç
+				 */
+				
+				JFrame newWindow = new JFrame();
+				Container c = newWindow.getContentPane();
+
+				JLabel roadText = new JLabel();
+				JScrollPane scrollPanel = new JScrollPane(roadText);
+				c.add(scrollPanel);
+				
+				int startNum = 1;//´Ó×îÐ¡µÄµã¿ªÊ¼Éî¶È±éÀú
+				int i;
+				for (i = 1;i <= getMaxNum() && !map.containsKey(i);i++);
+				startNum = i;
+				Integer[] roadVexNum = null;
+				if (clickedButton == sevenPanelBfsButton) {
+					roadVexNum = GuideAlgorithm.Bfs(startNum, map, view,viewNumNameMap);
+					newWindow.setTitle(""¹ã¶ÈÓÅÏÈ±éÀú"");
+				} else if (clickedButton == sevenPanelDfsButton) {
+					roadVexNum = GuideAlgorithm.Dfs(startNum, map, view,viewNumNameMap);
+					newWindow.setTitle(""Éî¶ÈÓÅÏÈ±éÀú"");
+				}
+				
+				StringBuffer roadStr = new StringBuffer();
+				roadStr.append(""<html>"");
+				roadStr.append(viewNumNameMap.get(roadVexNum[0]));
+				int length = 0;
+				for (i = 1;i < roadVexNum.length;i++) {
+					roadStr.append(""==>"" + viewNumNameMap.get(roadVexNum[i]));
+					length += viewNumNameMap.get(roadVexNum[i]).length();
+					
+					if (length > 30) {
+						length = 0;
+						roadStr.append(""<br>"");
+					}
+				}
+				roadStr.append(""</html>"");
+				roadText.setText(roadStr.toString());
+				
+				newWindow.pack();
+				newWindow.setLocationRelativeTo(null);//Õâ¾ä»°·ÅÔÚpack()ºóÃæ£¬·ñÔò¿ªÊ¼´°¿Ú´óÐ¡Îª0£¬×óÉÏ½ÇÔÚÆÁÄ»ÖÐµã
+				newWindow.setVisible(true);
+				newWindow.setResizable(false);
+			} else if (clickedButton == rightBut1) {
+				/**
+				 * Â·¾­²éÑ¯°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 0;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut2) {
+				/**
+				 * ¾°µãÐÅÏ¢°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 1;i++) {
+					card.next(cardPanel);
+				}
+			} else if (clickedButton == rightBut3) {
+				/**
+				 * Ìí¼Ó½Úµã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 2;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut4) {
+				/**
+				 * É¾³ý½Úµã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 3;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut5) {
+				/**
+				 * Ìí¼Ó¾°µã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 4;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut6) {
+				/**
+				 * É¾³ý¾°µã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 5;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut7) {
+				/**
+				 * É¾³ý¾°µã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 6;i++) {
+					card.next(cardPanel);
+				}
+			}
+		}
+		}";DMI_HARDCODED_ABSOLUTE_FILENAME
+"		public void actionPerformed(ActionEvent e) {
+
+			clickedButton = (JButton) e.getSource();
+			if (clickedButton == firstPanelDownBut1) {
+				/**
+				 * ×î¶ÌÂ·¾¶µÄ°´Å¥
+				 */
+				int numStart = getStartNum();
+				int numEnd = getEndNum();
+				int count = getMaxNum();//ÒòÎªÊý×éÏÂ±êºÍÂ·¾¶ÐòºÅÏà¶ÔÓ¦£¬ËùÒÔ½¨Á¢µÄÊý×éµÄ´óÐ¡Ó¦¸Ã°üÀ¨×î´óµÄÐòºÅ
+				paintVertex = GuideAlgorithm.Dijkstra(numStart, numEnd, count,map);
+				
+				if (paintVertex == null) {
+					JOptionPane.showMessageDialog(null, ""Ã»ÓÐÂ·¾¶¿ÉÒÔµ½´ï»òÕßÆðµãÓëÖÕµãÏàÍ¬£¡ÇëÈ·¶¨ËùÓÐ½Úµã¶¼Á¬Í¨¡£"");
+				}
+				
+				repaint();
+			} else if (clickedButton == firstPanelDownBut2) {
+				/**
+				 * ²Á³öÂ·Ïß°´Å¥
+				 */
+				paintVertex = null;
+				repaint();
+			} else if (clickedButton == thirdPanelDownButton1) {
+				/**
+				 * È·ÈÏÌí¼Ó½ÚµãµÄ°´Å¥
+				 */
+				
+				String xy = thirdPanelDownLab2.getText();
+				String relationNum = thirdPanelDownText1.getText();
+				if (xy.equals("""") || relationNum.equals("""")) {
+					JOptionPane.showMessageDialog(null, ""ÓÐÊý¾ÝÎ´ÊäÈë!"");
+					return;
+				}
+				
+				Set<Integer> relationNumSet = new HashSet<Integer>();
+				String[] relationNumArray = relationNum.split("","");
+				for (int i = 0;i < relationNumArray.length;i++) {
+					try {
+						relationNumSet.add(Integer.valueOf(relationNumArray[i]));
+					} catch (NumberFormatException e1) {
+						JOptionPane.showMessageDialog(null, ""ÊäÈë²»ÕýÈ·£¬Ö»ÄÜÊäÈëÊý×Ö!"");
+						return;
+					}
+				}
+				
+				//Èç¹ûÓÃ»§Ð´µÄµã²»´æÔÚ£¬ÄÇÃ´²»ÄÜÊ¹Ö®Ìí¼Ó³É¹¦
+				for (Integer i:relationNumSet) {
+					if (!map.containsKey(i)) {
+						JOptionPane.showMessageDialog(null, ""ÄúÊäÈëÁËµØÍ¼ÉÏ²»´æÔÚµÄµã!"");
+						return;
+					}
+				}
+				thirdPanelDownText1.setText("""");
+				
+				int vexNum;//¼´½«Ìí¼Óµ½Í¼ÖÐµÄ½ÚµãÐòºÅ
+				for (vexNum = 1;map.containsKey(vexNum);vexNum++);//Ñ¡ÔñÒ»¸ö×îÐ¡µÄ²¢ÇÒÎ´¼ÓÈëÍ¼µÄ½ÚµãÐòºÅ
+				
+				Vertex newVex = new Vertex();
+				newVex.num = vexNum;
+				newVex.x = Integer.parseInt(xy.split("","")[0]);
+				newVex.y = Integer.parseInt(xy.split("","")[1]);
+				newVex.pointNum = new HashMap<Integer, Integer>();
+				
+				//¹¹½¨ÐÂ¼ÓÈëµÄµãµÄÐÅÏ¢
+				for (Integer i:relationNumSet) {
+					int x = map.get(i).x;
+					int y = map.get(i).y;
+					int distance = (int) Math.sqrt((x-newVex.x) * (x-newVex.x) + (y-newVex.y) * (y-newVex.y));
+					newVex.pointNum.put(i, distance);
+				}
+				map.put(newVex.num, newVex);
+				
+				//ÐÞ¸ÄÓëÐÂ¼ÓµÄµãÓÐ¹ØÏµµÄµãµÄÐÅÏ¢£¬ÄÇÐ©µãÒ²ÓëÐÂ¼ÓµÄµãÓÐ¹ØÏµ
+				for (Integer i:relationNumSet) {
+					Vertex t = map.get(i);
+					t.pointNum.put(newVex.num, newVex.pointNum.get(i));
+					map.put(i, t);
+				}
+				
+				GuideUtil.setVertex(map, vertexPath);
+				repaint();
+			} else if (clickedButton == fourthPanelDownButton) {
+				/**
+				 * È·ÈÏÉ¾³ý½Úµã°´Å¥
+				 */
+				
+				if (fourthPanelDownText.getText().equals("""")) {
+					return;
+				}
+				
+				String[] deleteNumStr = fourthPanelDownText.getText().split("","");
+				Set<Integer> deleteNum = new HashSet<Integer>();
+				for (String s:deleteNumStr) {
+					try{
+						deleteNum.add(Integer.valueOf(s));
+					} catch (NumberFormatException e1) {
+						JOptionPane.showMessageDialog(null, ""ÊäÈë²»ÕýÈ·£¬Ö»ÄÜÊäÈëÊý×ÖºÍ¶ººÅ!"");
+						return;
+					}
+				}
+				fourthPanelDownText.setText("""");
+				
+//				É¾³ýÕâ¸öµãµÄÐÅÏ¢,±éÀú¼´½«±»É¾³ýµÄµãµÄÐòºÅµÄ¼¯ºÏ
+				for (Integer i:deleteNum) {
+					//Í¼ÖÐÉ¾³ýÕâ¸öµã
+					if (map.containsKey(i)) {
+						map.remove(i);
+					}
+				}
+				
+				Set<Integer> vexNum = map.keySet();//Í¼ÖÐµÄµãµÄÐòºÅ
+				Map<Integer,Integer> pointNum;//Ä³¸ö½ÚµãÖ¸ÏòÊ²Ã´µã
+				for (Integer i:vexNum) {
+					pointNum = map.get(i).pointNum;
+					for (Integer j:deleteNum) {
+						if (pointNum.containsKey(j)) {
+							pointNum.remove(j);
+						}
+					}
+				}
+				GuideUtil.setVertex(map, vertexPath);
+				
+				//Õâ¸ö½Úµã¿ÉÄÜÊÇÒ»¸ö¾°µã£¬¿ÉÄÜÓÐ½éÉÜÐÅÏ¢£¬Ò²ÒªÉ¾³ý
+				Set<String> viewName = view.keySet();
+				String t;
+				for (Iterator<String> it = viewName.iterator();it.hasNext();) {
+					t = view.get(it.next()).split("" "")[0];//µÃµ½Õâ¸ö¾°µãµÄÐòºÅ
+					if (deleteNum.contains(Integer.valueOf(t))) {
+						it.remove();
+					}
+				}
+				GuideUtil.setView(view, viewPath);
+				
+				setViewBox();//ÖØÐÂÏÔÊ¾¾°µãBOX
+				setViewNameList();//ÖØÐÂÏÔÊ¾Ñ¡ÔñµØµãµÄÄÇÁ½¸öÏÂÀ­¿ò
+				
+				paintVertex = null;//É¾³ý½Úµãºó¾Í²»ÏÔÊ¾Â·¾¶ÁË£¬¼´Ê±Ô­À´Ñ¡ÔñµÄÂ·¾¶µÄÆðµãºÍÖÕµã»¹ÔÚ
+				
+				repaint();
+			} else if (clickedButton == fifthPanelDownButton) {
+				/**
+				 * È·¶¨Ìí¼Ó¾°µã°´Å¥
+				 */
+				
+				String viewNum = fifthPanelDownText1.getText();
+				String viewName = fifthPanelDownText2.getText();
+				String viewIntroduce = fifthPanelDownText3.getText();
+				if (viewNum.equals("""") || viewName.equals("""") || viewIntroduce.equals("""")) {
+					JOptionPane.showMessageDialog(null, ""ÓÐÊý¾ÝÎ´ÊäÈë!"");
+					return;
+				}
+				
+				//µã²»´æÔÚ²»¼ÓÈë
+				try {
+					if (!map.containsKey(Integer.valueOf(viewNum))) {
+						JOptionPane.showMessageDialog(null, ""½Úµã²»´æÔÚ!"");
+						return;
+					}
+				} catch (NumberFormatException e1) {
+					JOptionPane.showMessageDialog(null, ""½ÚµãÐòºÅÊäÈë²»ÕýÈ·£¬Ö»ÄÜÊäÈëÊý×Ö!"");
+					return;
+				}
+				
+				Set<String> viewNameSet = view.keySet();
+				for (String name:viewNameSet) {
+					if (view.get(name).split("" "")[0].equals(viewNum)) {
+						JOptionPane.showMessageDialog(null, ""´Ë½ÚµãÒÑÊÇ¾°µã£¬Òª¸ü¸ÄÇëÉ¾³ýºóÔÙÌí¼Ó!"");
+						return;
+					}
+				}
+				
+				fifthPanelDownText1.setText("""");
+				fifthPanelDownText2.setText("""");
+				fifthPanelDownText3.setText("""");
+				
+				view.put(viewName, viewNum + "" "" +viewIntroduce);
+				
+				GuideUtil.setView(view, viewPath);
+				
+				setViewBox();//ÖØÐÂÏÔÊ¾¾°µãBOX
+				setViewNameList();//ÖØÐÂÏÔÊ¾Ñ¡ÔñµØµãµÄÄÇÁ½¸öÏÂÀ­¿ò
+				
+				repaint();
+			} else if (clickedButton == sixthPanelDownButton) {
+				/**
+				 * È·¶¨É¾³ý¾°µã°´Å¥
+				 */
+				
+				String inputText = sixthPanelDownText.getText();
+				if (inputText.equals("""")) {
+					JOptionPane.showMessageDialog(null, ""Êý¾ÝÎ´ÊäÈë!"");
+					return;
+				}
+				
+				Set<Integer> deleteNumSet = new HashSet<Integer>();
+				String[] deleteNumArray = inputText.split("","");
+				for (int i = 0;i < deleteNumArray.length;i++) {
+					try {
+						deleteNumSet.add(Integer.valueOf(deleteNumArray[i]));
+					} catch (NumberFormatException e1) {
+						JOptionPane.showMessageDialog(null, ""Ö»ÄÜÊäÈëÊý×ÖºÍ¶ººÅ!"");
+						return;
+					}
+				}
+				
+				Set<Integer> viewNumSet = new HashSet<Integer>();//´æ´¢¾°µãµÄ±àºÅ,ÅÐ¶ÏÊÇ·ñÒªÉ¾³ýµÄµãÊÇ·ñÊÇÒ»¸ö¾°µã
+				Set<String> viewNameSet = view.keySet();
+				for (String viewName:viewNameSet) {
+					viewNumSet.add(Integer.valueOf(view.get(viewName).split("" "")[0]));
+				}
+				for (Integer i:deleteNumSet) {
+					if (!viewNumSet.contains(i)) {
+						JOptionPane.showMessageDialog(null, ""ÄúÊäÈëµÄµãÖÐ°üÀ¨²»ÊÇ¾°µãµÄµã!"");
+						return;
+					}
+				}
+				sixthPanelDownText.setText("""");
+				
+				for (Iterator<String> it = viewNameSet.iterator();it.hasNext();) {
+					if (deleteNumSet.contains(Integer.valueOf(view.get(it.next()).split("" "")[0]))) {
+						it.remove();
+					}
+				}
+				
+				setViewBox();
+				setViewNameList();
+				GuideUtil.setView(view, viewPath);
+				
+				repaint();
+			} else if (	clickedButton == sevenPanelBfsButton ||
+						clickedButton == sevenPanelDfsButton) {
+				/**
+				 * Ëã·¨ÄÇÒ»Ûç
+				 */
+				
+				JFrame newWindow = new JFrame();
+				Container c = newWindow.getContentPane();
+
+				JLabel roadText = new JLabel();
+				JScrollPane scrollPanel = new JScrollPane(roadText);
+				c.add(scrollPanel);
+				
+				int startNum = 1;//´Ó×îÐ¡µÄµã¿ªÊ¼Éî¶È±éÀú
+				int i;
+				for (i = 1;i <= getMaxNum() && !map.containsKey(i);i++);
+				startNum = i;
+				Integer[] roadVexNum = null;
+				if (clickedButton == sevenPanelBfsButton) {
+					roadVexNum = GuideAlgorithm.Bfs(startNum, map, view,viewNumNameMap);
+					newWindow.setTitle(""¹ã¶ÈÓÅÏÈ±éÀú"");
+				} else if (clickedButton == sevenPanelDfsButton) {
+					roadVexNum = GuideAlgorithm.Dfs(startNum, map, view,viewNumNameMap);
+					newWindow.setTitle(""Éî¶ÈÓÅÏÈ±éÀú"");
+				}
+				
+				StringBuffer roadStr = new StringBuffer();
+				roadStr.append(""<html>"");
+				roadStr.append(viewNumNameMap.get(roadVexNum[0]));
+				int length = 0;
+				for (i = 1;i < roadVexNum.length;i++) {
+					roadStr.append(""==>"" + viewNumNameMap.get(roadVexNum[i]));
+					length += viewNumNameMap.get(roadVexNum[i]).length();
+					
+					if (length > 30) {
+						length = 0;
+						roadStr.append(""<br>"");
+					}
+				}
+				roadStr.append(""</html>"");
+				roadText.setText(roadStr.toString());
+				
+				newWindow.pack();
+				newWindow.setLocationRelativeTo(null);//Õâ¾ä»°·ÅÔÚpack()ºóÃæ£¬·ñÔò¿ªÊ¼´°¿Ú´óÐ¡Îª0£¬×óÉÏ½ÇÔÚÆÁÄ»ÖÐµã
+				newWindow.setVisible(true);
+				newWindow.setResizable(false);
+			} else if (clickedButton == rightBut1) {
+				/**
+				 * Â·¾­²éÑ¯°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 0;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut2) {
+				/**
+				 * ¾°µãÐÅÏ¢°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 1;i++) {
+					card.next(cardPanel);
+				}
+			} else if (clickedButton == rightBut3) {
+				/**
+				 * Ìí¼Ó½Úµã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 2;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut4) {
+				/**
+				 * É¾³ý½Úµã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 3;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut5) {
+				/**
+				 * Ìí¼Ó¾°µã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 4;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut6) {
+				/**
+				 * É¾³ý¾°µã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 5;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut7) {
+				/**
+				 * É¾³ý¾°µã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 6;i++) {
+					card.next(cardPanel);
+				}
+			}
+		}
+		}";DMI_HARDCODED_ABSOLUTE_FILENAME
+"		public void actionPerformed(ActionEvent e) {
+
+			clickedButton = (JButton) e.getSource();
+			if (clickedButton == firstPanelDownBut1) {
+				/**
+				 * ×î¶ÌÂ·¾¶µÄ°´Å¥
+				 */
+				int numStart = getStartNum();
+				int numEnd = getEndNum();
+				int count = getMaxNum();//ÒòÎªÊý×éÏÂ±êºÍÂ·¾¶ÐòºÅÏà¶ÔÓ¦£¬ËùÒÔ½¨Á¢µÄÊý×éµÄ´óÐ¡Ó¦¸Ã°üÀ¨×î´óµÄÐòºÅ
+				paintVertex = GuideAlgorithm.Dijkstra(numStart, numEnd, count,map);
+				
+				if (paintVertex == null) {
+					JOptionPane.showMessageDialog(null, ""Ã»ÓÐÂ·¾¶¿ÉÒÔµ½´ï»òÕßÆðµãÓëÖÕµãÏàÍ¬£¡ÇëÈ·¶¨ËùÓÐ½Úµã¶¼Á¬Í¨¡£"");
+				}
+				
+				repaint();
+			} else if (clickedButton == firstPanelDownBut2) {
+				/**
+				 * ²Á³öÂ·Ïß°´Å¥
+				 */
+				paintVertex = null;
+				repaint();
+			} else if (clickedButton == thirdPanelDownButton1) {
+				/**
+				 * È·ÈÏÌí¼Ó½ÚµãµÄ°´Å¥
+				 */
+				
+				String xy = thirdPanelDownLab2.getText();
+				String relationNum = thirdPanelDownText1.getText();
+				if (xy.equals("""") || relationNum.equals("""")) {
+					JOptionPane.showMessageDialog(null, ""ÓÐÊý¾ÝÎ´ÊäÈë!"");
+					return;
+				}
+				
+				Set<Integer> relationNumSet = new HashSet<Integer>();
+				String[] relationNumArray = relationNum.split("","");
+				for (int i = 0;i < relationNumArray.length;i++) {
+					try {
+						relationNumSet.add(Integer.valueOf(relationNumArray[i]));
+					} catch (NumberFormatException e1) {
+						JOptionPane.showMessageDialog(null, ""ÊäÈë²»ÕýÈ·£¬Ö»ÄÜÊäÈëÊý×Ö!"");
+						return;
+					}
+				}
+				
+				//Èç¹ûÓÃ»§Ð´µÄµã²»´æÔÚ£¬ÄÇÃ´²»ÄÜÊ¹Ö®Ìí¼Ó³É¹¦
+				for (Integer i:relationNumSet) {
+					if (!map.containsKey(i)) {
+						JOptionPane.showMessageDialog(null, ""ÄúÊäÈëÁËµØÍ¼ÉÏ²»´æÔÚµÄµã!"");
+						return;
+					}
+				}
+				thirdPanelDownText1.setText("""");
+				
+				int vexNum;//¼´½«Ìí¼Óµ½Í¼ÖÐµÄ½ÚµãÐòºÅ
+				for (vexNum = 1;map.containsKey(vexNum);vexNum++);//Ñ¡ÔñÒ»¸ö×îÐ¡µÄ²¢ÇÒÎ´¼ÓÈëÍ¼µÄ½ÚµãÐòºÅ
+				
+				Vertex newVex = new Vertex();
+				newVex.num = vexNum;
+				newVex.x = Integer.parseInt(xy.split("","")[0]);
+				newVex.y = Integer.parseInt(xy.split("","")[1]);
+				newVex.pointNum = new HashMap<Integer, Integer>();
+				
+				//¹¹½¨ÐÂ¼ÓÈëµÄµãµÄÐÅÏ¢
+				for (Integer i:relationNumSet) {
+					int x = map.get(i).x;
+					int y = map.get(i).y;
+					int distance = (int) Math.sqrt((x-newVex.x) * (x-newVex.x) + (y-newVex.y) * (y-newVex.y));
+					newVex.pointNum.put(i, distance);
+				}
+				map.put(newVex.num, newVex);
+				
+				//ÐÞ¸ÄÓëÐÂ¼ÓµÄµãÓÐ¹ØÏµµÄµãµÄÐÅÏ¢£¬ÄÇÐ©µãÒ²ÓëÐÂ¼ÓµÄµãÓÐ¹ØÏµ
+				for (Integer i:relationNumSet) {
+					Vertex t = map.get(i);
+					t.pointNum.put(newVex.num, newVex.pointNum.get(i));
+					map.put(i, t);
+				}
+				
+				GuideUtil.setVertex(map, vertexPath);
+				repaint();
+			} else if (clickedButton == fourthPanelDownButton) {
+				/**
+				 * È·ÈÏÉ¾³ý½Úµã°´Å¥
+				 */
+				
+				if (fourthPanelDownText.getText().equals("""")) {
+					return;
+				}
+				
+				String[] deleteNumStr = fourthPanelDownText.getText().split("","");
+				Set<Integer> deleteNum = new HashSet<Integer>();
+				for (String s:deleteNumStr) {
+					try{
+						deleteNum.add(Integer.valueOf(s));
+					} catch (NumberFormatException e1) {
+						JOptionPane.showMessageDialog(null, ""ÊäÈë²»ÕýÈ·£¬Ö»ÄÜÊäÈëÊý×ÖºÍ¶ººÅ!"");
+						return;
+					}
+				}
+				fourthPanelDownText.setText("""");
+				
+//				É¾³ýÕâ¸öµãµÄÐÅÏ¢,±éÀú¼´½«±»É¾³ýµÄµãµÄÐòºÅµÄ¼¯ºÏ
+				for (Integer i:deleteNum) {
+					//Í¼ÖÐÉ¾³ýÕâ¸öµã
+					if (map.containsKey(i)) {
+						map.remove(i);
+					}
+				}
+				
+				Set<Integer> vexNum = map.keySet();//Í¼ÖÐµÄµãµÄÐòºÅ
+				Map<Integer,Integer> pointNum;//Ä³¸ö½ÚµãÖ¸ÏòÊ²Ã´µã
+				for (Integer i:vexNum) {
+					pointNum = map.get(i).pointNum;
+					for (Integer j:deleteNum) {
+						if (pointNum.containsKey(j)) {
+							pointNum.remove(j);
+						}
+					}
+				}
+				GuideUtil.setVertex(map, vertexPath);
+				
+				//Õâ¸ö½Úµã¿ÉÄÜÊÇÒ»¸ö¾°µã£¬¿ÉÄÜÓÐ½éÉÜÐÅÏ¢£¬Ò²ÒªÉ¾³ý
+				Set<String> viewName = view.keySet();
+				String t;
+				for (Iterator<String> it = viewName.iterator();it.hasNext();) {
+					t = view.get(it.next()).split("" "")[0];//µÃµ½Õâ¸ö¾°µãµÄÐòºÅ
+					if (deleteNum.contains(Integer.valueOf(t))) {
+						it.remove();
+					}
+				}
+				GuideUtil.setView(view, viewPath);
+				
+				setViewBox();//ÖØÐÂÏÔÊ¾¾°µãBOX
+				setViewNameList();//ÖØÐÂÏÔÊ¾Ñ¡ÔñµØµãµÄÄÇÁ½¸öÏÂÀ­¿ò
+				
+				paintVertex = null;//É¾³ý½Úµãºó¾Í²»ÏÔÊ¾Â·¾¶ÁË£¬¼´Ê±Ô­À´Ñ¡ÔñµÄÂ·¾¶µÄÆðµãºÍÖÕµã»¹ÔÚ
+				
+				repaint();
+			} else if (clickedButton == fifthPanelDownButton) {
+				/**
+				 * È·¶¨Ìí¼Ó¾°µã°´Å¥
+				 */
+				
+				String viewNum = fifthPanelDownText1.getText();
+				String viewName = fifthPanelDownText2.getText();
+				String viewIntroduce = fifthPanelDownText3.getText();
+				if (viewNum.equals("""") || viewName.equals("""") || viewIntroduce.equals("""")) {
+					JOptionPane.showMessageDialog(null, ""ÓÐÊý¾ÝÎ´ÊäÈë!"");
+					return;
+				}
+				
+				//µã²»´æÔÚ²»¼ÓÈë
+				try {
+					if (!map.containsKey(Integer.valueOf(viewNum))) {
+						JOptionPane.showMessageDialog(null, ""½Úµã²»´æÔÚ!"");
+						return;
+					}
+				} catch (NumberFormatException e1) {
+					JOptionPane.showMessageDialog(null, ""½ÚµãÐòºÅÊäÈë²»ÕýÈ·£¬Ö»ÄÜÊäÈëÊý×Ö!"");
+					return;
+				}
+				
+				Set<String> viewNameSet = view.keySet();
+				for (String name:viewNameSet) {
+					if (view.get(name).split("" "")[0].equals(viewNum)) {
+						JOptionPane.showMessageDialog(null, ""´Ë½ÚµãÒÑÊÇ¾°µã£¬Òª¸ü¸ÄÇëÉ¾³ýºóÔÙÌí¼Ó!"");
+						return;
+					}
+				}
+				
+				fifthPanelDownText1.setText("""");
+				fifthPanelDownText2.setText("""");
+				fifthPanelDownText3.setText("""");
+				
+				view.put(viewName, viewNum + "" "" +viewIntroduce);
+				
+				GuideUtil.setView(view, viewPath);
+				
+				setViewBox();//ÖØÐÂÏÔÊ¾¾°µãBOX
+				setViewNameList();//ÖØÐÂÏÔÊ¾Ñ¡ÔñµØµãµÄÄÇÁ½¸öÏÂÀ­¿ò
+				
+				repaint();
+			} else if (clickedButton == sixthPanelDownButton) {
+				/**
+				 * È·¶¨É¾³ý¾°µã°´Å¥
+				 */
+				
+				String inputText = sixthPanelDownText.getText();
+				if (inputText.equals("""")) {
+					JOptionPane.showMessageDialog(null, ""Êý¾ÝÎ´ÊäÈë!"");
+					return;
+				}
+				
+				Set<Integer> deleteNumSet = new HashSet<Integer>();
+				String[] deleteNumArray = inputText.split("","");
+				for (int i = 0;i < deleteNumArray.length;i++) {
+					try {
+						deleteNumSet.add(Integer.valueOf(deleteNumArray[i]));
+					} catch (NumberFormatException e1) {
+						JOptionPane.showMessageDialog(null, ""Ö»ÄÜÊäÈëÊý×ÖºÍ¶ººÅ!"");
+						return;
+					}
+				}
+				
+				Set<Integer> viewNumSet = new HashSet<Integer>();//´æ´¢¾°µãµÄ±àºÅ,ÅÐ¶ÏÊÇ·ñÒªÉ¾³ýµÄµãÊÇ·ñÊÇÒ»¸ö¾°µã
+				Set<String> viewNameSet = view.keySet();
+				for (String viewName:viewNameSet) {
+					viewNumSet.add(Integer.valueOf(view.get(viewName).split("" "")[0]));
+				}
+				for (Integer i:deleteNumSet) {
+					if (!viewNumSet.contains(i)) {
+						JOptionPane.showMessageDialog(null, ""ÄúÊäÈëµÄµãÖÐ°üÀ¨²»ÊÇ¾°µãµÄµã!"");
+						return;
+					}
+				}
+				sixthPanelDownText.setText("""");
+				
+				for (Iterator<String> it = viewNameSet.iterator();it.hasNext();) {
+					if (deleteNumSet.contains(Integer.valueOf(view.get(it.next()).split("" "")[0]))) {
+						it.remove();
+					}
+				}
+				
+				setViewBox();
+				setViewNameList();
+				GuideUtil.setView(view, viewPath);
+				
+				repaint();
+			} else if (	clickedButton == sevenPanelBfsButton ||
+						clickedButton == sevenPanelDfsButton) {
+				/**
+				 * Ëã·¨ÄÇÒ»Ûç
+				 */
+				
+				JFrame newWindow = new JFrame();
+				Container c = newWindow.getContentPane();
+
+				JLabel roadText = new JLabel();
+				JScrollPane scrollPanel = new JScrollPane(roadText);
+				c.add(scrollPanel);
+				
+				int startNum = 1;//´Ó×îÐ¡µÄµã¿ªÊ¼Éî¶È±éÀú
+				int i;
+				for (i = 1;i <= getMaxNum() && !map.containsKey(i);i++);
+				startNum = i;
+				Integer[] roadVexNum = null;
+				if (clickedButton == sevenPanelBfsButton) {
+					roadVexNum = GuideAlgorithm.Bfs(startNum, map, view,viewNumNameMap);
+					newWindow.setTitle(""¹ã¶ÈÓÅÏÈ±éÀú"");
+				} else if (clickedButton == sevenPanelDfsButton) {
+					roadVexNum = GuideAlgorithm.Dfs(startNum, map, view,viewNumNameMap);
+					newWindow.setTitle(""Éî¶ÈÓÅÏÈ±éÀú"");
+				}
+				
+				StringBuffer roadStr = new StringBuffer();
+				roadStr.append(""<html>"");
+				roadStr.append(viewNumNameMap.get(roadVexNum[0]));
+				int length = 0;
+				for (i = 1;i < roadVexNum.length;i++) {
+					roadStr.append(""==>"" + viewNumNameMap.get(roadVexNum[i]));
+					length += viewNumNameMap.get(roadVexNum[i]).length();
+					
+					if (length > 30) {
+						length = 0;
+						roadStr.append(""<br>"");
+					}
+				}
+				roadStr.append(""</html>"");
+				roadText.setText(roadStr.toString());
+				
+				newWindow.pack();
+				newWindow.setLocationRelativeTo(null);//Õâ¾ä»°·ÅÔÚpack()ºóÃæ£¬·ñÔò¿ªÊ¼´°¿Ú´óÐ¡Îª0£¬×óÉÏ½ÇÔÚÆÁÄ»ÖÐµã
+				newWindow.setVisible(true);
+				newWindow.setResizable(false);
+			} else if (clickedButton == rightBut1) {
+				/**
+				 * Â·¾­²éÑ¯°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 0;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut2) {
+				/**
+				 * ¾°µãÐÅÏ¢°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 1;i++) {
+					card.next(cardPanel);
+				}
+			} else if (clickedButton == rightBut3) {
+				/**
+				 * Ìí¼Ó½Úµã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 2;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut4) {
+				/**
+				 * É¾³ý½Úµã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 3;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut5) {
+				/**
+				 * Ìí¼Ó¾°µã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 4;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut6) {
+				/**
+				 * É¾³ý¾°µã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 5;i++) {
+					card.next(cardPanel);
+				}
+				repaint();
+			} else if (clickedButton == rightBut7) {
+				/**
+				 * É¾³ý¾°µã°´Å¥
+				 */
+				card.first(cardPanel);
+				for (int i = 0;i < 6;i++) {
+					card.next(cardPanel);
+				}
+			}
+		}
+		}";NP_NULL_ON_SOME_PATH
+"    public static Map<Integer,Vertex> getVertex(String path) {
+    	Map<Integer,Vertex> map = new HashMap<Integer, Vertex>();
+    	BufferedReader fileIn = null;    	
+    	String lineStr;
+    	
+    	try {
+    		fileIn = new BufferedReader(new FileReader(path));
+			while ((lineStr = fileIn.readLine()) != null) {
+				Vertex vex = new Vertex();
+				String[] everyNum = lineStr.split("" "");
+				vex.num = Integer.parseInt(everyNum[0]);
+				vex.x = Integer.parseInt(everyNum[1]);
+				vex.y = Integer.parseInt(everyNum[2]);
+				
+				vex.pointNum = new HashMap<Integer, Integer>();
+				for (int i = 3;i < everyNum.length;i+=2) {
+					vex.pointNum.put(Integer.valueOf(everyNum[i]), Integer.valueOf(everyNum[i+1]));
+				}
+				map.put(vex.num, vex);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				fileIn.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    	
+		return map;
+		
+    }
+    }";DM_DEFAULT_ENCODING
+"    public static Map<String,String> getView(String path) {
+    	Map<String,String> result = new HashMap<String, String>();
+    	BufferedReader fileIn = null;
+    	
+    	try {
+			fileIn = new BufferedReader(new FileReader(path));
+			String all,first,second;
+			String[] tmp;
+			while ((all = fileIn.readLine()) != null) {
+				tmp = all.split("" "", 2);
+				first = tmp[0];
+				second = tmp[1];
+				result.put(first, second);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				fileIn.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    	
+		return result;
+    }
+    }";DM_DEFAULT_ENCODING
+"    public static void setVertex(Map<Integer,Vertex> map,String outPath) {
+    	BufferedWriter outFile = null;
+    	Set<Integer> vertexNum = map.keySet();
+    	
+    	try {
+			outFile = new BufferedWriter(new FileWriter(outPath));
+			for (Integer v:vertexNum) {
+				Vertex tmpVex = map.get(v);
+				outFile.write(v + "" "" + tmpVex.x + "" "" + tmpVex.y);
+				Map<Integer,Integer> tmpLength = tmpVex.pointNum;
+				Set<Integer> pointNum = tmpLength.keySet();
+				for (Integer i:pointNum) {
+					outFile.write("" "" + i + "" "" + tmpLength.get(i));
+				}
+				outFile.newLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				outFile.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    }
+    }";DM_DEFAULT_ENCODING
+"    public static void setView(Map<String,String> view,String outPath) {
+    	BufferedWriter outFile = null;
+    	Set<String> viewName = view.keySet();
+    	
+    	try {
+			outFile = new BufferedWriter(new FileWriter(outPath));
+			for (String v:viewName) {
+				outFile.write(v + "" "" + view.get(v));
+				outFile.newLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				outFile.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    }
+    }";DM_DEFAULT_ENCODING
+"    public static Map<Integer,Vertex> getVertex(String path) {
+    	Map<Integer,Vertex> map = new HashMap<Integer, Vertex>();
+    	BufferedReader fileIn = null;    	
+    	String lineStr;
+    	
+    	try {
+    		fileIn = new BufferedReader(new FileReader(path));
+			while ((lineStr = fileIn.readLine()) != null) {
+				Vertex vex = new Vertex();
+				String[] everyNum = lineStr.split("" "");
+				vex.num = Integer.parseInt(everyNum[0]);
+				vex.x = Integer.parseInt(everyNum[1]);
+				vex.y = Integer.parseInt(everyNum[2]);
+				
+				vex.pointNum = new HashMap<Integer, Integer>();
+				for (int i = 3;i < everyNum.length;i+=2) {
+					vex.pointNum.put(Integer.valueOf(everyNum[i]), Integer.valueOf(everyNum[i+1]));
+				}
+				map.put(vex.num, vex);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				fileIn.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    	
+		return map;
+		
+    }
+    }";NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH
+"    public static Map<String,String> getView(String path) {
+    	Map<String,String> result = new HashMap<String, String>();
+    	BufferedReader fileIn = null;
+    	
+    	try {
+			fileIn = new BufferedReader(new FileReader(path));
+			String all,first,second;
+			String[] tmp;
+			while ((all = fileIn.readLine()) != null) {
+				tmp = all.split("" "", 2);
+				first = tmp[0];
+				second = tmp[1];
+				result.put(first, second);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				fileIn.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    	
+		return result;
+    }
+    }";NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH
+"    public static void setVertex(Map<Integer,Vertex> map,String outPath) {
+    	BufferedWriter outFile = null;
+    	Set<Integer> vertexNum = map.keySet();
+    	
+    	try {
+			outFile = new BufferedWriter(new FileWriter(outPath));
+			for (Integer v:vertexNum) {
+				Vertex tmpVex = map.get(v);
+				outFile.write(v + "" "" + tmpVex.x + "" "" + tmpVex.y);
+				Map<Integer,Integer> tmpLength = tmpVex.pointNum;
+				Set<Integer> pointNum = tmpLength.keySet();
+				for (Integer i:pointNum) {
+					outFile.write("" "" + i + "" "" + tmpLength.get(i));
+				}
+				outFile.newLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				outFile.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    }
+    }";NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH
+"    public static void setView(Map<String,String> view,String outPath) {
+    	BufferedWriter outFile = null;
+    	Set<String> viewName = view.keySet();
+    	
+    	try {
+			outFile = new BufferedWriter(new FileWriter(outPath));
+			for (String v:viewName) {
+				outFile.write(v + "" "" + view.get(v));
+				outFile.newLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				outFile.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    }
+    }";NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH
+"    public static void setVertex(Map<Integer,Vertex> map,String outPath) {
+    	BufferedWriter outFile = null;
+    	Set<Integer> vertexNum = map.keySet();
+    	
+    	try {
+			outFile = new BufferedWriter(new FileWriter(outPath));
+			for (Integer v:vertexNum) {
+				Vertex tmpVex = map.get(v);
+				outFile.write(v + "" "" + tmpVex.x + "" "" + tmpVex.y);
+				Map<Integer,Integer> tmpLength = tmpVex.pointNum;
+				Set<Integer> pointNum = tmpLength.keySet();
+				for (Integer i:pointNum) {
+					outFile.write("" "" + i + "" "" + tmpLength.get(i));
+				}
+				outFile.newLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				outFile.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    }
+    }";WMI_WRONG_MAP_ITERATOR
+"    public static void setView(Map<String,String> view,String outPath) {
+    	BufferedWriter outFile = null;
+    	Set<String> viewName = view.keySet();
+    	
+    	try {
+			outFile = new BufferedWriter(new FileWriter(outPath));
+			for (String v:viewName) {
+				outFile.write(v + "" "" + view.get(v));
+				outFile.newLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				outFile.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+    }
+    }";WMI_WRONG_MAP_ITERATOR

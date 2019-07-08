@@ -1,6 +1,4 @@
 package analizerCode;
-
-
 import java.nio.file.Files;
 import java.io.BufferedReader;
 import java.io.File;
@@ -34,23 +32,12 @@ public class mainTestClass {
 		
 		
 		
-		Final_Parser parser = new Final_Parser("C:\\Users\\andre\\git\\DSML\\DSML_sptbgsAnalisys\\RxJava_Spotbugs.xml");
+		Final_Parser parser = new Final_Parser("gaopu.xml");
 		ArrayList<Element> bugList = parser.findBugInstance();
-		File file = new File("myCsvRx2.csv");
+		File file = new File("mycsv.csv");
 		FileWriter outputFile = new FileWriter(file);
 		CSVWriter writer = new CSVWriter(outputFile);
-		int count = 0;
-		
-		parser.copyFiles("C:\\Users\\andre\\eclipse-workspace\\RxJava-3.x.zip_expanded");
-		
-		
-		
-		
-		for (Element e: bugList) {
-			count++;
-			//System.out.println(e.toString());
-		}
-		System.out.println(count);
+		int count = 0;		
 		
 		
 		for (Element e: bugList) {
@@ -58,16 +45,18 @@ public class mainTestClass {
 			String methodName = parser.getBugMethod(e).getAttributeValue("name");
 			String vulnerability = e.getAttributeValue("type");
 			String sourceFile=parser.getBugClass(e).getChild("SourceLine").getAttributeValue("sourcefile");
-			if(!vulnerability.equals("EI_EXPOSE_REP2")) {
-			System.out.println("vulnerabilità:\t"+vulnerability);
-			System.out.println("className:\t"+className);
-			System.out.println("methodName:\t"+methodName);
-			System.out.println("sourceFile:\t"+sourceFile);
-			System.out.println(parser.printBugMethod(className, methodName,sourceFile));
-			parser.csvWriter(writer, vulnerability, parser.printBugMethod(className, methodName, sourceFile));
-			}
-		}	
+			System.out.println(parser.printBugMethod(className, methodName));
+			System.out.println(className);
+			System.out.println(methodName);
+			System.out.println(vulnerability);
+			parser.csvWriter(writer, vulnerability, parser.printBugMethod(className, methodName));
+		}
+		
+		
 		writer.close();
+	}	
+	
+		
 		
 }
-}
+

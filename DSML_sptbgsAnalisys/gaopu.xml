@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1562619557406" analysisTimestamp="1562619552710" release="">
+  <Project projectName="gaopu.zip_expanded">
+    <Jar>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\bin</Jar>
+    <AuxClasspathEntry>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\Java-master\medical_question</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\Java-master\CrawlPandaDanmu\src\main\java</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\Java-master\Struts2FileUpAndDown\src</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\Java-master</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\Java-master\InsulinPump</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\Java-master\&#35199;&#37038;&#23548;&#28216;&#31995;&#32479;&#28304;&#30721;\&#28304;&#30721;</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\Java-master\PullBookinfo</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\Java-master\CrawlDouyuDanmu\src\main\java</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\gaopu.zip_expanded\Java-master\MicroWave</SrcDir>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Crawl">
+      <SourceLine classname="Crawl" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Class>
+    <Field classname="Crawl" name="LOGGER" signature="LLogger;" isStatic="true">
+      <SourceLine classname="Crawl" start="20" end="20" startBytecode="0" endBytecode="0" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Crawl">
+      <SourceLine classname="Crawl" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Class>
+    <Field classname="Crawl" name="appid" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="Crawl" start="24" end="24" startBytecode="0" endBytecode="0" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Crawl">
+      <SourceLine classname="Crawl" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Class>
+    <Field classname="Crawl" name="authType" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="Crawl" start="27" end="27" startBytecode="0" endBytecode="0" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Crawl">
+      <SourceLine classname="Crawl" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Class>
+    <Field classname="Crawl" name="port" signature="I" isStatic="false">
+      <SourceLine classname="Crawl" start="34" end="34" startBytecode="0" endBytecode="0" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Crawl">
+      <SourceLine classname="Crawl" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Class>
+    <Field classname="Crawl" name="rid" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="Crawl" start="23" end="23" startBytecode="0" endBytecode="0" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Crawl">
+      <SourceLine classname="Crawl" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Class>
+    <Field classname="Crawl" name="serverIp" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="Crawl" start="32" end="32" startBytecode="0" endBytecode="0" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Crawl">
+      <SourceLine classname="Crawl" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Class>
+    <Field classname="Crawl" name="sign" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="Crawl" start="26" end="26" startBytecode="0" endBytecode="0" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Crawl">
+      <SourceLine classname="Crawl" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Class>
+    <Field classname="Crawl" name="socket" signature="Ljava/net/Socket;" isStatic="false">
+      <SourceLine classname="Crawl" start="30" end="30" startBytecode="0" endBytecode="0" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Crawl">
+      <SourceLine classname="Crawl" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Class>
+    <Field classname="Crawl" name="ts" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="Crawl" start="25" end="25" startBytecode="0" endBytecode="0" sourcefile="Crawl.java" sourcepath="Crawl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DouyuBarrageHandler">
+      <SourceLine classname="DouyuBarrageHandler" sourcefile="DouyuBarrageHandler.java" sourcepath="DouyuBarrageHandler.java"/>
+    </Class>
+    <Method classname="DouyuBarrageHandler" name="getSendBytes" signature="(Ljava/lang/String;)[B" isStatic="false">
+      <SourceLine classname="DouyuBarrageHandler" start="75" end="84" startBytecode="0" endBytecode="174" sourcefile="DouyuBarrageHandler.java" sourcepath="DouyuBarrageHandler.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="DouyuBarrageHandler" start="81" end="81" startBytecode="65" endBytecode="65" sourcefile="DouyuBarrageHandler.java" sourcepath="DouyuBarrageHandler.java"/>
+    <SourceLine classname="DouyuBarrageHandler" start="81" end="81" startBytecode="65" endBytecode="65" sourcefile="DouyuBarrageHandler.java" sourcepath="DouyuBarrageHandler.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DouyuBarrageHandler">
+      <SourceLine classname="DouyuBarrageHandler" sourcefile="DouyuBarrageHandler.java" sourcepath="DouyuBarrageHandler.java"/>
+    </Class>
+    <Method classname="DouyuBarrageHandler" name="read" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="DouyuBarrageHandler" start="52" end="55" startBytecode="0" endBytecode="108" sourcefile="DouyuBarrageHandler.java" sourcepath="DouyuBarrageHandler.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([BII)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="DouyuBarrageHandler" start="55" end="55" startBytecode="35" endBytecode="35" sourcefile="DouyuBarrageHandler.java" sourcepath="DouyuBarrageHandler.java"/>
+    <SourceLine classname="DouyuBarrageHandler" start="55" end="55" startBytecode="35" endBytecode="35" sourcefile="DouyuBarrageHandler.java" sourcepath="DouyuBarrageHandler.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="GetAnswers">
+      <SourceLine classname="GetAnswers" sourcefile="GetAnswers.java" sourcepath="GetAnswers.java"/>
+    </Class>
+    <Field classname="GetAnswers" name="categoryLink" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="GetAnswers" sourcefile="GetAnswers.java" sourcepath="GetAnswers.java"/>
+    </Field>
+    <SourceLine classname="GetAnswers" start="144" end="144" startBytecode="12" endBytecode="12" sourcefile="GetAnswers.java" sourcepath="GetAnswers.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="GetBookInfoThread">
+      <SourceLine classname="GetBookInfoThread" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Class>
+    <Field classname="GetBookInfoThread" name="bookAuthorRegex" signature="Ljava/util/regex/Pattern;" isStatic="false">
+      <SourceLine classname="GetBookInfoThread" start="16" end="16" startBytecode="0" endBytecode="0" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="GetBookInfoThread">
+      <SourceLine classname="GetBookInfoThread" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Class>
+    <Field classname="GetBookInfoThread" name="bookImgRegex" signature="Ljava/util/regex/Pattern;" isStatic="false">
+      <SourceLine classname="GetBookInfoThread" start="19" end="19" startBytecode="0" endBytecode="0" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="GetBookInfoThread">
+      <SourceLine classname="GetBookInfoThread" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Class>
+    <Field classname="GetBookInfoThread" name="bookIsbnRegex" signature="Ljava/util/regex/Pattern;" isStatic="false">
+      <SourceLine classname="GetBookInfoThread" start="18" end="18" startBytecode="0" endBytecode="0" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="GetBookInfoThread">
+      <SourceLine classname="GetBookInfoThread" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Class>
+    <Field classname="GetBookInfoThread" name="bookName" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="GetBookInfoThread" start="20" end="20" startBytecode="0" endBytecode="0" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="GetBookInfoThread">
+      <SourceLine classname="GetBookInfoThread" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Class>
+    <Field classname="GetBookInfoThread" name="bookPublishRegex" signature="Ljava/util/regex/Pattern;" isStatic="false">
+      <SourceLine classname="GetBookInfoThread" start="17" end="17" startBytecode="0" endBytecode="0" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="GetBookInfoThread">
+      <SourceLine classname="GetBookInfoThread" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Class>
+    <Field classname="GetBookInfoThread" name="httpClient" signature="LCloseableHttpClient;" isStatic="false">
+      <SourceLine classname="GetBookInfoThread" start="13" end="13" startBytecode="0" endBytecode="0" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="GetBookInfoThread">
+      <SourceLine classname="GetBookInfoThread" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Class>
+    <Field classname="GetBookInfoThread" name="rootElement" signature="LElement;" isStatic="false">
+      <SourceLine classname="GetBookInfoThread" start="15" end="15" startBytecode="0" endBytecode="0" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="GetBookInfoThread">
+      <SourceLine classname="GetBookInfoThread" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Class>
+    <Field classname="GetBookInfoThread" name="webAddress" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="GetBookInfoThread" start="14" end="14" startBytecode="0" endBytecode="0" sourcefile="GetBookInfoThread.java" sourcepath="GetBookInfoThread.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="MessageHandler">
+      <SourceLine classname="MessageHandler" sourcefile="MessageHandler.java" sourcepath="MessageHandler.java"/>
+    </Class>
+    <Method classname="MessageHandler" name="read" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="MessageHandler" start="26" end="106" startBytecode="0" endBytecode="1113" sourcefile="MessageHandler.java" sourcepath="MessageHandler.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="MessageHandler" start="87" end="87" startBytecode="382" endBytecode="382" sourcefile="MessageHandler.java" sourcepath="MessageHandler.java"/>
+    <SourceLine classname="MessageHandler" start="87" end="87" startBytecode="382" endBytecode="382" sourcefile="MessageHandler.java" sourcepath="MessageHandler.java"/>
+  </BugInstance>
+  <BugInstance type="SR_NOT_CHECKED" priority="2" rank="16" abbrev="RR" category="BAD_PRACTICE" first="1">
+    <Class classname="MessageHandler">
+      <SourceLine classname="MessageHandler" sourcefile="MessageHandler.java" sourcepath="MessageHandler.java"/>
+    </Class>
+    <Method classname="MessageHandler" name="read" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="MessageHandler" start="26" end="106" startBytecode="0" endBytecode="1113" sourcefile="MessageHandler.java" sourcepath="MessageHandler.java"/>
+    </Method>
+    <Method classname="java.io.InputStream" name="skip" signature="(J)J" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStream"/>
+    </Method>
+    <SourceLine classname="MessageHandler" start="42" end="42" startBytecode="90" endBytecode="90" sourcefile="MessageHandler.java" sourcepath="MessageHandler.java"/>
+    <SourceLine classname="MessageHandler" start="42" end="42" startBytecode="90" endBytecode="90" sourcefile="MessageHandler.java" sourcepath="MessageHandler.java"/>
+  </BugInstance>
+  <BugInstance type="RU_INVOKE_RUN" priority="1" rank="12" abbrev="Ru" category="MT_CORRECTNESS" first="1">
+    <Class classname="MicroWaveMain">
+      <SourceLine classname="MicroWaveMain" sourcefile="MicroWaveMain.java" sourcepath="MicroWaveMain.java"/>
+    </Class>
+    <Method classname="MicroWaveMain" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="MicroWaveMain" start="6" end="18" startBytecode="0" endBytecode="146" sourcefile="MicroWaveMain.java" sourcepath="MicroWaveMain.java"/>
+    </Method>
+    <SourceLine classname="MicroWaveMain" start="9" end="9" startBytecode="18" endBytecode="18" sourcefile="MicroWaveMain.java" sourcepath="MicroWaveMain.java"/>
+    <SourceLine classname="MicroWaveMain" start="9" end="9" startBytecode="18" endBytecode="18" sourcefile="MicroWaveMain.java" sourcepath="MicroWaveMain.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Utils">
+      <SourceLine classname="Utils" sourcefile="Utils.java" sourcepath="Utils.java"/>
+    </Class>
+    <Method classname="Utils" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="Utils" start="8" end="16" startBytecode="0" endBytecode="110" sourcefile="Utils.java" sourcepath="Utils.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Utils" start="12" end="12" startBytecode="17" endBytecode="17" sourcefile="Utils.java" sourcepath="Utils.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Utils" start="13" end="13" startBytecode="23" endBytecode="23" sourcefile="Utils.java" sourcepath="Utils.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Utils" start="16" end="16" startBytecode="31" endBytecode="31" sourcefile="Utils.java" sourcepath="Utils.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="WriteAnswersToFile">
+      <SourceLine classname="WriteAnswersToFile" sourcefile="WriteAnswersToFile.java" sourcepath="WriteAnswersToFile.java"/>
+    </Class>
+    <Field classname="WriteAnswersToFile" name="address" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="WriteAnswersToFile" start="12" end="12" startBytecode="0" endBytecode="0" sourcefile="WriteAnswersToFile.java" sourcepath="WriteAnswersToFile.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="WriteAnswersToFile">
+      <SourceLine classname="WriteAnswersToFile" sourcefile="WriteAnswersToFile.java" sourcepath="WriteAnswersToFile.java"/>
+    </Class>
+    <Field classname="WriteAnswersToFile" name="dom" signature="LDocument;" isStatic="false">
+      <SourceLine classname="WriteAnswersToFile" start="13" end="13" startBytecode="0" endBytecode="0" sourcefile="WriteAnswersToFile.java" sourcepath="WriteAnswersToFile.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="WriteBookInfoToFile">
+      <SourceLine classname="WriteBookInfoToFile" sourcefile="WriteBookInfoToFile.java" sourcepath="WriteBookInfoToFile.java"/>
+    </Class>
+    <Field classname="WriteBookInfoToFile" name="fileAddress" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="WriteBookInfoToFile" start="10" end="10" startBytecode="0" endBytecode="0" sourcefile="WriteBookInfoToFile.java" sourcepath="WriteBookInfoToFile.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="WriteBookInfoToFile">
+      <SourceLine classname="WriteBookInfoToFile" sourcefile="WriteBookInfoToFile.java" sourcepath="WriteBookInfoToFile.java"/>
+    </Class>
+    <Field classname="WriteBookInfoToFile" name="root" signature="LElement;" isStatic="false">
+      <SourceLine classname="WriteBookInfoToFile" start="9" end="9" startBytecode="0" endBytecode="0" sourcefile="WriteBookInfoToFile.java" sourcepath="WriteBookInfoToFile.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.crawl.comments.CrawlComments">
+      <SourceLine classname="com.crawl.comments.CrawlComments" sourcefile="CrawlComments.java" sourcepath="com/crawl/comments/CrawlComments.java"/>
+    </Class>
+    <Field classname="com.crawl.comments.CrawlComments" name="app" signature="LElement;" isStatic="false">
+      <SourceLine classname="com.crawl.comments.CrawlComments" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="CrawlComments.java" sourcepath="com/crawl/comments/CrawlComments.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.crawl.comments.CrawlComments">
+      <SourceLine classname="com.crawl.comments.CrawlComments" sourcefile="CrawlComments.java" sourcepath="com/crawl/comments/CrawlComments.java"/>
+    </Class>
+    <Field classname="com.crawl.comments.CrawlComments" name="appId" signature="I" isStatic="false">
+      <SourceLine classname="com.crawl.comments.CrawlComments" start="24" end="24" startBytecode="0" endBytecode="0" sourcefile="CrawlComments.java" sourcepath="com/crawl/comments/CrawlComments.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.crawl.comments.CrawlComments">
+      <SourceLine classname="com.crawl.comments.CrawlComments" sourcefile="CrawlComments.java" sourcepath="com/crawl/comments/CrawlComments.java"/>
+    </Class>
+    <Field classname="com.crawl.comments.CrawlComments" name="count" signature="I" isStatic="false">
+      <SourceLine classname="com.crawl.comments.CrawlComments" start="23" end="23" startBytecode="0" endBytecode="0" sourcefile="CrawlComments.java" sourcepath="com/crawl/comments/CrawlComments.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.crawl.comments.CrawlComments">
+      <SourceLine classname="com.crawl.comments.CrawlComments" sourcefile="CrawlComments.java" sourcepath="com/crawl/comments/CrawlComments.java"/>
+    </Class>
+    <Field classname="com.crawl.comments.CrawlComments" name="start" signature="I" isStatic="false">
+      <SourceLine classname="com.crawl.comments.CrawlComments" start="22" end="22" startBytecode="0" endBytecode="0" sourcefile="CrawlComments.java" sourcepath="com/crawl/comments/CrawlComments.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.geekgao.file.FileAction">
+      <SourceLine classname="com.geekgao.file.FileAction" sourcefile="FileAction.java" sourcepath="com/geekgao/file/FileAction.java"/>
+    </Class>
+    <Field classname="com.geekgao.file.FileAction" name="file" signature="Ljava/io/File;" isStatic="false">
+      <SourceLine classname="com.geekgao.file.FileAction" start="9" end="9" startBytecode="0" endBytecode="0" sourcefile="FileAction.java" sourcepath="com/geekgao/file/FileAction.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.geekgao.file.FileAction">
+      <SourceLine classname="com.geekgao.file.FileAction" sourcefile="FileAction.java" sourcepath="com/geekgao/file/FileAction.java"/>
+    </Class>
+    <Field classname="com.geekgao.file.FileAction" name="fileContentType" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.geekgao.file.FileAction" start="11" end="11" startBytecode="0" endBytecode="0" sourcefile="FileAction.java" sourcepath="com/geekgao/file/FileAction.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.geekgao.file.FileAction">
+      <SourceLine classname="com.geekgao.file.FileAction" sourcefile="FileAction.java" sourcepath="com/geekgao/file/FileAction.java"/>
+    </Class>
+    <Field classname="com.geekgao.file.FileAction" name="fileFileName" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.geekgao.file.FileAction" start="10" end="10" startBytecode="0" endBytecode="0" sourcefile="FileAction.java" sourcepath="com/geekgao/file/FileAction.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="org.geekgao.guide.GuideAlgorithm">
+      <SourceLine classname="org.geekgao.guide.GuideAlgorithm" sourcefile="GuideAlgorithm.java" sourcepath="org/geekgao/guide/GuideAlgorithm.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideAlgorithm" name="Bfs" signature="(ILjava/util/Map;Ljava/util/Map;Ljava/util/Map;)[Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideAlgorithm" start="110" end="135" startBytecode="0" endBytecode="643" sourcefile="GuideAlgorithm.java" sourcepath="org/geekgao/guide/GuideAlgorithm.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="org.geekgao.guide.GuideAlgorithm">
+      <SourceLine classname="org.geekgao.guide.GuideAlgorithm" sourcefile="GuideAlgorithm.java" sourcepath="org/geekgao/guide/GuideAlgorithm.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideAlgorithm" name="Dfs" signature="(ILjava/util/Map;Ljava/util/Map;Ljava/util/Map;)[Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideAlgorithm" start="141" end="166" startBytecode="0" endBytecode="631" sourcefile="GuideAlgorithm.java" sourcepath="org/geekgao/guide/GuideAlgorithm.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="org.geekgao.guide.GuideAlgorithm">
+      <SourceLine classname="org.geekgao.guide.GuideAlgorithm" sourcefile="GuideAlgorithm.java" sourcepath="org/geekgao/guide/GuideAlgorithm.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideAlgorithm" name="Dijkstra" signature="(IIILjava/util/Map;)[Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideAlgorithm" start="31" end="104" startBytecode="0" endBytecode="1593" sourcefile="GuideAlgorithm.java" sourcepath="org/geekgao/guide/GuideAlgorithm.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="org.geekgao.guide.GuideSystem">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideSystem" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" start="103" end="114" startBytecode="0" endBytecode="103" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Method>
+    <String value="C:/Users/geekgao/Desktop/&#191;&#206;&#179;&#204;&#201;&#232;&#188;&#198;&#207;&#224;&#185;&#216;/data.txt" role="FILE_NAME"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem" start="105" end="105" startBytecode="133" endBytecode="133" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem" start="105" end="105" startBytecode="133" endBytecode="133" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="org.geekgao.guide.GuideSystem">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideSystem" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" start="103" end="114" startBytecode="0" endBytecode="103" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Method>
+    <String value="C:/Users/geekgao/Desktop/&#191;&#206;&#179;&#204;&#201;&#232;&#188;&#198;&#207;&#224;&#185;&#216;/view.txt" role="FILE_NAME"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem" start="106" end="106" startBytecode="142" endBytecode="142" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem" start="106" end="106" startBytecode="142" endBytecode="142" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE" first="1">
+    <Class classname="org.geekgao.guide.GuideSystem">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideSystem" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" start="103" end="114" startBytecode="0" endBytecode="410" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Method>
+    <Field classname="org.geekgao.guide.GuideSystem" name="view" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Field>
+    <SourceLine classname="org.geekgao.guide.GuideSystem" start="111" end="111" startBytecode="198" endBytecode="198" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem" start="111" end="111" startBytecode="198" endBytecode="198" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE" first="1">
+    <Class classname="org.geekgao.guide.GuideSystem">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideSystem" name="paint" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" start="122" end="188" startBytecode="0" endBytecode="1364" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Method>
+    <Field classname="org.geekgao.guide.GuideSystem" name="view" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="org.geekgao.guide.GuideSystem" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Field>
+    <SourceLine classname="org.geekgao.guide.GuideSystem" start="160" end="160" startBytecode="487" endBytecode="487" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem" start="160" end="160" startBytecode="487" endBytecode="487" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="org.geekgao.guide.GuideSystem$MyButtonActionListener">
+      <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="467" end="803" startBytecode="0" endBytecode="1158" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Method>
+    <String value="C:/Users/geekgao/Desktop/&#191;&#206;&#179;&#204;&#201;&#232;&#188;&#198;&#207;&#224;&#185;&#216;/data.txt" role="FILE_NAME"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="586" end="586" startBytecode="1035" endBytecode="1035" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="586" end="586" startBytecode="1035" endBytecode="1035" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="org.geekgao.guide.GuideSystem$MyButtonActionListener">
+      <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="467" end="803" startBytecode="0" endBytecode="1158" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Method>
+    <String value="C:/Users/geekgao/Desktop/&#191;&#206;&#179;&#204;&#201;&#232;&#188;&#198;&#207;&#224;&#185;&#216;/view.txt" role="FILE_NAME"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="597" end="597" startBytecode="1135" endBytecode="1135" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="597" end="597" startBytecode="1135" endBytecode="1135" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="org.geekgao.guide.GuideSystem$MyButtonActionListener">
+      <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="467" end="803" startBytecode="0" endBytecode="5165" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java"/>
+    </Method>
+    <LocalVariable name="roadVexNum" register="8" pc="2050" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="723" end="723" startBytecode="2121" endBytecode="2121" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="712" end="712" startBytecode="1981" endBytecode="1981" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="org.geekgao.guide.GuideSystem$MyButtonActionListener" start="716" end="716" startBytecode="2053" endBytecode="2053" sourcefile="GuideSystem.java" sourcepath="org/geekgao/guide/GuideSystem.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="getVertex" signature="(Ljava/lang/String;)Ljava/util/Map;" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="55" end="86" startBytecode="0" endBytecode="752" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="60" end="60" startBytecode="19" endBytecode="19" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="60" end="60" startBytecode="19" endBytecode="19" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="getView" signature="(Ljava/lang/String;)Ljava/util/Map;" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="118" end="144" startBytecode="0" endBytecode="604" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="122" end="122" startBytecode="19" endBytecode="19" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="122" end="122" startBytecode="19" endBytecode="19" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="setVertex" signature="(Ljava/util/Map;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="91" end="115" startBytecode="0" endBytecode="802" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter"/>
+    </Method>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="95" end="95" startBytecode="18" endBytecode="18" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="95" end="95" startBytecode="18" endBytecode="18" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="setView" signature="(Ljava/util/Map;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="148" end="166" startBytecode="0" endBytecode="544" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter"/>
+    </Method>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="152" end="152" startBytecode="18" endBytecode="18" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="152" end="152" startBytecode="18" endBytecode="18" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+  </BugInstance>
+  <BugInstance type="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="getVertex" signature="(Ljava/lang/String;)Ljava/util/Map;" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="55" end="86" startBytecode="0" endBytecode="752" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <LocalVariable name="fileIn" register="2" pc="18" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="80" end="80" startBytecode="177" endBytecode="177" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="80" end="80" startBytecode="220" endBytecode="220" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="56" end="56" startBytecode="8" endBytecode="8" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="60" end="60" startBytecode="19" endBytecode="19" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_ARE_CLONED" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="getView" signature="(Ljava/lang/String;)Ljava/util/Map;" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="118" end="144" startBytecode="0" endBytecode="604" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <LocalVariable name="fileIn" register="2" pc="18" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="138" end="138" startBytecode="79" endBytecode="79" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="138" end="138" startBytecode="120" endBytecode="120" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="119" end="119" startBytecode="8" endBytecode="8" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="122" end="122" startBytecode="19" endBytecode="19" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_ARE_CLONED" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="setVertex" signature="(Ljava/util/Map;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="91" end="115" startBytecode="0" endBytecode="802" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <LocalVariable name="outFile" register="2" pc="17" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="110" end="110" startBytecode="219" endBytecode="219" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="110" end="110" startBytecode="238" endBytecode="238" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="91" end="91" startBytecode="0" endBytecode="0" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="95" end="95" startBytecode="18" endBytecode="18" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_ARE_CLONED" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="setView" signature="(Ljava/util/Map;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="148" end="166" startBytecode="0" endBytecode="544" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <LocalVariable name="outFile" register="2" pc="17" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="161" end="161" startBytecode="111" endBytecode="111" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="161" end="161" startBytecode="130" endBytecode="130" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="148" end="148" startBytecode="0" endBytecode="0" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="152" end="152" startBytecode="18" endBytecode="18" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_ARE_CLONED" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="setVertex" signature="(Ljava/util/Map;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="91" end="115" startBytecode="0" endBytecode="802" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="97" end="97" startBytecode="51" endBytecode="51" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="97" end="97" startBytecode="51" endBytecode="51" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE" first="1">
+    <Class classname="org.geekgao.guide.GuideUtil">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Class>
+    <Method classname="org.geekgao.guide.GuideUtil" name="setView" signature="(Ljava/util/Map;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="org.geekgao.guide.GuideUtil" start="148" end="166" startBytecode="0" endBytecode="544" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    </Method>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="154" end="154" startBytecode="69" endBytecode="69" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+    <SourceLine classname="org.geekgao.guide.GuideUtil" start="154" end="154" startBytecode="69" endBytecode="69" sourcefile="GuideUtil.java" sourcepath="org/geekgao/guide/GuideUtil.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="negaDictPath" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="22" end="22" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="negativeArticlePath" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="17" end="17" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="posiDictPath" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="positiveArticlePath" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="16" end="16" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="unsureArticlePath" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="18" end="18" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="isGroup" signature="Z" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="33" end="33" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="negativeDict" signature="Ljava/util/Set;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="30" end="30" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="negativeWord" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="25" end="25" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="positiveDict" signature="Ljava/util/Set;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="29" end="29" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="positiveWord" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="24" end="24" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="strTemp" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="34" end="34" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" name="unsureWord" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" start="26" end="26" startBytecode="0" endBytecode="0" sourcefile="CalcWeightAndDoc.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/CalcWeightAndDoc.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="negaDictPath" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="29" end="29" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="posiDictPath" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="28" end="28" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="articleWordMap" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="25" end="25" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="backNegative" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="20" end="20" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="backPositive" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="19" end="19" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="backUnsure" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="isGroup" signature="Z" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="23" end="23" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="negativeDict" signature="Ljava/util/Set;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="33" end="33" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="positiveDict" signature="Ljava/util/Set;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="32" end="32" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="priorNegative" signature="D" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="16" end="16" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="priorPositive" signature="D" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="15" end="15" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="priorUnsure" signature="D" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="17" end="17" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Class>
+    <Field classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" name="strTemp" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" start="24" end="24" startBytecode="0" endBytecode="0" sourcefile="EmotionJudge.java" sourcepath="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;/EmotionJudge.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 8 Jul 2019 22:58:53 +0200" total_classes="46" referenced_classes="391" total_bugs="80" total_size="1493" num_packages="5" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="20.59" clock_seconds="65.42" peak_mbytes="856.11" alloc_mbytes="1024.00" gc_seconds="0.28" priority_2="72" priority_1="8">
+    <PackageStats package="" total_bugs="28" total_types="32" total_size="601" priority_2="24" priority_1="4">
+      <ClassStats class="Crawl" sourceFile="Crawl.java" interface="false" size="18" bugs="9" priority_2="9"/>
+      <ClassStats class="DouyuBarrageHandler" sourceFile="DouyuBarrageHandler.java" interface="false" size="63" bugs="2" priority_1="2"/>
+      <ClassStats class="DouyuBarrageHandler$1" sourceFile="DouyuBarrageHandler.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="DownloadImg" sourceFile="DownloadImg.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="GetAnswers" sourceFile="GetAnswers.java" interface="false" size="17" bugs="1" priority_2="1"/>
+      <ClassStats class="GetBookInfoThread" sourceFile="GetBookInfoThread.java" interface="false" size="13" bugs="8" priority_2="8"/>
+      <ClassStats class="InsulinPump" sourceFile="InsulinPump.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="InsulinPump$1" sourceFile="InsulinPump.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="Main" sourceFile="Main.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="MessageHandler" sourceFile="MessageHandler.java" interface="false" size="55" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="MessageType" sourceFile="MessageType.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="MicroWave" sourceFile="MicroWave.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="MicroWave$1" sourceFile="MicroWave.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="MicroWaveMain" sourceFile="MicroWaveMain.java" interface="false" size="11" bugs="1" priority_1="1"/>
+      <ClassStats class="MicroWaveMain$1" sourceFile="MicroWaveMain.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="MicroWaveWindow" sourceFile="MicroWaveWindow.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="MicroWaveWindow$1" sourceFile="MicroWaveWindow.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="MicroWaveWindow$2" sourceFile="MicroWaveWindow.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="MicroWaveWindow$3" sourceFile="MicroWaveWindow.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="MicroWaveWindow$4" sourceFile="MicroWaveWindow.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="MicroWaveWindow$5" sourceFile="MicroWaveWindow.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="MicroWaveWindow$6" sourceFile="MicroWaveWindow.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="MicroWaveWindow$7" sourceFile="MicroWaveWindow.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="People" sourceFile="People.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="People$1" sourceFile="People.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="PumpMain" sourceFile="PumpMain.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="PumpWindow" sourceFile="PumpWindow.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="Start" sourceFile="Start.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="Utils" sourceFile="Utils.java" interface="false" size="28" bugs="1" priority_2="1"/>
+      <ClassStats class="WriteAnswersToFile" sourceFile="WriteAnswersToFile.java" interface="false" size="7" bugs="2" priority_2="2"/>
+      <ClassStats class="WriteBookInfoToFile" sourceFile="WriteBookInfoToFile.java" interface="false" size="7" bugs="2" priority_2="2"/>
+      <ClassStats class="WriteInfoToDB" sourceFile="WriteInfoToDB.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.crawl.comments" total_bugs="4" total_types="3" total_size="29" priority_2="4">
+      <ClassStats class="com.crawl.comments.CrawlComments" sourceFile="CrawlComments.java" interface="false" size="11" bugs="4" priority_2="4"/>
+      <ClassStats class="com.crawl.comments.CrawlUtils" sourceFile="CrawlUtils.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.crawl.comments.Main" sourceFile="Main.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.geekgao.file" total_bugs="3" total_types="1" total_size="22" priority_2="3">
+      <ClassStats class="com.geekgao.file.FileAction" sourceFile="FileAction.java" interface="false" size="22" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <PackageStats package="org.geekgao.guide" total_bugs="20" total_types="8" total_size="774" priority_2="16" priority_1="4">
+      <ClassStats class="org.geekgao.guide.GuideAlgorithm" sourceFile="GuideAlgorithm.java" interface="false" size="91" bugs="3" priority_2="3"/>
+      <ClassStats class="org.geekgao.guide.GuideAlgorithm$1LengthAndRoad" sourceFile="GuideAlgorithm.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.geekgao.guide.GuideSystem" sourceFile="GuideSystem.java" interface="false" size="347" bugs="4" priority_2="4"/>
+      <ClassStats class="org.geekgao.guide.GuideSystem$1" sourceFile="GuideSystem.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.geekgao.guide.GuideSystem$MyButtonActionListener" sourceFile="GuideSystem.java" interface="false" size="205" bugs="3" priority_2="3"/>
+      <ClassStats class="org.geekgao.guide.GuideSystem$MyMouseListener" sourceFile="GuideSystem.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.geekgao.guide.GuideUtil" sourceFile="GuideUtil.java" interface="false" size="88" bugs="10" priority_2="6" priority_1="4"/>
+      <ClassStats class="org.geekgao.guide.Vertex" sourceFile="Vertex.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;" total_bugs="25" total_types="2" total_size="67" priority_2="25">
+      <ClassStats class="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.CalcWeightAndDoc" sourceFile="CalcWeightAndDoc.java" interface="false" size="33" bugs="12" priority_2="12"/>
+      <ClassStats class="&#25991;&#26412;&#24773;&#24863;&#20998;&#26512;.EmotionJudge" sourceFile="EmotionJudge.java" interface="false" size="34" bugs="13" priority_2="13"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="599" invocations="1707" avgMicrosecondsPerInvocation="350" maxMicrosecondsPerInvocation="77452" standardDeviationMicrosecondsPerInvocation="1989"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="370" invocations="391" avgMicrosecondsPerInvocation="947" maxMicrosecondsPerInvocation="22425" standardDeviationMicrosecondsPerInvocation="2212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="343" invocations="391" avgMicrosecondsPerInvocation="878" maxMicrosecondsPerInvocation="21662" standardDeviationMicrosecondsPerInvocation="2088"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="339" invocations="1712" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="16223" standardDeviationMicrosecondsPerInvocation="399"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="337" invocations="2" avgMicrosecondsPerInvocation="168664" maxMicrosecondsPerInvocation="172637" standardDeviationMicrosecondsPerInvocation="3993"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="232" invocations="1015" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="16416" standardDeviationMicrosecondsPerInvocation="673"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="203" invocations="225" avgMicrosecondsPerInvocation="902" maxMicrosecondsPerInvocation="79795" standardDeviationMicrosecondsPerInvocation="6293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="147" invocations="235" avgMicrosecondsPerInvocation="628" maxMicrosecondsPerInvocation="32977" standardDeviationMicrosecondsPerInvocation="3296"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="138" invocations="225" avgMicrosecondsPerInvocation="615" maxMicrosecondsPerInvocation="32837" standardDeviationMicrosecondsPerInvocation="3153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="112" invocations="391" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="13712" standardDeviationMicrosecondsPerInvocation="838"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="105" invocations="225" avgMicrosecondsPerInvocation="467" maxMicrosecondsPerInvocation="29778" standardDeviationMicrosecondsPerInvocation="2337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="105" invocations="233" avgMicrosecondsPerInvocation="450" maxMicrosecondsPerInvocation="22096" standardDeviationMicrosecondsPerInvocation="2095"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="103" invocations="46" avgMicrosecondsPerInvocation="2254" maxMicrosecondsPerInvocation="96729" standardDeviationMicrosecondsPerInvocation="14086"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="94" invocations="391" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="63583" standardDeviationMicrosecondsPerInvocation="3210"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="71" invocations="391" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="25395" standardDeviationMicrosecondsPerInvocation="1433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="66" invocations="391" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="3210" standardDeviationMicrosecondsPerInvocation="343"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="65" invocations="1650" avgMicrosecondsPerInvocation="39" maxMicrosecondsPerInvocation="997" standardDeviationMicrosecondsPerInvocation="69"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="65" invocations="391" avgMicrosecondsPerInvocation="167" maxMicrosecondsPerInvocation="2060" standardDeviationMicrosecondsPerInvocation="254"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="64" invocations="391" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="12904" standardDeviationMicrosecondsPerInvocation="687"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1562619557405" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

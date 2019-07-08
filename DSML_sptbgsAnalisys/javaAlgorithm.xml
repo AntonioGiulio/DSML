@@ -1,0 +1,1829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1562618431414" analysisTimestamp="1562618418563" release="">
+  <Project projectName="Java-master.zip_expanded">
+    <Jar>C:\Users\Antonio\eclipse-workspace\Java-master.zip_expanded\bin</Jar>
+    <AuxClasspathEntry>C:\Users\Antonio\eclipse-workspace\Java-master.zip_expanded\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\Java-master.zip_expanded\Java-master</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\Java-master.zip_expanded\Java-master\DataStructures\Graphs</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\Java-master.zip_expanded\Java-master\DataStructures\Stacks</SrcDir>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="AdjacencyListGraph">
+      <SourceLine classname="AdjacencyListGraph" sourcefile="Graphs.java" sourcepath="Graphs.java"/>
+    </Class>
+    <Field classname="AdjacencyListGraph" name="verticies" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="AdjacencyListGraph" start="8" end="8" startBytecode="0" endBytecode="0" sourcefile="AdjacencyListGraph.java" sourcepath="AdjacencyListGraph.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="AdjacencyListGraph$Vertex">
+      <SourceLine classname="AdjacencyListGraph$Vertex" sourcefile="Graphs.java" sourcepath="Graphs.java"/>
+    </Class>
+    <Field classname="AdjacencyListGraph$Vertex" name="adjacentVerticies" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="AdjacencyListGraph$Vertex" sourcefile="Graphs.java" sourcepath="Graphs.java"/>
+    </Field>
+    <SourceLine classname="AdjacencyListGraph$Vertex" start="14" end="14" startBytecode="0" endBytecode="0" sourcefile="Vertex.java" sourcepath="Vertex.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="AdjacencyListGraph$Vertex">
+      <SourceLine classname="AdjacencyListGraph$Vertex" sourcefile="Graphs.java" sourcepath="Graphs.java"/>
+    </Class>
+    <Field classname="AdjacencyListGraph$Vertex" name="data" signature="Ljava/lang/Comparable;" isStatic="false">
+      <SourceLine classname="AdjacencyListGraph$Vertex" sourcefile="Graphs.java" sourcepath="Graphs.java"/>
+    </Field>
+    <SourceLine classname="AdjacencyListGraph$Vertex" start="14" end="14" startBytecode="0" endBytecode="0" sourcefile="Vertex.java" sourcepath="Vertex.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="BellmanFord">
+      <SourceLine classname="BellmanFord" sourcefile="BellmanFord.java" sourcepath="BellmanFord.java"/>
+    </Class>
+    <Method classname="BellmanFord" name="go" signature="()V" isStatic="false">
+      <SourceLine classname="BellmanFord" start="49" end="101" startBytecode="0" endBytecode="942" sourcefile="BellmanFord.java" sourcepath="BellmanFord.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="BellmanFord" start="49" end="49" startBytecode="7" endBytecode="7" sourcefile="BellmanFord.java" sourcepath="BellmanFord.java"/>
+    <SourceLine classname="BellmanFord" start="49" end="49" startBytecode="7" endBytecode="7" sourcefile="BellmanFord.java" sourcepath="BellmanFord.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="BellmanFord$Edge">
+      <SourceLine classname="BellmanFord$Edge" start="24" end="29" sourcefile="BellmanFord.java" sourcepath="BellmanFord.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.AnyBaseToAnyBase">
+      <SourceLine classname="Conversions.AnyBaseToAnyBase" sourcefile="AnyBaseToAnyBase.java" sourcepath="Conversions/AnyBaseToAnyBase.java"/>
+    </Class>
+    <Method classname="Conversions.AnyBaseToAnyBase" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.AnyBaseToAnyBase" start="25" end="55" startBytecode="0" endBytecode="428" sourcefile="AnyBaseToAnyBase.java" sourcepath="Conversions/AnyBaseToAnyBase.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.AnyBaseToAnyBase" start="25" end="25" startBytecode="7" endBytecode="7" sourcefile="AnyBaseToAnyBase.java" sourcepath="Conversions/AnyBaseToAnyBase.java"/>
+    <SourceLine classname="Conversions.AnyBaseToAnyBase" start="25" end="25" startBytecode="7" endBytecode="7" sourcefile="AnyBaseToAnyBase.java" sourcepath="Conversions/AnyBaseToAnyBase.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.AnyBaseToDecimal">
+      <SourceLine classname="Conversions.AnyBaseToDecimal" sourcefile="AnyBaseToDecimal.java" sourcepath="Conversions/AnyBaseToDecimal.java"/>
+    </Class>
+    <Method classname="Conversions.AnyBaseToDecimal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.AnyBaseToDecimal" start="15" end="24" startBytecode="0" endBytecode="197" sourcefile="AnyBaseToDecimal.java" sourcepath="Conversions/AnyBaseToDecimal.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="Conversions.AnyBaseToDecimal" start="15" end="15" startBytecode="11" endBytecode="11" sourcefile="AnyBaseToDecimal.java" sourcepath="Conversions/AnyBaseToDecimal.java"/>
+    <SourceLine classname="Conversions.AnyBaseToDecimal" start="15" end="15" startBytecode="11" endBytecode="11" sourcefile="AnyBaseToDecimal.java" sourcepath="Conversions/AnyBaseToDecimal.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" first="1">
+    <Class classname="Conversions.AnyBaseToDecimal">
+      <SourceLine classname="Conversions.AnyBaseToDecimal" sourcefile="AnyBaseToDecimal.java" sourcepath="Conversions/AnyBaseToDecimal.java"/>
+    </Class>
+    <Method classname="Conversions.AnyBaseToDecimal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.AnyBaseToDecimal" start="15" end="24" startBytecode="0" endBytecode="197" sourcefile="AnyBaseToDecimal.java" sourcepath="Conversions/AnyBaseToDecimal.java"/>
+    </Method>
+    <LocalVariable name="inp" register="2" pc="84" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="Conversions.AnyBaseToDecimal" start="21" end="21" startBytecode="85" endBytecode="85" sourcefile="AnyBaseToDecimal.java" sourcepath="Conversions/AnyBaseToDecimal.java"/>
+    <SourceLine classname="Conversions.AnyBaseToDecimal" start="21" end="21" startBytecode="85" endBytecode="85" sourcefile="AnyBaseToDecimal.java" sourcepath="Conversions/AnyBaseToDecimal.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.AnytoAny">
+      <SourceLine classname="Conversions.AnytoAny" sourcefile="AnytoAny.java" sourcepath="Conversions/AnytoAny.java"/>
+    </Class>
+    <Method classname="Conversions.AnytoAny" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.AnytoAny" start="10" end="27" startBytecode="0" endBytecode="322" sourcefile="AnytoAny.java" sourcepath="Conversions/AnytoAny.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.AnytoAny" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="AnytoAny.java" sourcepath="Conversions/AnytoAny.java"/>
+    <SourceLine classname="Conversions.AnytoAny" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="AnytoAny.java" sourcepath="Conversions/AnytoAny.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.BinaryToDecimal">
+      <SourceLine classname="Conversions.BinaryToDecimal" sourcefile="BinaryToDecimal.java" sourcepath="Conversions/BinaryToDecimal.java"/>
+    </Class>
+    <Method classname="Conversions.BinaryToDecimal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.BinaryToDecimal" start="17" end="29" startBytecode="0" endBytecode="275" sourcefile="BinaryToDecimal.java" sourcepath="Conversions/BinaryToDecimal.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.BinaryToDecimal" start="17" end="17" startBytecode="7" endBytecode="7" sourcefile="BinaryToDecimal.java" sourcepath="Conversions/BinaryToDecimal.java"/>
+    <SourceLine classname="Conversions.BinaryToDecimal" start="17" end="17" startBytecode="7" endBytecode="7" sourcefile="BinaryToDecimal.java" sourcepath="Conversions/BinaryToDecimal.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.BinaryToHexadecimal">
+      <SourceLine classname="Conversions.BinaryToHexadecimal" sourcefile="BinaryToHexadecimal.java" sourcepath="Conversions/BinaryToHexadecimal.java"/>
+    </Class>
+    <Method classname="Conversions.BinaryToHexadecimal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.BinaryToHexadecimal" start="48" end="54" startBytecode="0" endBytecode="151" sourcefile="BinaryToHexadecimal.java" sourcepath="Conversions/BinaryToHexadecimal.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.BinaryToHexadecimal" start="48" end="48" startBytecode="7" endBytecode="7" sourcefile="BinaryToHexadecimal.java" sourcepath="Conversions/BinaryToHexadecimal.java"/>
+    <SourceLine classname="Conversions.BinaryToHexadecimal" start="48" end="48" startBytecode="7" endBytecode="7" sourcefile="BinaryToHexadecimal.java" sourcepath="Conversions/BinaryToHexadecimal.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.BinaryToOctal">
+      <SourceLine classname="Conversions.BinaryToOctal" sourcefile="BinaryToOctal.java" sourcepath="Conversions/BinaryToOctal.java"/>
+    </Class>
+    <Method classname="Conversions.BinaryToOctal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.BinaryToOctal" start="18" end="23" startBytecode="0" endBytecode="123" sourcefile="BinaryToOctal.java" sourcepath="Conversions/BinaryToOctal.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.BinaryToOctal" start="18" end="18" startBytecode="7" endBytecode="7" sourcefile="BinaryToOctal.java" sourcepath="Conversions/BinaryToOctal.java"/>
+    <SourceLine classname="Conversions.BinaryToOctal" start="18" end="18" startBytecode="7" endBytecode="7" sourcefile="BinaryToOctal.java" sourcepath="Conversions/BinaryToOctal.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.DecimalToAnyBase">
+      <SourceLine classname="Conversions.DecimalToAnyBase" sourcefile="DecimalToAnyBase.java" sourcepath="Conversions/DecimalToAnyBase.java"/>
+    </Class>
+    <Method classname="Conversions.DecimalToAnyBase" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.DecimalToAnyBase" start="16" end="29" startBytecode="0" endBytecode="244" sourcefile="DecimalToAnyBase.java" sourcepath="Conversions/DecimalToAnyBase.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="Conversions.DecimalToAnyBase" start="16" end="16" startBytecode="11" endBytecode="11" sourcefile="DecimalToAnyBase.java" sourcepath="Conversions/DecimalToAnyBase.java"/>
+    <SourceLine classname="Conversions.DecimalToAnyBase" start="16" end="16" startBytecode="11" endBytecode="11" sourcefile="DecimalToAnyBase.java" sourcepath="Conversions/DecimalToAnyBase.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.DecimalToBinary">
+      <SourceLine classname="Conversions.DecimalToBinary" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    </Class>
+    <Method classname="Conversions.DecimalToBinary" name="bitwiseConversion" signature="()V" isStatic="true">
+      <SourceLine classname="Conversions.DecimalToBinary" start="46" end="56" startBytecode="0" endBytecode="234" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.DecimalToBinary" start="47" end="47" startBytecode="11" endBytecode="11" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    <SourceLine classname="Conversions.DecimalToBinary" start="47" end="47" startBytecode="11" endBytecode="11" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.DecimalToBinary">
+      <SourceLine classname="Conversions.DecimalToBinary" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    </Class>
+    <Method classname="Conversions.DecimalToBinary" name="conventionalConversion" signature="()V" isStatic="true">
+      <SourceLine classname="Conversions.DecimalToBinary" start="28" end="38" startBytecode="0" endBytecode="234" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.DecimalToBinary" start="29" end="29" startBytecode="11" endBytecode="11" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    <SourceLine classname="Conversions.DecimalToBinary" start="29" end="29" startBytecode="11" endBytecode="11" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" first="1">
+    <Class classname="Conversions.DecimalToBinary">
+      <SourceLine classname="Conversions.DecimalToBinary" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    </Class>
+    <Method classname="Conversions.DecimalToBinary" name="bitwiseConversion" signature="()V" isStatic="true">
+      <SourceLine classname="Conversions.DecimalToBinary" start="46" end="56" startBytecode="0" endBytecode="234" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="printf" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream"/>
+    </Method>
+    <String value="Bitwise conversion.\n	Enter the decimal number: " role="STRING_FORMAT_STRING"/>
+    <SourceLine classname="Conversions.DecimalToBinary" start="48" end="48" startBytecode="25" endBytecode="25" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" first="1">
+    <Class classname="Conversions.DecimalToBinary">
+      <SourceLine classname="Conversions.DecimalToBinary" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    </Class>
+    <Method classname="Conversions.DecimalToBinary" name="conventionalConversion" signature="()V" isStatic="true">
+      <SourceLine classname="Conversions.DecimalToBinary" start="28" end="38" startBytecode="0" endBytecode="234" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="printf" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream"/>
+    </Method>
+    <String value="Conventional conversion.\n	Enter the decimal number: " role="STRING_FORMAT_STRING"/>
+    <SourceLine classname="Conversions.DecimalToBinary" start="30" end="30" startBytecode="25" endBytecode="25" sourcefile="DecimalToBinary.java" sourcepath="Conversions/DecimalToBinary.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.DecimalToOctal">
+      <SourceLine classname="Conversions.DecimalToOctal" sourcefile="DecimalToOctal.java" sourcepath="Conversions/DecimalToOctal.java"/>
+    </Class>
+    <Method classname="Conversions.DecimalToOctal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.DecimalToOctal" start="17" end="30" startBytecode="0" endBytecode="275" sourcefile="DecimalToOctal.java" sourcepath="Conversions/DecimalToOctal.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.DecimalToOctal" start="17" end="17" startBytecode="7" endBytecode="7" sourcefile="DecimalToOctal.java" sourcepath="Conversions/DecimalToOctal.java"/>
+    <SourceLine classname="Conversions.DecimalToOctal" start="17" end="17" startBytecode="7" endBytecode="7" sourcefile="DecimalToOctal.java" sourcepath="Conversions/DecimalToOctal.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.HexToOct">
+      <SourceLine classname="Conversions.HexToOct" sourcefile="HexToOct.java" sourcepath="Conversions/HexToOct.java"/>
+    </Class>
+    <Method classname="Conversions.HexToOct" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.HexToOct" start="56" end="69" startBytecode="0" endBytecode="164" sourcefile="HexToOct.java" sourcepath="Conversions/HexToOct.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.HexToOct" start="56" end="56" startBytecode="7" endBytecode="7" sourcefile="HexToOct.java" sourcepath="Conversions/HexToOct.java"/>
+    <SourceLine classname="Conversions.HexToOct" start="56" end="56" startBytecode="7" endBytecode="7" sourcefile="HexToOct.java" sourcepath="Conversions/HexToOct.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="Conversions.HexaDecimalToBinary">
+      <SourceLine classname="Conversions.HexaDecimalToBinary" sourcefile="HexaDecimalToBinary.java" sourcepath="Conversions/HexaDecimalToBinary.java"/>
+    </Class>
+    <Field classname="Conversions.HexaDecimalToBinary" name="LONG_BITS" signature="I" isStatic="false">
+      <SourceLine classname="Conversions.HexaDecimalToBinary" sourcefile="HexaDecimalToBinary.java" sourcepath="Conversions/HexaDecimalToBinary.java"/>
+    </Field>
+    <SourceLine classname="Conversions.HexaDecimalToBinary" start="5" end="5" startBytecode="7" endBytecode="7" sourcefile="HexaDecimalToBinary.java" sourcepath="Conversions/HexaDecimalToBinary.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.HexaDecimalToDecimal">
+      <SourceLine classname="Conversions.HexaDecimalToDecimal" sourcefile="HexaDecimalToDecimal.java" sourcepath="Conversions/HexaDecimalToDecimal.java"/>
+    </Class>
+    <Method classname="Conversions.HexaDecimalToDecimal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.HexaDecimalToDecimal" start="24" end="39" startBytecode="0" endBytecode="143" sourcefile="HexaDecimalToDecimal.java" sourcepath="Conversions/HexaDecimalToDecimal.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.HexaDecimalToDecimal" start="24" end="24" startBytecode="7" endBytecode="7" sourcefile="HexaDecimalToDecimal.java" sourcepath="Conversions/HexaDecimalToDecimal.java"/>
+    <SourceLine classname="Conversions.HexaDecimalToDecimal" start="24" end="24" startBytecode="7" endBytecode="7" sourcefile="HexaDecimalToDecimal.java" sourcepath="Conversions/HexaDecimalToDecimal.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.OctalToDecimal">
+      <SourceLine classname="Conversions.OctalToDecimal" sourcefile="OctalToDecimal.java" sourcepath="Conversions/OctalToDecimal.java"/>
+    </Class>
+    <Method classname="Conversions.OctalToDecimal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.OctalToDecimal" start="20" end="27" startBytecode="0" endBytecode="178" sourcefile="OctalToDecimal.java" sourcepath="Conversions/OctalToDecimal.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.OctalToDecimal" start="20" end="20" startBytecode="7" endBytecode="7" sourcefile="OctalToDecimal.java" sourcepath="Conversions/OctalToDecimal.java"/>
+    <SourceLine classname="Conversions.OctalToDecimal" start="20" end="20" startBytecode="7" endBytecode="7" sourcefile="OctalToDecimal.java" sourcepath="Conversions/OctalToDecimal.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Conversions.OctalToHexadecimal">
+      <SourceLine classname="Conversions.OctalToHexadecimal" sourcefile="OctalToHexadecimal.java" sourcepath="Conversions/OctalToHexadecimal.java"/>
+    </Class>
+    <Method classname="Conversions.OctalToHexadecimal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Conversions.OctalToHexadecimal" start="51" end="62" startBytecode="0" endBytecode="164" sourcefile="OctalToHexadecimal.java" sourcepath="Conversions/OctalToHexadecimal.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Conversions.OctalToHexadecimal" start="51" end="51" startBytecode="7" endBytecode="7" sourcefile="OctalToHexadecimal.java" sourcepath="Conversions/OctalToHexadecimal.java"/>
+    <SourceLine classname="Conversions.OctalToHexadecimal" start="51" end="51" startBytecode="7" endBytecode="7" sourcefile="OctalToHexadecimal.java" sourcepath="Conversions/OctalToHexadecimal.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Conversions.OctalToHexadecimal">
+      <SourceLine classname="Conversions.OctalToHexadecimal" sourcefile="OctalToHexadecimal.java" sourcepath="Conversions/OctalToHexadecimal.java"/>
+    </Class>
+    <Method classname="Conversions.OctalToHexadecimal" name="DecimalToHex" signature="(I)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="Conversions.OctalToHexadecimal" start="36" end="45" startBytecode="0" endBytecode="183" sourcefile="OctalToHexadecimal.java" sourcepath="Conversions/OctalToHexadecimal.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Conversions.OctalToHexadecimal">
+      <SourceLine classname="Conversions.OctalToHexadecimal" sourcefile="OctalToHexadecimal.java" sourcepath="Conversions/OctalToHexadecimal.java"/>
+    </Class>
+    <Method classname="Conversions.OctalToHexadecimal" name="OctToDec" signature="(Ljava/lang/String;)I" isStatic="true">
+      <SourceLine classname="Conversions.OctalToHexadecimal" start="19" end="26" startBytecode="0" endBytecode="154" sourcefile="OctalToHexadecimal.java" sourcepath="Conversions/OctalToHexadecimal.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Cycle">
+      <SourceLine classname="Cycle" sourcefile="Cycles.java" sourcepath="Cycles.java"/>
+    </Class>
+    <Field classname="Cycle" name="adjacencyMatrix" signature="[[I" isStatic="false">
+      <SourceLine classname="Cycle" start="10" end="10" startBytecode="0" endBytecode="0" sourcefile="Cycle.java" sourcepath="Cycle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Cycle">
+      <SourceLine classname="Cycle" sourcefile="Cycles.java" sourcepath="Cycles.java"/>
+    </Class>
+    <Field classname="Cycle" name="cycles" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Cycle" start="12" end="12" startBytecode="0" endBytecode="0" sourcefile="Cycle.java" sourcepath="Cycle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Cycle">
+      <SourceLine classname="Cycle" sourcefile="Cycles.java" sourcepath="Cycles.java"/>
+    </Class>
+    <Field classname="Cycle" name="edges" signature="I" isStatic="false">
+      <SourceLine classname="Cycle" start="9" end="9" startBytecode="0" endBytecode="0" sourcefile="Cycle.java" sourcepath="Cycle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Cycle">
+      <SourceLine classname="Cycle" sourcefile="Cycles.java" sourcepath="Cycles.java"/>
+    </Class>
+    <Field classname="Cycle" name="finalCycles" signature="[Z" isStatic="false">
+      <SourceLine classname="Cycle" start="13" end="13" startBytecode="0" endBytecode="0" sourcefile="Cycle.java" sourcepath="Cycle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Cycle">
+      <SourceLine classname="Cycle" sourcefile="Cycles.java" sourcepath="Cycles.java"/>
+    </Class>
+    <Field classname="Cycle" name="nodes" signature="I" isStatic="false">
+      <SourceLine classname="Cycle" start="9" end="9" startBytecode="0" endBytecode="0" sourcefile="Cycle.java" sourcepath="Cycle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Cycle">
+      <SourceLine classname="Cycle" sourcefile="Cycles.java" sourcepath="Cycles.java"/>
+    </Class>
+    <Field classname="Cycle" name="visited" signature="[Z" isStatic="false">
+      <SourceLine classname="Cycle" start="11" end="11" startBytecode="0" endBytecode="0" sourcefile="Cycle.java" sourcepath="Cycle.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Buffers.CircularBuffer">
+      <SourceLine classname="DataStructures.Buffers.CircularBuffer" sourcefile="CircularBuffer.java" sourcepath="DataStructures/Buffers/CircularBuffer.java"/>
+    </Class>
+    <Method classname="DataStructures.Buffers.CircularBuffer" name="readOutChar" signature="()Ljava/lang/Character;" isStatic="false">
+      <SourceLine classname="DataStructures.Buffers.CircularBuffer" start="30" end="39" startBytecode="0" endBytecode="138" sourcefile="CircularBuffer.java" sourcepath="DataStructures/Buffers/CircularBuffer.java"/>
+    </Method>
+    <Method classname="java.lang.Character" name="&lt;init&gt;" signature="(C)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Character"/>
+    </Method>
+    <Method classname="java.lang.Character" name="valueOf" signature="(C)Ljava/lang/Character;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Character"/>
+    </Method>
+    <SourceLine classname="DataStructures.Buffers.CircularBuffer" start="34" end="34" startBytecode="29" endBytecode="29" sourcefile="CircularBuffer.java" sourcepath="DataStructures/Buffers/CircularBuffer.java"/>
+    <SourceLine classname="DataStructures.Buffers.CircularBuffer" start="34" end="34" startBytecode="29" endBytecode="29" sourcefile="CircularBuffer.java" sourcepath="DataStructures/Buffers/CircularBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DataStructures.HashMap.Hashing.Main">
+      <SourceLine classname="DataStructures.HashMap.Hashing.Main" sourcefile="Main.java" sourcepath="DataStructures/HashMap/Hashing/Main.java"/>
+    </Class>
+    <Method classname="DataStructures.HashMap.Hashing.Main" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DataStructures.HashMap.Hashing.Main" start="10" end="12" startBytecode="0" endBytecode="397" sourcefile="Main.java" sourcepath="DataStructures/HashMap/Hashing/Main.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DataStructures.HashMap.Hashing.Main" start="19" end="19" startBytecode="57" endBytecode="57" sourcefile="Main.java" sourcepath="DataStructures/HashMap/Hashing/Main.java"/>
+    <SourceLine classname="DataStructures.HashMap.Hashing.Main" start="19" end="19" startBytecode="57" endBytecode="57" sourcefile="Main.java" sourcepath="DataStructures/HashMap/Hashing/Main.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_SELF_USE_OBJECT" priority="2" rank="8" abbrev="Eq" category="CORRECTNESS" first="1">
+    <Class classname="DataStructures.Heaps.HeapElement">
+      <SourceLine classname="DataStructures.Heaps.HeapElement" sourcefile="HeapElement.java" sourcepath="DataStructures/Heaps/HeapElement.java"/>
+    </Class>
+    <Method classname="DataStructures.Heaps.HeapElement" name="equals" signature="(LDataStructures/Heaps/HeapElement;)Z" isStatic="false">
+      <SourceLine classname="DataStructures.Heaps.HeapElement" start="121" end="121" startBytecode="0" endBytecode="90" sourcefile="HeapElement.java" sourcepath="DataStructures/Heaps/HeapElement.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="2" rank="16" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="DataStructures.Heaps.HeapElement">
+      <SourceLine classname="DataStructures.Heaps.HeapElement" sourcefile="HeapElement.java" sourcepath="DataStructures/Heaps/HeapElement.java"/>
+    </Class>
+    <Method classname="DataStructures.Heaps.HeapElement" name="equals" signature="(LDataStructures/Heaps/HeapElement;)Z" isStatic="false">
+      <SourceLine classname="DataStructures.Heaps.HeapElement" start="121" end="121" startBytecode="0" endBytecode="90" sourcefile="HeapElement.java" sourcepath="DataStructures/Heaps/HeapElement.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="DataStructures.Heaps.MaxHeap">
+      <SourceLine classname="DataStructures.Heaps.MaxHeap" sourcefile="MaxHeap.java" sourcepath="DataStructures/Heaps/MaxHeap.java"/>
+    </Class>
+    <Method classname="DataStructures.Heaps.MaxHeap" name="deleteElement" signature="(I)V" isStatic="false">
+      <SourceLine classname="DataStructures.Heaps.MaxHeap" start="92" end="109" startBytecode="0" endBytecode="334" sourcefile="MaxHeap.java" sourcepath="DataStructures/Heaps/MaxHeap.java"/>
+    </Method>
+    <SourceLine classname="DataStructures.Heaps.MaxHeap" start="104" end="104" startBytecode="108" endBytecode="108" sourcefile="MaxHeap.java" sourcepath="DataStructures/Heaps/MaxHeap.java"/>
+    <SourceLine classname="DataStructures.Heaps.MaxHeap" start="104" end="104" startBytecode="108" endBytecode="108" sourcefile="MaxHeap.java" sourcepath="DataStructures/Heaps/MaxHeap.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="DataStructures.Heaps.MaxHeap">
+      <SourceLine classname="DataStructures.Heaps.MaxHeap" sourcefile="MaxHeap.java" sourcepath="DataStructures/Heaps/MaxHeap.java"/>
+    </Class>
+    <Method classname="DataStructures.Heaps.MaxHeap" name="toggleUp" signature="(I)V" isStatic="false">
+      <SourceLine classname="DataStructures.Heaps.MaxHeap" start="51" end="56" startBytecode="0" endBytecode="156" sourcefile="MaxHeap.java" sourcepath="DataStructures/Heaps/MaxHeap.java"/>
+    </Method>
+    <SourceLine classname="DataStructures.Heaps.MaxHeap" start="53" end="53" startBytecode="27" endBytecode="27" sourcefile="MaxHeap.java" sourcepath="DataStructures/Heaps/MaxHeap.java"/>
+    <SourceLine classname="DataStructures.Heaps.MaxHeap" start="53" end="53" startBytecode="27" endBytecode="27" sourcefile="MaxHeap.java" sourcepath="DataStructures/Heaps/MaxHeap.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="DataStructures.Heaps.MinHeap">
+      <SourceLine classname="DataStructures.Heaps.MinHeap" sourcefile="MinHeap.java" sourcepath="DataStructures/Heaps/MinHeap.java"/>
+    </Class>
+    <Method classname="DataStructures.Heaps.MinHeap" name="deleteElement" signature="(I)V" isStatic="false">
+      <SourceLine classname="DataStructures.Heaps.MinHeap" start="87" end="104" startBytecode="0" endBytecode="334" sourcefile="MinHeap.java" sourcepath="DataStructures/Heaps/MinHeap.java"/>
+    </Method>
+    <SourceLine classname="DataStructures.Heaps.MinHeap" start="99" end="99" startBytecode="108" endBytecode="108" sourcefile="MinHeap.java" sourcepath="DataStructures/Heaps/MinHeap.java"/>
+    <SourceLine classname="DataStructures.Heaps.MinHeap" start="99" end="99" startBytecode="108" endBytecode="108" sourcefile="MinHeap.java" sourcepath="DataStructures/Heaps/MinHeap.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="DataStructures.Heaps.MinHeap">
+      <SourceLine classname="DataStructures.Heaps.MinHeap" sourcefile="MinHeap.java" sourcepath="DataStructures/Heaps/MinHeap.java"/>
+    </Class>
+    <Method classname="DataStructures.Heaps.MinHeap" name="toggleUp" signature="(I)V" isStatic="false">
+      <SourceLine classname="DataStructures.Heaps.MinHeap" start="46" end="51" startBytecode="0" endBytecode="156" sourcefile="MinHeap.java" sourcepath="DataStructures/Heaps/MinHeap.java"/>
+    </Method>
+    <SourceLine classname="DataStructures.Heaps.MinHeap" start="48" end="48" startBytecode="27" endBytecode="27" sourcefile="MinHeap.java" sourcepath="DataStructures/Heaps/MinHeap.java"/>
+    <SourceLine classname="DataStructures.Heaps.MinHeap" start="48" end="48" startBytecode="27" endBytecode="27" sourcefile="MinHeap.java" sourcepath="DataStructures/Heaps/MinHeap.java"/>
+  </BugInstance>
+  <BugInstance type="UR_UNINIT_READ" priority="2" rank="3" abbrev="UR" category="CORRECTNESS" first="1">
+    <Class classname="DataStructures.Lists.CircleLinkedList">
+      <SourceLine classname="DataStructures.Lists.CircleLinkedList" sourcefile="CircleLinkedList.java" sourcepath="DataStructures/Lists/CircleLinkedList.java"/>
+    </Class>
+    <Method classname="DataStructures.Lists.CircleLinkedList" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="DataStructures.Lists.CircleLinkedList" start="20" end="24" startBytecode="0" endBytecode="98" sourcefile="CircleLinkedList.java" sourcepath="DataStructures/Lists/CircleLinkedList.java"/>
+    </Method>
+    <Field classname="DataStructures.Lists.CircleLinkedList" name="head" signature="LDataStructures/Lists/CircleLinkedList$Node;" isStatic="false">
+      <SourceLine classname="DataStructures.Lists.CircleLinkedList" sourcefile="CircleLinkedList.java" sourcepath="DataStructures/Lists/CircleLinkedList.java"/>
+    </Field>
+    <SourceLine classname="DataStructures.Lists.CircleLinkedList" start="22" end="22" startBytecode="11" endBytecode="11" sourcefile="CircleLinkedList.java" sourcepath="DataStructures/Lists/CircleLinkedList.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="1" rank="9" abbrev="RCN" category="CORRECTNESS" first="1">
+    <Class classname="DataStructures.Lists.DoublyLinkedList">
+      <SourceLine classname="DataStructures.Lists.DoublyLinkedList" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java"/>
+    </Class>
+    <Method classname="DataStructures.Lists.DoublyLinkedList" name="deleteHead" signature="()LDataStructures/Lists/Link;" isStatic="false">
+      <SourceLine classname="DataStructures.Lists.DoublyLinkedList" start="87" end="92" startBytecode="0" endBytecode="123" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java"/>
+    </Method>
+    <Field classname="DataStructures.Lists.DoublyLinkedList" name="head" signature="LDataStructures/Lists/Link;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="DataStructures.Lists.DoublyLinkedList" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java"/>
+    </Field>
+    <SourceLine classname="DataStructures.Lists.DoublyLinkedList" start="89" end="89" startBytecode="21" endBytecode="21" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java"/>
+    <SourceLine classname="DataStructures.Lists.DoublyLinkedList" start="90" end="90" startBytecode="28" endBytecode="28" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+    <SourceLine classname="DataStructures.Lists.DoublyLinkedList" start="90" end="90" startBytecode="28" endBytecode="28" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="1" rank="9" abbrev="RCN" category="CORRECTNESS" first="1">
+    <Class classname="DataStructures.Lists.DoublyLinkedList">
+      <SourceLine classname="DataStructures.Lists.DoublyLinkedList" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java"/>
+    </Class>
+    <Method classname="DataStructures.Lists.DoublyLinkedList" name="deleteTail" signature="()LDataStructures/Lists/Link;" isStatic="false">
+      <SourceLine classname="DataStructures.Lists.DoublyLinkedList" start="101" end="107" startBytecode="0" endBytecode="123" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java"/>
+    </Method>
+    <Field classname="DataStructures.Lists.Link" name="previous" signature="LDataStructures/Lists/Link;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="DataStructures.Lists.Link" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java"/>
+    </Field>
+    <Field classname="DataStructures.Lists.DoublyLinkedList" name="tail" signature="LDataStructures/Lists/Link;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="DataStructures.Lists.DoublyLinkedList" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java"/>
+    </Field>
+    <SourceLine classname="DataStructures.Lists.DoublyLinkedList" start="103" end="103" startBytecode="21" endBytecode="21" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java"/>
+    <SourceLine classname="DataStructures.Lists.DoublyLinkedList" start="104" end="104" startBytecode="28" endBytecode="28" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+    <SourceLine classname="DataStructures.Lists.DoublyLinkedList" start="104" end="104" startBytecode="28" endBytecode="28" sourcefile="DoublyLinkedList.java" sourcepath="DataStructures/Lists/DoublyLinkedList.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Lists.Merge_K_SortedLinkedlist$Node">
+      <SourceLine classname="DataStructures.Lists.Merge_K_SortedLinkedlist$Node" start="48" end="54" sourcefile="Merge_K_SortedLinkedlist.java" sourcepath="DataStructures/Lists/Merge_K_SortedLinkedlist.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Trees.AVLTree$Node">
+      <SourceLine classname="DataStructures.Trees.AVLTree$Node" start="8" end="16" sourcefile="AVLTree.java" sourcepath="DataStructures/Trees/AVLTree.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Trees.BinaryTree$Node">
+      <SourceLine classname="DataStructures.Trees.BinaryTree$Node" start="43" end="48" sourcefile="BinaryTree.java" sourcepath="DataStructures/Trees/BinaryTree.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DataStructures.Trees.GenericTree">
+      <SourceLine classname="DataStructures.Trees.GenericTree" sourcefile="GenericTree.java" sourcepath="DataStructures/Trees/GenericTree.java"/>
+    </Class>
+    <Method classname="DataStructures.Trees.GenericTree" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.GenericTree" start="26" end="29" startBytecode="0" endBytecode="90" sourcefile="GenericTree.java" sourcepath="DataStructures/Trees/GenericTree.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DataStructures.Trees.GenericTree" start="27" end="27" startBytecode="11" endBytecode="11" sourcefile="GenericTree.java" sourcepath="DataStructures/Trees/GenericTree.java"/>
+    <SourceLine classname="DataStructures.Trees.GenericTree" start="27" end="27" startBytecode="11" endBytecode="11" sourcefile="GenericTree.java" sourcepath="DataStructures/Trees/GenericTree.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Trees.GenericTree$Node">
+      <SourceLine classname="DataStructures.Trees.GenericTree$Node" start="18" end="20" sourcefile="GenericTree.java" sourcepath="DataStructures/Trees/GenericTree.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="1">
+    <Class classname="DataStructures.Trees.LevelOrderTraversal">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversal" sourcefile="LevelOrderTraversal.java" sourcepath="DataStructures/Trees/LevelOrderTraversal.java"/>
+    </Class>
+    <Field classname="DataStructures.Trees.LevelOrderTraversal" name="root" signature="LDataStructures/Trees/LevelOrderTraversal$Node;" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversal" start="16" end="16" startBytecode="0" endBytecode="0" sourcefile="LevelOrderTraversal.java" sourcepath="DataStructures/Trees/LevelOrderTraversal.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Trees.LevelOrderTraversal$Node">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversal$Node" start="9" end="12" sourcefile="LevelOrderTraversal.java" sourcepath="DataStructures/Trees/LevelOrderTraversal.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="1">
+    <Class classname="DataStructures.Trees.LevelOrderTraversalQueue">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue" sourcefile="LevelOrderTraversalQueue.java" sourcepath="DataStructures/Trees/LevelOrderTraversalQueue.java"/>
+    </Class>
+    <Field classname="DataStructures.Trees.LevelOrderTraversalQueue" name="root" signature="LDataStructures/Trees/LevelOrderTraversalQueue$Node;" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue" sourcefile="LevelOrderTraversalQueue.java" sourcepath="DataStructures/Trees/LevelOrderTraversalQueue.java"/>
+    </Field>
+    <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue" start="28" end="28" startBytecode="10" endBytecode="10" sourcefile="LevelOrderTraversalQueue.java" sourcepath="DataStructures/Trees/LevelOrderTraversalQueue.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Trees.LevelOrderTraversalQueue$Node">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue$Node" start="15" end="19" sourcefile="LevelOrderTraversalQueue.java" sourcepath="DataStructures/Trees/LevelOrderTraversalQueue.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="1">
+    <Class classname="DataStructures.Trees.LevelOrderTraversalQueue$Node">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue$Node" sourcefile="LevelOrderTraversalQueue.java" sourcepath="DataStructures/Trees/LevelOrderTraversalQueue.java"/>
+    </Class>
+    <Field classname="DataStructures.Trees.LevelOrderTraversalQueue$Node" name="left" signature="LDataStructures/Trees/LevelOrderTraversalQueue$Node;" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue$Node" sourcefile="LevelOrderTraversalQueue.java" sourcepath="DataStructures/Trees/LevelOrderTraversalQueue.java"/>
+    </Field>
+    <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue$Node" start="11" end="11" startBytecode="0" endBytecode="0" sourcefile="Node.java" sourcepath="DataStructures/Trees/Node.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_NULL_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="1">
+    <Class classname="DataStructures.Trees.LevelOrderTraversalQueue$Node">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue$Node" sourcefile="LevelOrderTraversalQueue.java" sourcepath="DataStructures/Trees/LevelOrderTraversalQueue.java"/>
+    </Class>
+    <Field classname="DataStructures.Trees.LevelOrderTraversalQueue$Node" name="right" signature="LDataStructures/Trees/LevelOrderTraversalQueue$Node;" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue$Node" sourcefile="LevelOrderTraversalQueue.java" sourcepath="DataStructures/Trees/LevelOrderTraversalQueue.java"/>
+    </Field>
+    <SourceLine classname="DataStructures.Trees.LevelOrderTraversalQueue$Node" start="11" end="11" startBytecode="0" endBytecode="0" sourcefile="Node.java" sourcepath="DataStructures/Trees/Node.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DataStructures.Trees.RedBlackBST">
+      <SourceLine classname="DataStructures.Trees.RedBlackBST" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    </Class>
+    <Method classname="DataStructures.Trees.RedBlackBST" name="deleteDemo" signature="()V" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.RedBlackBST" start="315" end="332" startBytecode="0" endBytecode="256" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DataStructures.Trees.RedBlackBST" start="315" end="315" startBytecode="7" endBytecode="7" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    <SourceLine classname="DataStructures.Trees.RedBlackBST" start="315" end="315" startBytecode="7" endBytecode="7" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DataStructures.Trees.RedBlackBST">
+      <SourceLine classname="DataStructures.Trees.RedBlackBST" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    </Class>
+    <Method classname="DataStructures.Trees.RedBlackBST" name="insertDemo" signature="()V" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.RedBlackBST" start="294" end="312" startBytecode="0" endBytecode="210" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DataStructures.Trees.RedBlackBST" start="294" end="294" startBytecode="7" endBytecode="7" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    <SourceLine classname="DataStructures.Trees.RedBlackBST" start="294" end="294" startBytecode="7" endBytecode="7" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Trees.RedBlackBST">
+      <SourceLine classname="DataStructures.Trees.RedBlackBST" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    </Class>
+    <Field classname="DataStructures.Trees.RedBlackBST" name="B" signature="I" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.RedBlackBST" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    </Field>
+    <SourceLine classname="DataStructures.Trees.RedBlackBST" start="11" end="11" startBytecode="11" endBytecode="11" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Trees.RedBlackBST">
+      <SourceLine classname="DataStructures.Trees.RedBlackBST" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    </Class>
+    <Field classname="DataStructures.Trees.RedBlackBST" name="R" signature="I" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.RedBlackBST" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+    </Field>
+    <SourceLine classname="DataStructures.Trees.RedBlackBST" start="10" end="10" startBytecode="6" endBytecode="6" sourcefile="RedBlackBST.java" sourcepath="DataStructures/Trees/RedBlackBST.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DataStructures.Trees.TrieImp">
+      <SourceLine classname="DataStructures.Trees.TrieImp" sourcefile="TrieImp.java" sourcepath="DataStructures/Trees/TrieImp.java"/>
+    </Class>
+    <Method classname="DataStructures.Trees.TrieImp" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DataStructures.Trees.TrieImp" start="84" end="89" startBytecode="0" endBytecode="717" sourcefile="TrieImp.java" sourcepath="DataStructures/Trees/TrieImp.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DataStructures.Trees.TrieImp" start="87" end="87" startBytecode="15" endBytecode="15" sourcefile="TrieImp.java" sourcepath="DataStructures/Trees/TrieImp.java"/>
+    <SourceLine classname="DataStructures.Trees.TrieImp" start="87" end="87" startBytecode="15" endBytecode="15" sourcefile="TrieImp.java" sourcepath="DataStructures/Trees/TrieImp.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Trees.TrieImp$TrieNode">
+      <SourceLine classname="DataStructures.Trees.TrieImp$TrieNode" start="17" end="20" sourcefile="TrieImp.java" sourcepath="DataStructures/Trees/TrieImp.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="1">
+    <Class classname="DataStructures.Trees.ValidBSTOrNot">
+      <SourceLine classname="DataStructures.Trees.ValidBSTOrNot" sourcefile="ValidBSTOrNot.java" sourcepath="DataStructures/Trees/ValidBSTOrNot.java"/>
+    </Class>
+    <Field classname="DataStructures.Trees.ValidBSTOrNot" name="root" signature="LDataStructures/Trees/ValidBSTOrNot$Node;" isStatic="false">
+      <SourceLine classname="DataStructures.Trees.ValidBSTOrNot" sourcefile="ValidBSTOrNot.java" sourcepath="DataStructures/Trees/ValidBSTOrNot.java"/>
+    </Field>
+    <SourceLine classname="DataStructures.Trees.ValidBSTOrNot" start="24" end="24" startBytecode="2" endBytecode="2" sourcefile="ValidBSTOrNot.java" sourcepath="DataStructures/Trees/ValidBSTOrNot.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="DataStructures.Trees.ValidBSTOrNot$Node">
+      <SourceLine classname="DataStructures.Trees.ValidBSTOrNot$Node" start="9" end="12" sourcefile="ValidBSTOrNot.java" sourcepath="DataStructures/Trees/ValidBSTOrNot.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DynamicProgramming.EditDistance">
+      <SourceLine classname="DynamicProgramming.EditDistance" sourcefile="EditDistance.java" sourcepath="DynamicProgramming/EditDistance.java"/>
+    </Class>
+    <Method classname="DynamicProgramming.EditDistance" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DynamicProgramming.EditDistance" start="68" end="77" startBytecode="0" endBytecode="195" sourcefile="EditDistance.java" sourcepath="DynamicProgramming/EditDistance.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DynamicProgramming.EditDistance" start="68" end="68" startBytecode="7" endBytecode="7" sourcefile="EditDistance.java" sourcepath="DynamicProgramming/EditDistance.java"/>
+    <SourceLine classname="DynamicProgramming.EditDistance" start="68" end="68" startBytecode="7" endBytecode="7" sourcefile="EditDistance.java" sourcepath="DynamicProgramming/EditDistance.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DynamicProgramming.Fibonacci">
+      <SourceLine classname="DynamicProgramming.Fibonacci" sourcefile="Fibonacci.java" sourcepath="DynamicProgramming/Fibonacci.java"/>
+    </Class>
+    <Method classname="DynamicProgramming.Fibonacci" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DynamicProgramming.Fibonacci" start="18" end="24" startBytecode="0" endBytecode="124" sourcefile="Fibonacci.java" sourcepath="DynamicProgramming/Fibonacci.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="DynamicProgramming.Fibonacci" start="18" end="18" startBytecode="11" endBytecode="11" sourcefile="Fibonacci.java" sourcepath="DynamicProgramming/Fibonacci.java"/>
+    <SourceLine classname="DynamicProgramming.Fibonacci" start="18" end="18" startBytecode="11" endBytecode="11" sourcefile="Fibonacci.java" sourcepath="DynamicProgramming/Fibonacci.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DynamicProgramming.KadaneAlgorithm">
+      <SourceLine classname="DynamicProgramming.KadaneAlgorithm" sourcefile="KadaneAlgorithm.java" sourcepath="DynamicProgramming/KadaneAlgorithm.java"/>
+    </Class>
+    <Method classname="DynamicProgramming.KadaneAlgorithm" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DynamicProgramming.KadaneAlgorithm" start="43" end="53" startBytecode="0" endBytecode="216" sourcefile="KadaneAlgorithm.java" sourcepath="DynamicProgramming/KadaneAlgorithm.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DynamicProgramming.KadaneAlgorithm" start="43" end="43" startBytecode="7" endBytecode="7" sourcefile="KadaneAlgorithm.java" sourcepath="DynamicProgramming/KadaneAlgorithm.java"/>
+    <SourceLine classname="DynamicProgramming.KadaneAlgorithm" start="43" end="43" startBytecode="7" endBytecode="7" sourcefile="KadaneAlgorithm.java" sourcepath="DynamicProgramming/KadaneAlgorithm.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DynamicProgramming.LongestIncreasingSubsequence">
+      <SourceLine classname="DynamicProgramming.LongestIncreasingSubsequence" sourcefile="LongestIncreasingSubsequence.java" sourcepath="DynamicProgramming/LongestIncreasingSubsequence.java"/>
+    </Class>
+    <Method classname="DynamicProgramming.LongestIncreasingSubsequence" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DynamicProgramming.LongestIncreasingSubsequence" start="11" end="20" startBytecode="0" endBytecode="190" sourcefile="LongestIncreasingSubsequence.java" sourcepath="DynamicProgramming/LongestIncreasingSubsequence.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DynamicProgramming.LongestIncreasingSubsequence" start="11" end="11" startBytecode="7" endBytecode="7" sourcefile="LongestIncreasingSubsequence.java" sourcepath="DynamicProgramming/LongestIncreasingSubsequence.java"/>
+    <SourceLine classname="DynamicProgramming.LongestIncreasingSubsequence" start="11" end="11" startBytecode="7" endBytecode="7" sourcefile="LongestIncreasingSubsequence.java" sourcepath="DynamicProgramming/LongestIncreasingSubsequence.java"/>
+  </BugInstance>
+  <BugInstance type="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW" priority="2" rank="17" abbrev="IM" category="STYLE" first="1">
+    <Class classname="DynamicProgramming.LongestIncreasingSubsequence">
+      <SourceLine classname="DynamicProgramming.LongestIncreasingSubsequence" sourcefile="LongestIncreasingSubsequence.java" sourcepath="DynamicProgramming/LongestIncreasingSubsequence.java"/>
+    </Class>
+    <Method classname="DynamicProgramming.LongestIncreasingSubsequence" name="upperBound" signature="([IIII)I" isStatic="true">
+      <SourceLine classname="DynamicProgramming.LongestIncreasingSubsequence" start="23" end="31" startBytecode="0" endBytecode="157" sourcefile="LongestIncreasingSubsequence.java" sourcepath="DynamicProgramming/LongestIncreasingSubsequence.java"/>
+    </Method>
+    <SourceLine classname="DynamicProgramming.LongestIncreasingSubsequence" start="24" end="24" startBytecode="7" endBytecode="7" sourcefile="LongestIncreasingSubsequence.java" sourcepath="DynamicProgramming/LongestIncreasingSubsequence.java"/>
+    <SourceLine classname="DynamicProgramming.LongestIncreasingSubsequence" start="24" end="24" startBytecode="7" endBytecode="7" sourcefile="LongestIncreasingSubsequence.java" sourcepath="DynamicProgramming/LongestIncreasingSubsequence.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DynamicProgramming.LongestValidParentheses">
+      <SourceLine classname="DynamicProgramming.LongestValidParentheses" sourcefile="LongestValidParentheses.java" sourcepath="DynamicProgramming/LongestValidParentheses.java"/>
+    </Class>
+    <Method classname="DynamicProgramming.LongestValidParentheses" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DynamicProgramming.LongestValidParentheses" start="47" end="60" startBytecode="0" endBytecode="174" sourcefile="LongestValidParentheses.java" sourcepath="DynamicProgramming/LongestValidParentheses.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DynamicProgramming.LongestValidParentheses" start="47" end="47" startBytecode="7" endBytecode="7" sourcefile="LongestValidParentheses.java" sourcepath="DynamicProgramming/LongestValidParentheses.java"/>
+    <SourceLine classname="DynamicProgramming.LongestValidParentheses" start="47" end="47" startBytecode="7" endBytecode="7" sourcefile="LongestValidParentheses.java" sourcepath="DynamicProgramming/LongestValidParentheses.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="DynamicProgramming.MatrixChainMultiplication">
+      <SourceLine classname="DynamicProgramming.MatrixChainMultiplication" sourcefile="MatrixChainMultiplication.java" sourcepath="DynamicProgramming/MatrixChainMultiplication.java"/>
+    </Class>
+    <Method classname="DynamicProgramming.MatrixChainMultiplication" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="DynamicProgramming.MatrixChainMultiplication" start="8" end="13" startBytecode="0" endBytecode="63" sourcefile="MatrixChainMultiplication.java" sourcepath="DynamicProgramming/MatrixChainMultiplication.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="DynamicProgramming.MatrixChainMultiplication" start="8" end="8" startBytecode="7" endBytecode="7" sourcefile="MatrixChainMultiplication.java" sourcepath="DynamicProgramming/MatrixChainMultiplication.java"/>
+    <SourceLine classname="DynamicProgramming.MatrixChainMultiplication" start="8" end="8" startBytecode="7" endBytecode="7" sourcefile="MatrixChainMultiplication.java" sourcepath="DynamicProgramming/MatrixChainMultiplication.java"/>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" first="1">
+    <Class classname="DynamicProgramming.MatrixChainMultiplication">
+      <SourceLine classname="DynamicProgramming.MatrixChainMultiplication" sourcefile="MatrixChainMultiplication.java" sourcepath="DynamicProgramming/MatrixChainMultiplication.java"/>
+    </Class>
+    <Method classname="DynamicProgramming.MatrixChainMultiplication" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DynamicProgramming.MatrixChainMultiplication" start="16" end="64" startBytecode="0" endBytecode="848" sourcefile="MatrixChainMultiplication.java" sourcepath="DynamicProgramming/MatrixChainMultiplication.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream"/>
+    </Method>
+    <String value="A(%d)  =  %2d  x  %2d\n" role="STRING_FORMAT_STRING"/>
+    <SourceLine classname="DynamicProgramming.MatrixChainMultiplication" start="28" end="28" startBytecode="136" endBytecode="136" sourcefile="MatrixChainMultiplication.java" sourcepath="DynamicProgramming/MatrixChainMultiplication.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="FloydWarshall">
+      <SourceLine classname="FloydWarshall" sourcefile="FloydWarshall.java" sourcepath="FloydWarshall.java"/>
+    </Class>
+    <Field classname="FloydWarshall" name="DistanceMatrix" signature="[[I" isStatic="false">
+      <SourceLine classname="FloydWarshall" start="7" end="7" startBytecode="0" endBytecode="0" sourcefile="FloydWarshall.java" sourcepath="FloydWarshall.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="FloydWarshall">
+      <SourceLine classname="FloydWarshall" sourcefile="FloydWarshall.java" sourcepath="FloydWarshall.java"/>
+    </Class>
+    <Field classname="FloydWarshall" name="numberofvertices" signature="I" isStatic="false">
+      <SourceLine classname="FloydWarshall" start="8" end="8" startBytecode="0" endBytecode="0" sourcefile="FloydWarshall.java" sourcepath="FloydWarshall.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Graph">
+      <SourceLine classname="Graph" sourcefile="ConnectedComponent.java" sourcepath="ConnectedComponent.java"/>
+    </Class>
+    <Field classname="Graph" name="edgeList" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Graph" start="31" end="31" startBytecode="0" endBytecode="0" sourcefile="Graph.java" sourcepath="Graph.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Graph">
+      <SourceLine classname="Graph" sourcefile="ConnectedComponent.java" sourcepath="ConnectedComponent.java"/>
+    </Class>
+    <Field classname="Graph" name="nodeList" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Graph" start="32" end="32" startBytecode="0" endBytecode="0" sourcefile="Graph.java" sourcepath="Graph.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Graph$Edge">
+      <SourceLine classname="Graph$Edge" sourcefile="ConnectedComponent.java" sourcepath="ConnectedComponent.java"/>
+    </Class>
+    <Field classname="Graph$Edge" name="endNode" signature="LGraph$Node;" isStatic="false">
+      <SourceLine classname="Graph$Edge" sourcefile="ConnectedComponent.java" sourcepath="ConnectedComponent.java"/>
+    </Field>
+    <SourceLine classname="Graph$Edge" start="22" end="22" startBytecode="0" endBytecode="0" sourcefile="Edge.java" sourcepath="Edge.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Graph$Edge">
+      <SourceLine classname="Graph$Edge" sourcefile="ConnectedComponent.java" sourcepath="ConnectedComponent.java"/>
+    </Class>
+    <Field classname="Graph$Edge" name="startNode" signature="LGraph$Node;" isStatic="false">
+      <SourceLine classname="Graph$Edge" sourcefile="ConnectedComponent.java" sourcepath="ConnectedComponent.java"/>
+    </Field>
+    <SourceLine classname="Graph$Edge" start="22" end="22" startBytecode="0" endBytecode="0" sourcefile="Edge.java" sourcepath="Edge.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Graph$Node">
+      <SourceLine classname="Graph$Node" sourcefile="ConnectedComponent.java" sourcepath="ConnectedComponent.java"/>
+    </Class>
+    <Field classname="Graph$Node" name="name" signature="Ljava/lang/Comparable;" isStatic="false">
+      <SourceLine classname="Graph$Node" sourcefile="ConnectedComponent.java" sourcepath="ConnectedComponent.java"/>
+    </Field>
+    <SourceLine classname="Graph$Node" start="14" end="14" startBytecode="0" endBytecode="0" sourcefile="Node.java" sourcepath="Node.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="LinkedListStack">
+      <SourceLine classname="LinkedListStack" sourcefile="StackOfLinkedList.java" sourcepath="StackOfLinkedList.java"/>
+    </Class>
+    <Field classname="LinkedListStack" name="head" signature="LNode;" isStatic="false">
+      <SourceLine classname="LinkedListStack" start="51" end="51" startBytecode="0" endBytecode="0" sourcefile="LinkedListStack.java" sourcepath="LinkedListStack.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="MinimizingLateness.MinimizingLateness">
+      <SourceLine classname="MinimizingLateness.MinimizingLateness" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+    </Class>
+    <Method classname="MinimizingLateness.MinimizingLateness" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="MinimizingLateness.MinimizingLateness" start="26" end="56" startBytecode="0" endBytecode="555" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="MinimizingLateness.MinimizingLateness" start="26" end="26" startBytecode="10" endBytecode="10" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+    <SourceLine classname="MinimizingLateness.MinimizingLateness" start="26" end="26" startBytecode="10" endBytecode="10" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="MinimizingLateness.MinimizingLateness$Schedule">
+      <SourceLine classname="MinimizingLateness.MinimizingLateness$Schedule" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+    </Class>
+    <Field classname="MinimizingLateness.MinimizingLateness$Schedule" name="f" signature="I" isStatic="false">
+      <SourceLine classname="MinimizingLateness.MinimizingLateness$Schedule" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+    </Field>
+    <SourceLine classname="MinimizingLateness.MinimizingLateness" start="48" end="48" startBytecode="203" endBytecode="203" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="MinimizingLateness.MinimizingLateness$Schedule">
+      <SourceLine classname="MinimizingLateness.MinimizingLateness$Schedule" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+    </Class>
+    <Field classname="MinimizingLateness.MinimizingLateness$Schedule" name="s" signature="I" isStatic="false">
+      <SourceLine classname="MinimizingLateness.MinimizingLateness$Schedule" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+    </Field>
+    <SourceLine classname="MinimizingLateness.MinimizingLateness" start="47" end="47" startBytecode="184" endBytecode="184" sourcefile="MinimizingLateness.java" sourcepath="MinimizingLateness/MinimizingLateness.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Misc.PalindromePrime">
+      <SourceLine classname="Misc.PalindromePrime" sourcefile="PalindromePrime.java" sourcepath="Misc/PalindromePrime.java"/>
+    </Class>
+    <Method classname="Misc.PalindromePrime" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Misc.PalindromePrime" start="8" end="12" startBytecode="0" endBytecode="106" sourcefile="PalindromePrime.java" sourcepath="Misc/PalindromePrime.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Misc.PalindromePrime" start="8" end="8" startBytecode="7" endBytecode="7" sourcefile="PalindromePrime.java" sourcepath="Misc/PalindromePrime.java"/>
+    <SourceLine classname="Misc.PalindromePrime" start="8" end="8" startBytecode="7" endBytecode="7" sourcefile="PalindromePrime.java" sourcepath="Misc/PalindromePrime.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="Misc.heap_sort">
+      <SourceLine classname="Misc.heap_sort" sourcefile="heap_sort.java" sourcepath="Misc/heap_sort.java"/>
+    </Class>
+    <Method classname="Misc.heap_sort" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Misc.heap_sort" start="59" end="67" startBytecode="0" endBytecode="42" sourcefile="heap_sort.java" sourcepath="Misc/heap_sort.java"/>
+    </Method>
+    <LocalVariable name="n" register="2" pc="37" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="Misc.heap_sort" start="60" end="60" startBytecode="36" endBytecode="36" sourcefile="heap_sort.java" sourcepath="Misc/heap_sort.java"/>
+    <SourceLine classname="Misc.heap_sort" start="60" end="60" startBytecode="36" endBytecode="36" sourcefile="heap_sort.java" sourcepath="Misc/heap_sort.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="n"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="Node">
+      <SourceLine classname="Node" sourcefile="StackOfLinkedList.java" sourcepath="StackOfLinkedList.java"/>
+    </Class>
+    <Field classname="Node" name="data" signature="I" isStatic="false">
+      <SourceLine classname="Node" start="34" end="34" startBytecode="0" endBytecode="0" sourcefile="Node.java" sourcepath="Node.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="Node">
+      <SourceLine classname="Node" sourcefile="StackOfLinkedList.java" sourcepath="StackOfLinkedList.java"/>
+    </Class>
+    <Field classname="Node" name="next" signature="LNode;" isStatic="false">
+      <SourceLine classname="Node" start="35" end="35" startBytecode="0" endBytecode="0" sourcefile="Node.java" sourcepath="Node.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="NodeStack">
+      <SourceLine classname="NodeStack" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+    </Class>
+    <Method classname="NodeStack" name="pop" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="NodeStack" start="89" end="96" startBytecode="0" endBytecode="128" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+    </Method>
+    <Field classname="NodeStack" name="head" signature="LNodeStack;" isStatic="true">
+      <SourceLine classname="NodeStack" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+    </Field>
+    <SourceLine classname="NodeStack" start="91" end="91" startBytecode="13" endBytecode="13" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+    <SourceLine classname="NodeStack" start="91" end="91" startBytecode="13" endBytecode="13" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="NodeStack">
+      <SourceLine classname="NodeStack" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+    </Class>
+    <Method classname="NodeStack" name="push" signature="(Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="NodeStack" start="67" end="80" startBytecode="0" endBytecode="221" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+    </Method>
+    <Field classname="NodeStack" name="head" signature="LNodeStack;" isStatic="true">
+      <SourceLine classname="NodeStack" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+    </Field>
+    <SourceLine classname="NodeStack" start="76" end="76" startBytecode="55" endBytecode="55" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+    <SourceLine classname="NodeStack" start="76" end="76" startBytecode="55" endBytecode="55" sourcefile="NodeStack.java" sourcepath="NodeStack.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.Armstrong">
+      <SourceLine classname="Others.Armstrong" sourcefile="Armstrong.java" sourcepath="Others/Armstrong.java"/>
+    </Class>
+    <Method classname="Others.Armstrong" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.Armstrong" start="16" end="24" startBytecode="0" endBytecode="151" sourcefile="Armstrong.java" sourcepath="Others/Armstrong.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.Armstrong" start="16" end="16" startBytecode="7" endBytecode="7" sourcefile="Armstrong.java" sourcepath="Others/Armstrong.java"/>
+    <SourceLine classname="Others.Armstrong" start="16" end="16" startBytecode="7" endBytecode="7" sourcefile="Armstrong.java" sourcepath="Others/Armstrong.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.BrianKernighanAlgorithm">
+      <SourceLine classname="Others.BrianKernighanAlgorithm" sourcefile="BrianKernighanAlgorithm.java" sourcepath="Others/BrianKernighanAlgorithm.java"/>
+    </Class>
+    <Method classname="Others.BrianKernighanAlgorithm" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.BrianKernighanAlgorithm" start="43" end="48" startBytecode="0" endBytecode="124" sourcefile="BrianKernighanAlgorithm.java" sourcepath="Others/BrianKernighanAlgorithm.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.BrianKernighanAlgorithm" start="43" end="43" startBytecode="7" endBytecode="7" sourcefile="BrianKernighanAlgorithm.java" sourcepath="Others/BrianKernighanAlgorithm.java"/>
+    <SourceLine classname="Others.BrianKernighanAlgorithm" start="43" end="43" startBytecode="7" endBytecode="7" sourcefile="BrianKernighanAlgorithm.java" sourcepath="Others/BrianKernighanAlgorithm.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.CRC32">
+      <SourceLine classname="Others.CRC32" sourcefile="CRC32.java" sourcepath="Others/CRC32.java"/>
+    </Class>
+    <Method classname="Others.CRC32" name="crc32" signature="(Ljava/lang/String;)I" isStatic="true">
+      <SourceLine classname="Others.CRC32" start="15" end="15" startBytecode="0" endBytecode="49" sourcefile="CRC32.java" sourcepath="Others/CRC32.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="Others.CRC32" start="15" end="15" startBytecode="1" endBytecode="1" sourcefile="CRC32.java" sourcepath="Others/CRC32.java"/>
+    <SourceLine classname="Others.CRC32" start="15" end="15" startBytecode="1" endBytecode="1" sourcefile="CRC32.java" sourcepath="Others/CRC32.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.CountChar">
+      <SourceLine classname="Others.CountChar" sourcefile="CountChar.java" sourcepath="Others/CountChar.java"/>
+    </Class>
+    <Method classname="Others.CountChar" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.CountChar" start="16" end="21" startBytecode="0" endBytecode="140" sourcefile="CountChar.java" sourcepath="Others/CountChar.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.CountChar" start="16" end="16" startBytecode="7" endBytecode="7" sourcefile="CountChar.java" sourcepath="Others/CountChar.java"/>
+    <SourceLine classname="Others.CountChar" start="16" end="16" startBytecode="7" endBytecode="7" sourcefile="CountChar.java" sourcepath="Others/CountChar.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="2" rank="16" abbrev="ES" category="BAD_PRACTICE" first="1">
+    <Class classname="Others.CountChar">
+      <SourceLine classname="Others.CountChar" sourcefile="CountChar.java" sourcepath="Others/CountChar.java"/>
+    </Class>
+    <Method classname="Others.CountChar" name="CountCharacters" signature="(Ljava/lang/String;)I" isStatic="true">
+      <SourceLine classname="Others.CountChar" start="30" end="42" startBytecode="0" endBytecode="24" sourcefile="CountChar.java" sourcepath="Others/CountChar.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <String value="" role="STRING_CONSTANT"/>
+    <LocalVariable name="str" register="0" pc="3" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="Others.CountChar" start="32" end="32" startBytecode="5" endBytecode="5" sourcefile="CountChar.java" sourcepath="Others/CountChar.java"/>
+    <SourceLine classname="Others.CountChar" start="32" end="32" startBytecode="5" endBytecode="5" sourcefile="CountChar.java" sourcepath="Others/CountChar.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.CountWords">
+      <SourceLine classname="Others.CountWords" sourcefile="CountWords.java" sourcepath="Others/CountWords.java"/>
+    </Class>
+    <Method classname="Others.CountWords" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.CountWords" start="14" end="20" startBytecode="0" endBytecode="140" sourcefile="CountWords.java" sourcepath="Others/CountWords.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.CountWords" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="CountWords.java" sourcepath="Others/CountWords.java"/>
+    <SourceLine classname="Others.CountWords" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="CountWords.java" sourcepath="Others/CountWords.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.Dijkshtra">
+      <SourceLine classname="Others.Dijkshtra" sourcefile="Dijkshtra.java" sourcepath="Others/Dijkshtra.java"/>
+    </Class>
+    <Method classname="Others.Dijkshtra" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.Dijkshtra" start="14" end="83" startBytecode="0" endBytecode="1034" sourcefile="Dijkshtra.java" sourcepath="Others/Dijkshtra.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.Dijkshtra" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="Dijkshtra.java" sourcepath="Others/Dijkshtra.java"/>
+    <SourceLine classname="Others.Dijkshtra" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="Dijkshtra.java" sourcepath="Others/Dijkshtra.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.Factorial">
+      <SourceLine classname="Others.Factorial" sourcefile="Factorial.java" sourcepath="Others/Factorial.java"/>
+    </Class>
+    <Method classname="Others.Factorial" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.Factorial" start="19" end="38" startBytecode="0" endBytecode="251" sourcefile="Factorial.java" sourcepath="Others/Factorial.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.Factorial" start="19" end="19" startBytecode="7" endBytecode="7" sourcefile="Factorial.java" sourcepath="Others/Factorial.java"/>
+    <SourceLine classname="Others.Factorial" start="19" end="19" startBytecode="7" endBytecode="7" sourcefile="Factorial.java" sourcepath="Others/Factorial.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.FibToN">
+      <SourceLine classname="Others.FibToN" sourcefile="FibToN.java" sourcepath="Others/FibToN.java"/>
+    </Class>
+    <Method classname="Others.FibToN" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.FibToN" start="17" end="31" startBytecode="0" endBytecode="210" sourcefile="FibToN.java" sourcepath="Others/FibToN.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.FibToN" start="17" end="17" startBytecode="7" endBytecode="7" sourcefile="FibToN.java" sourcepath="Others/FibToN.java"/>
+    <SourceLine classname="Others.FibToN" start="17" end="17" startBytecode="7" endBytecode="7" sourcefile="FibToN.java" sourcepath="Others/FibToN.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.FloydTriangle">
+      <SourceLine classname="Others.FloydTriangle" sourcefile="FloydTriangle.java" sourcepath="Others/FloydTriangle.java"/>
+    </Class>
+    <Method classname="Others.FloydTriangle" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.FloydTriangle" start="8" end="18" startBytecode="0" endBytecode="259" sourcefile="FloydTriangle.java" sourcepath="Others/FloydTriangle.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.FloydTriangle" start="8" end="8" startBytecode="7" endBytecode="7" sourcefile="FloydTriangle.java" sourcepath="Others/FloydTriangle.java"/>
+    <SourceLine classname="Others.FloydTriangle" start="8" end="8" startBytecode="7" endBytecode="7" sourcefile="FloydTriangle.java" sourcepath="Others/FloydTriangle.java"/>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" first="1">
+    <Class classname="Others.GCD">
+      <SourceLine classname="Others.GCD" sourcefile="GCD.java" sourcepath="Others/GCD.java"/>
+    </Class>
+    <Method classname="Others.GCD" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.GCD" start="36" end="41" startBytecode="0" endBytecode="131" sourcefile="GCD.java" sourcepath="Others/GCD.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="printf" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream"/>
+    </Method>
+    <String value="gcd(40,24)=%d gcd(24,40)=%d\n" role="STRING_FORMAT_STRING"/>
+    <SourceLine classname="Others.GCD" start="40" end="40" startBytecode="63" endBytecode="63" sourcefile="GCD.java" sourcepath="Others/GCD.java"/>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" first="1">
+    <Class classname="Others.Graph">
+      <SourceLine classname="Others.Graph" sourcefile="Dijkstra.java" sourcepath="Others/Dijkstra.java"/>
+    </Class>
+    <Method classname="Others.Graph" name="dijkstra" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Others.Graph" start="127" end="142" startBytecode="0" endBytecode="432" sourcefile="Dijkstra.java" sourcepath="Others/Dijkstra.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="printf" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream"/>
+    </Method>
+    <String value="Graph doesn&apos;t contain start vertex &quot;%s&quot;\n" role="STRING_FORMAT_STRING"/>
+    <SourceLine classname="Others.Graph" start="128" end="128" startBytecode="26" endBytecode="26" sourcefile="Dijkstra.java" sourcepath="Others/Dijkstra.java"/>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" first="1">
+    <Class classname="Others.Graph">
+      <SourceLine classname="Others.Graph" sourcefile="Dijkstra.java" sourcepath="Others/Dijkstra.java"/>
+    </Class>
+    <Method classname="Others.Graph" name="printPath" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Others.Graph" start="174" end="181" startBytecode="0" endBytecode="134" sourcefile="Dijkstra.java" sourcepath="Others/Dijkstra.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="printf" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream"/>
+    </Method>
+    <String value="Graph doesn&apos;t contain end vertex &quot;%s&quot;\n" role="STRING_FORMAT_STRING"/>
+    <SourceLine classname="Others.Graph" start="175" end="175" startBytecode="26" endBytecode="26" sourcefile="Dijkstra.java" sourcepath="Others/Dijkstra.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" rank="16" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="Others.Graph$Vertex">
+      <SourceLine classname="Others.Graph$Vertex" sourcefile="Dijkstra.java" sourcepath="Others/Dijkstra.java"/>
+    </Class>
+    <Method classname="Others.Graph$Vertex" name="compareTo" signature="(LOthers/Graph$Vertex;)I" isStatic="false">
+      <SourceLine classname="Others.Graph$Vertex" start="92" end="95" startBytecode="0" endBytecode="103" sourcefile="Dijkstra.java" sourcepath="Others/Dijkstra.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.InsertDeleteInArray">
+      <SourceLine classname="Others.InsertDeleteInArray" sourcefile="InsertDeleteInArray.java" sourcepath="Others/InsertDeleteInArray.java"/>
+    </Class>
+    <Method classname="Others.InsertDeleteInArray" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.InsertDeleteInArray" start="8" end="47" startBytecode="0" endBytecode="575" sourcefile="InsertDeleteInArray.java" sourcepath="Others/InsertDeleteInArray.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.InsertDeleteInArray" start="8" end="8" startBytecode="7" endBytecode="7" sourcefile="InsertDeleteInArray.java" sourcepath="Others/InsertDeleteInArray.java"/>
+    <SourceLine classname="Others.InsertDeleteInArray" start="8" end="8" startBytecode="7" endBytecode="7" sourcefile="InsertDeleteInArray.java" sourcepath="Others/InsertDeleteInArray.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.Krishnamurthy">
+      <SourceLine classname="Others.Krishnamurthy" sourcefile="Krishnamurthy.java" sourcepath="Others/Krishnamurthy.java"/>
+    </Class>
+    <Method classname="Others.Krishnamurthy" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.Krishnamurthy" start="14" end="29" startBytecode="0" endBytecode="298" sourcefile="Krishnamurthy.java" sourcepath="Others/Krishnamurthy.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.Krishnamurthy" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="Krishnamurthy.java" sourcepath="Others/Krishnamurthy.java"/>
+    <SourceLine classname="Others.Krishnamurthy" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="Krishnamurthy.java" sourcepath="Others/Krishnamurthy.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.LowestBasePalindrome">
+      <SourceLine classname="Others.LowestBasePalindrome" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+    </Class>
+    <Method classname="Others.LowestBasePalindrome" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.LowestBasePalindrome" start="18" end="32" startBytecode="0" endBytecode="241" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.LowestBasePalindrome" start="18" end="18" startBytecode="7" endBytecode="7" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+    <SourceLine classname="Others.LowestBasePalindrome" start="18" end="18" startBytecode="7" endBytecode="7" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="Others.LowestBasePalindrome">
+      <SourceLine classname="Others.LowestBasePalindrome" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+    </Class>
+    <Method classname="Others.LowestBasePalindrome" name="lowestBasePalindrome" signature="(I)I" isStatic="true">
+      <SourceLine classname="Others.LowestBasePalindrome" start="43" end="91" startBytecode="0" endBytecode="464" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+    </Method>
+    <SourceLine classname="Others.LowestBasePalindrome" start="76" end="76" startBytecode="74" endBytecode="74" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="Others.LowestBasePalindrome">
+      <SourceLine classname="Others.LowestBasePalindrome" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+    </Class>
+    <Method classname="Others.LowestBasePalindrome" name="reverse" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="Others.LowestBasePalindrome" start="95" end="99" startBytecode="0" endBytecode="138" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+    </Method>
+    <SourceLine classname="Others.LowestBasePalindrome" start="97" end="97" startBytecode="13" endBytecode="13" sourcefile="LowestBasePalindrome.java" sourcepath="Others/LowestBasePalindrome.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="Others.PasswordGen">
+      <SourceLine classname="Others.PasswordGen" sourcefile="PasswordGen.java" sourcepath="Others/PasswordGen.java"/>
+    </Class>
+    <Method classname="Others.PasswordGen" name="generatePassword" signature="(II)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="Others.PasswordGen" start="23" end="45" startBytecode="0" endBytecode="491" sourcefile="PasswordGen.java" sourcepath="Others/PasswordGen.java"/>
+    </Method>
+    <SourceLine classname="Others.PasswordGen" start="42" end="42" startBytecode="133" endBytecode="133" sourcefile="PasswordGen.java" sourcepath="Others/PasswordGen.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.PerlinNoise">
+      <SourceLine classname="Others.PerlinNoise" sourcefile="PerlinNoise.java" sourcepath="Others/PerlinNoise.java"/>
+    </Class>
+    <Method classname="Others.PerlinNoise" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.PerlinNoise" start="114" end="165" startBytecode="0" endBytecode="748" sourcefile="PerlinNoise.java" sourcepath="Others/PerlinNoise.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.PerlinNoise" start="114" end="114" startBytecode="7" endBytecode="7" sourcefile="PerlinNoise.java" sourcepath="Others/PerlinNoise.java"/>
+    <SourceLine classname="Others.PerlinNoise" start="114" end="114" startBytecode="7" endBytecode="7" sourcefile="PerlinNoise.java" sourcepath="Others/PerlinNoise.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.PowerOfTwoOrNot">
+      <SourceLine classname="Others.PowerOfTwoOrNot" sourcefile="PowerOfTwoOrNot.java" sourcepath="Others/PowerOfTwoOrNot.java"/>
+    </Class>
+    <Method classname="Others.PowerOfTwoOrNot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.PowerOfTwoOrNot" start="14" end="23" startBytecode="0" endBytecode="173" sourcefile="PowerOfTwoOrNot.java" sourcepath="Others/PowerOfTwoOrNot.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.PowerOfTwoOrNot" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="PowerOfTwoOrNot.java" sourcepath="Others/PowerOfTwoOrNot.java"/>
+    <SourceLine classname="Others.PowerOfTwoOrNot" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="PowerOfTwoOrNot.java" sourcepath="Others/PowerOfTwoOrNot.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.RemoveDuplicateFromString">
+      <SourceLine classname="Others.RemoveDuplicateFromString" sourcefile="RemoveDuplicateFromString.java" sourcepath="Others/RemoveDuplicateFromString.java"/>
+    </Class>
+    <Method classname="Others.RemoveDuplicateFromString" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.RemoveDuplicateFromString" start="12" end="19" startBytecode="0" endBytecode="156" sourcefile="RemoveDuplicateFromString.java" sourcepath="Others/RemoveDuplicateFromString.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="Others.RemoveDuplicateFromString" start="12" end="12" startBytecode="11" endBytecode="11" sourcefile="RemoveDuplicateFromString.java" sourcepath="Others/RemoveDuplicateFromString.java"/>
+    <SourceLine classname="Others.RemoveDuplicateFromString" start="12" end="12" startBytecode="11" endBytecode="11" sourcefile="RemoveDuplicateFromString.java" sourcepath="Others/RemoveDuplicateFromString.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.ReturnSubsequence">
+      <SourceLine classname="Others.ReturnSubsequence" sourcefile="ReturnSubsequence.java" sourcepath="Others/ReturnSubsequence.java"/>
+    </Class>
+    <Method classname="Others.ReturnSubsequence" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.ReturnSubsequence" start="7" end="16" startBytecode="0" endBytecode="206" sourcefile="ReturnSubsequence.java" sourcepath="Others/ReturnSubsequence.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.ReturnSubsequence" start="8" end="8" startBytecode="15" endBytecode="15" sourcefile="ReturnSubsequence.java" sourcepath="Others/ReturnSubsequence.java"/>
+    <SourceLine classname="Others.ReturnSubsequence" start="8" end="8" startBytecode="15" endBytecode="15" sourcefile="ReturnSubsequence.java" sourcepath="Others/ReturnSubsequence.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.ReverseString">
+      <SourceLine classname="Others.ReverseString" sourcefile="ReverseString.java" sourcepath="Others/ReverseString.java"/>
+    </Class>
+    <Method classname="Others.ReverseString" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.ReverseString" start="39" end="44" startBytecode="0" endBytecode="142" sourcefile="ReverseString.java" sourcepath="Others/ReverseString.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="Others.ReverseString" start="39" end="39" startBytecode="11" endBytecode="11" sourcefile="ReverseString.java" sourcepath="Others/ReverseString.java"/>
+    <SourceLine classname="Others.ReverseString" start="39" end="39" startBytecode="11" endBytecode="11" sourcefile="ReverseString.java" sourcepath="Others/ReverseString.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.RootPrecision">
+      <SourceLine classname="Others.RootPrecision" sourcefile="RootPrecision.java" sourcepath="Others/RootPrecision.java"/>
+    </Class>
+    <Method classname="Others.RootPrecision" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.RootPrecision" start="9" end="17" startBytecode="0" endBytecode="120" sourcefile="RootPrecision.java" sourcepath="Others/RootPrecision.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.RootPrecision" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="RootPrecision.java" sourcepath="Others/RootPrecision.java"/>
+    <SourceLine classname="Others.RootPrecision" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="RootPrecision.java" sourcepath="Others/RootPrecision.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.Schedule">
+      <SourceLine classname="Others.Schedule" sourcefile="SJF.java" sourcepath="Others/SJF.java"/>
+    </Class>
+    <Method classname="Others.Schedule" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="Others.Schedule" start="41" end="71" startBytecode="0" endBytecode="452" sourcefile="SJF.java" sourcepath="Others/SJF.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.Schedule" start="42" end="42" startBytecode="16" endBytecode="16" sourcefile="SJF.java" sourcepath="Others/SJF.java"/>
+    <SourceLine classname="Others.Schedule" start="42" end="42" startBytecode="16" endBytecode="16" sourcefile="SJF.java" sourcepath="Others/SJF.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.SkylineProblem">
+      <SourceLine classname="Others.SkylineProblem" sourcefile="SkylineProblem.java" sourcepath="Others/SkylineProblem.java"/>
+    </Class>
+    <Method classname="Others.SkylineProblem" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="Others.SkylineProblem" start="12" end="25" startBytecode="0" endBytecode="242" sourcefile="SkylineProblem.java" sourcepath="Others/SkylineProblem.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.SkylineProblem" start="12" end="12" startBytecode="7" endBytecode="7" sourcefile="SkylineProblem.java" sourcepath="Others/SkylineProblem.java"/>
+    <SourceLine classname="Others.SkylineProblem" start="12" end="12" startBytecode="7" endBytecode="7" sourcefile="SkylineProblem.java" sourcepath="Others/SkylineProblem.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="Others.SkylineProblem$Building">
+      <SourceLine classname="Others.SkylineProblem$Building" start="122" end="126" sourcefile="SkylineProblem.java" sourcepath="Others/SkylineProblem.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="Others.SkylineProblem$Skyline">
+      <SourceLine classname="Others.SkylineProblem$Skyline" start="111" end="114" sourcefile="SkylineProblem.java" sourcepath="Others/SkylineProblem.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.StackPostfixNotation">
+      <SourceLine classname="Others.StackPostfixNotation" sourcefile="StackPostfixNotation.java" sourcepath="Others/StackPostfixNotation.java"/>
+    </Class>
+    <Method classname="Others.StackPostfixNotation" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.StackPostfixNotation" start="7" end="10" startBytecode="0" endBytecode="100" sourcefile="StackPostfixNotation.java" sourcepath="Others/StackPostfixNotation.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.StackPostfixNotation" start="7" end="7" startBytecode="7" endBytecode="7" sourcefile="StackPostfixNotation.java" sourcepath="Others/StackPostfixNotation.java"/>
+    <SourceLine classname="Others.StackPostfixNotation" start="7" end="7" startBytecode="7" endBytecode="7" sourcefile="StackPostfixNotation.java" sourcepath="Others/StackPostfixNotation.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.TopKWords">
+      <SourceLine classname="Others.TopKWords" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java"/>
+    </Class>
+    <Method classname="Others.TopKWords" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.TopKWords" start="64" end="85" startBytecode="0" endBytecode="373" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.TopKWords" start="75" end="75" startBytecode="50" endBytecode="50" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java"/>
+    <SourceLine classname="Others.TopKWords" start="75" end="75" startBytecode="50" endBytecode="50" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java"/>
+  </BugInstance>
+  <BugInstance type="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="Others.TopKWords$CountWords">
+      <SourceLine classname="Others.TopKWords$CountWords" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java"/>
+    </Class>
+    <Method classname="Others.TopKWords$CountWords" name="getDictionary" signature="()Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="Others.TopKWords$CountWords" start="18" end="58" startBytecode="0" endBytecode="657" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java"/>
+    </Method>
+    <LocalVariable name="fis" register="2" pc="15" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="Others.TopKWords$CountWords" start="53" end="53" startBytecode="191" endBytecode="191" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="Others.TopKWords$CountWords" start="53" end="53" startBytecode="172" endBytecode="172" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="Others.TopKWords$CountWords" start="19" end="19" startBytecode="8" endBytecode="8" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="Others.TopKWords$CountWords" start="23" end="23" startBytecode="18" endBytecode="18" sourcefile="TopKWords.java" sourcepath="Others/TopKWords.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_ARE_CLONED" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Others.TowerOfHanoi">
+      <SourceLine classname="Others.TowerOfHanoi" sourcefile="TowerOfHanoi.java" sourcepath="Others/TowerOfHanoi.java"/>
+    </Class>
+    <Method classname="Others.TowerOfHanoi" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Others.TowerOfHanoi" start="21" end="25" startBytecode="0" endBytecode="112" sourcefile="TowerOfHanoi.java" sourcepath="Others/TowerOfHanoi.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Others.TowerOfHanoi" start="22" end="22" startBytecode="15" endBytecode="15" sourcefile="TowerOfHanoi.java" sourcepath="Others/TowerOfHanoi.java"/>
+    <SourceLine classname="Others.TowerOfHanoi" start="22" end="22" startBytecode="15" endBytecode="15" sourcefile="TowerOfHanoi.java" sourcepath="Others/TowerOfHanoi.java"/>
+  </BugInstance>
+  <BugInstance type="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW" priority="2" rank="17" abbrev="IM" category="STYLE" first="1">
+    <Class classname="Searches.IterativeBinarySearch">
+      <SourceLine classname="Searches.IterativeBinarySearch" sourcefile="IterativeBinarySearch.java" sourcepath="Searches/IterativeBinarySearch.java"/>
+    </Class>
+    <Method classname="Searches.IterativeBinarySearch" name="find" signature="([Ljava/lang/Comparable;Ljava/lang/Comparable;)I" isStatic="false">
+      <SourceLine classname="Searches.IterativeBinarySearch" start="39" end="55" startBytecode="0" endBytecode="257" sourcefile="IterativeBinarySearch.java" sourcepath="Searches/IterativeBinarySearch.java"/>
+    </Method>
+    <SourceLine classname="Searches.IterativeBinarySearch" start="43" end="43" startBytecode="16" endBytecode="16" sourcefile="IterativeBinarySearch.java" sourcepath="Searches/IterativeBinarySearch.java"/>
+    <SourceLine classname="Searches.IterativeBinarySearch" start="43" end="43" startBytecode="16" endBytecode="16" sourcefile="IterativeBinarySearch.java" sourcepath="Searches/IterativeBinarySearch.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Searches.SaddlebackSearch">
+      <SourceLine classname="Searches.SaddlebackSearch" sourcefile="SaddlebackSearch.java" sourcepath="Searches/SaddlebackSearch.java"/>
+    </Class>
+    <Method classname="Searches.SaddlebackSearch" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Searches.SaddlebackSearch" start="64" end="78" startBytecode="0" endBytecode="369" sourcefile="SaddlebackSearch.java" sourcepath="Searches/SaddlebackSearch.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="Searches.SaddlebackSearch" start="64" end="64" startBytecode="7" endBytecode="7" sourcefile="SaddlebackSearch.java" sourcepath="Searches/SaddlebackSearch.java"/>
+    <SourceLine classname="Searches.SaddlebackSearch" start="64" end="64" startBytecode="7" endBytecode="7" sourcefile="SaddlebackSearch.java" sourcepath="Searches/SaddlebackSearch.java"/>
+  </BugInstance>
+  <BugInstance type="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW" priority="2" rank="17" abbrev="IM" category="STYLE" first="1">
+    <Class classname="Sorts.QuickSort">
+      <SourceLine classname="Sorts.QuickSort" sourcefile="QuickSort.java" sourcepath="Sorts/QuickSort.java"/>
+    </Class>
+    <Method classname="Sorts.QuickSort" name="partition" signature="([Ljava/lang/Comparable;II)I" isStatic="true">
+      <SourceLine classname="Sorts.QuickSort" start="67" end="83" startBytecode="0" endBytecode="240" sourcefile="QuickSort.java" sourcepath="Sorts/QuickSort.java"/>
+    </Method>
+    <SourceLine classname="Sorts.QuickSort" start="67" end="67" startBytecode="4" endBytecode="4" sourcefile="QuickSort.java" sourcepath="Sorts/QuickSort.java"/>
+    <SourceLine classname="Sorts.QuickSort" start="67" end="67" startBytecode="4" endBytecode="4" sourcefile="QuickSort.java" sourcepath="Sorts/QuickSort.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ciphers.AES">
+      <SourceLine classname="ciphers.AES" sourcefile="AES.java" sourcepath="ciphers/AES.java"/>
+    </Class>
+    <Method classname="ciphers.AES" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ciphers.AES" start="570" end="600" startBytecode="0" endBytecode="587" sourcefile="AES.java" sourcepath="ciphers/AES.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="ciphers.AES" start="570" end="570" startBytecode="11" endBytecode="11" sourcefile="AES.java" sourcepath="ciphers/AES.java"/>
+    <SourceLine classname="ciphers.AES" start="570" end="570" startBytecode="11" endBytecode="11" sourcefile="AES.java" sourcepath="ciphers/AES.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="ciphers.AES">
+      <SourceLine classname="ciphers.AES" sourcefile="AES.java" sourcepath="ciphers/AES.java"/>
+    </Class>
+    <Method classname="ciphers.AES" name="mergeCellsIntoBlock" signature="([I)Ljava/math/BigInteger;" isStatic="true">
+      <SourceLine classname="ciphers.AES" start="328" end="340" startBytecode="0" endBytecode="213" sourcefile="AES.java" sourcepath="ciphers/AES.java"/>
+    </Method>
+    <SourceLine classname="ciphers.AES" start="337" end="337" startBytecode="47" endBytecode="47" sourcefile="AES.java" sourcepath="ciphers/AES.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ciphers.AESEncryption">
+      <SourceLine classname="ciphers.AESEncryption" sourcefile="AESEncryption.java" sourcepath="ciphers/AESEncryption.java"/>
+    </Class>
+    <Method classname="ciphers.AESEncryption" name="decryptText" signature="([BLjavax/crypto/SecretKey;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ciphers.AESEncryption" start="98" end="101" startBytecode="0" endBytecode="110" sourcefile="AESEncryption.java" sourcepath="ciphers/AESEncryption.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="ciphers.AESEncryption" start="101" end="101" startBytecode="23" endBytecode="23" sourcefile="AESEncryption.java" sourcepath="ciphers/AESEncryption.java"/>
+    <SourceLine classname="ciphers.AESEncryption" start="101" end="101" startBytecode="23" endBytecode="23" sourcefile="AESEncryption.java" sourcepath="ciphers/AESEncryption.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ciphers.AESEncryption">
+      <SourceLine classname="ciphers.AESEncryption" sourcefile="AESEncryption.java" sourcepath="ciphers/AESEncryption.java"/>
+    </Class>
+    <Method classname="ciphers.AESEncryption" name="encryptText" signature="(Ljava/lang/String;Ljavax/crypto/SecretKey;)[B" isStatic="true">
+      <SourceLine classname="ciphers.AESEncryption" start="77" end="80" startBytecode="0" endBytecode="106" sourcefile="AESEncryption.java" sourcepath="ciphers/AESEncryption.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="ciphers.AESEncryption" start="79" end="79" startBytecode="14" endBytecode="14" sourcefile="AESEncryption.java" sourcepath="ciphers/AESEncryption.java"/>
+    <SourceLine classname="ciphers.AESEncryption" start="79" end="79" startBytecode="14" endBytecode="14" sourcefile="AESEncryption.java" sourcepath="ciphers/AESEncryption.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ciphers.Caesar">
+      <SourceLine classname="ciphers.Caesar" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    </Class>
+    <Method classname="ciphers.Caesar" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ciphers.Caesar" start="112" end="129" startBytecode="0" endBytecode="321" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="ciphers.Caesar" start="112" end="112" startBytecode="7" endBytecode="7" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    <SourceLine classname="ciphers.Caesar" start="112" end="112" startBytecode="7" endBytecode="7" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="ciphers.Caesar">
+      <SourceLine classname="ciphers.Caesar" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    </Class>
+    <Method classname="ciphers.Caesar" name="decode" signature="(Ljava/lang/String;I)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ciphers.Caesar" start="63" end="86" startBytecode="0" endBytecode="401" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    </Method>
+    <SourceLine classname="ciphers.Caesar" start="83" end="83" startBytecode="135" endBytecode="135" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="ciphers.Caesar">
+      <SourceLine classname="ciphers.Caesar" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    </Class>
+    <Method classname="ciphers.Caesar" name="encode" signature="(Ljava/lang/String;I)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ciphers.Caesar" start="25" end="51" startBytecode="0" endBytecode="401" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    </Method>
+    <SourceLine classname="ciphers.Caesar" start="48" end="48" startBytecode="135" endBytecode="135" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="ciphers.Caesar">
+      <SourceLine classname="ciphers.Caesar" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    </Class>
+    <Method classname="ciphers.Caesar" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ciphers.Caesar" start="112" end="129" startBytecode="0" endBytecode="321" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    </Method>
+    <SourceLine classname="ciphers.Caesar" start="120" end="127" startBytecode="67" endBytecode="162" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+    <SourceLine classname="ciphers.Caesar" start="120" end="127" startBytecode="67" endBytecode="162" sourcefile="Caesar.java" sourcepath="ciphers/Caesar.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ciphers.ColumnarTranspositionCipher">
+      <SourceLine classname="ciphers.ColumnarTranspositionCipher" sourcefile="ColumnarTranspositionCipher.java" sourcepath="ciphers/ColumnarTranspositionCipher.java"/>
+    </Class>
+    <Field classname="ciphers.ColumnarTranspositionCipher" name="ENCRYPTION_FIELD_CHAR" signature="C" isStatic="true">
+      <SourceLine classname="ciphers.ColumnarTranspositionCipher" start="16" end="16" startBytecode="0" endBytecode="0" sourcefile="ColumnarTranspositionCipher.java" sourcepath="ciphers/ColumnarTranspositionCipher.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ciphers.ColumnarTranspositionCipher">
+      <SourceLine classname="ciphers.ColumnarTranspositionCipher" sourcefile="ColumnarTranspositionCipher.java" sourcepath="ciphers/ColumnarTranspositionCipher.java"/>
+    </Class>
+    <Field classname="ciphers.ColumnarTranspositionCipher" name="abecedarium" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ciphers.ColumnarTranspositionCipher" start="12" end="12" startBytecode="0" endBytecode="0" sourcefile="ColumnarTranspositionCipher.java" sourcepath="ciphers/ColumnarTranspositionCipher.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ciphers.ColumnarTranspositionCipher">
+      <SourceLine classname="ciphers.ColumnarTranspositionCipher" sourcefile="ColumnarTranspositionCipher.java" sourcepath="ciphers/ColumnarTranspositionCipher.java"/>
+    </Class>
+    <Field classname="ciphers.ColumnarTranspositionCipher" name="keyword" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ciphers.ColumnarTranspositionCipher" start="10" end="10" startBytecode="0" endBytecode="0" sourcefile="ColumnarTranspositionCipher.java" sourcepath="ciphers/ColumnarTranspositionCipher.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ciphers.ColumnarTranspositionCipher">
+      <SourceLine classname="ciphers.ColumnarTranspositionCipher" sourcefile="ColumnarTranspositionCipher.java" sourcepath="ciphers/ColumnarTranspositionCipher.java"/>
+    </Class>
+    <Field classname="ciphers.ColumnarTranspositionCipher" name="table" signature="[[Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="ciphers.ColumnarTranspositionCipher" start="11" end="11" startBytecode="0" endBytecode="0" sourcefile="ColumnarTranspositionCipher.java" sourcepath="ciphers/ColumnarTranspositionCipher.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ciphers.RSA">
+      <SourceLine classname="ciphers.RSA" sourcefile="RSA.java" sourcepath="ciphers/RSA.java"/>
+    </Class>
+    <Method classname="ciphers.RSA" name="decrypt" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ciphers.RSA" start="64" end="64" startBytecode="0" endBytecode="81" sourcefile="RSA.java" sourcepath="ciphers/RSA.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="ciphers.RSA" start="64" end="64" startBytecode="26" endBytecode="26" sourcefile="RSA.java" sourcepath="ciphers/RSA.java"/>
+    <SourceLine classname="ciphers.RSA" start="64" end="64" startBytecode="26" endBytecode="26" sourcefile="RSA.java" sourcepath="ciphers/RSA.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ciphers.RSA">
+      <SourceLine classname="ciphers.RSA" sourcefile="RSA.java" sourcepath="ciphers/RSA.java"/>
+    </Class>
+    <Method classname="ciphers.RSA" name="encrypt" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ciphers.RSA" start="46" end="46" startBytecode="0" endBytecode="77" sourcefile="RSA.java" sourcepath="ciphers/RSA.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="ciphers.RSA" start="46" end="46" startBytecode="5" endBytecode="5" sourcefile="RSA.java" sourcepath="ciphers/RSA.java"/>
+    <SourceLine classname="ciphers.RSA" start="46" end="46" startBytecode="5" endBytecode="5" sourcefile="RSA.java" sourcepath="ciphers/RSA.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="ciphers.Vigenere">
+      <SourceLine classname="ciphers.Vigenere" sourcefile="Vigenere.java" sourcepath="ciphers/Vigenere.java"/>
+    </Class>
+    <Method classname="ciphers.Vigenere" name="decrypt" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ciphers.Vigenere" start="36" end="56" startBytecode="0" endBytecode="329" sourcefile="Vigenere.java" sourcepath="ciphers/Vigenere.java"/>
+    </Method>
+    <SourceLine classname="ciphers.Vigenere" start="50" end="50" startBytecode="120" endBytecode="120" sourcefile="Vigenere.java" sourcepath="ciphers/Vigenere.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="ciphers.Vigenere">
+      <SourceLine classname="ciphers.Vigenere" sourcefile="Vigenere.java" sourcepath="ciphers/Vigenere.java"/>
+    </Class>
+    <Method classname="ciphers.Vigenere" name="encrypt" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ciphers.Vigenere" start="14" end="31" startBytecode="0" endBytecode="331" sourcefile="Vigenere.java" sourcepath="ciphers/Vigenere.java"/>
+    </Method>
+    <SourceLine classname="ciphers.Vigenere" start="27" end="27" startBytecode="122" endBytecode="122" sourcefile="Vigenere.java" sourcepath="ciphers/Vigenere.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="divideconquer.ClosestPair">
+      <SourceLine classname="divideconquer.ClosestPair" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    </Class>
+    <Method classname="divideconquer.ClosestPair" name="bruteForce" signature="([Ldivideconquer/ClosestPair$Location;)D" isStatic="false">
+      <SourceLine classname="divideconquer.ClosestPair" start="276" end="324" startBytecode="0" endBytecode="537" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    </Method>
+    <Field classname="divideconquer.ClosestPair" name="minNum" signature="D" isStatic="true">
+      <SourceLine classname="divideconquer.ClosestPair" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    </Field>
+    <SourceLine classname="divideconquer.ClosestPair" start="291" end="291" startBytecode="85" endBytecode="85" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    <SourceLine classname="divideconquer.ClosestPair" start="291" end="291" startBytecode="85" endBytecode="85" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="divideconquer.ClosestPair">
+      <SourceLine classname="divideconquer.ClosestPair" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    </Class>
+    <Method classname="divideconquer.ClosestPair" name="closestPair" signature="([Ldivideconquer/ClosestPair$Location;I)D" isStatic="false">
+      <SourceLine classname="divideconquer.ClosestPair" start="186" end="264" startBytecode="0" endBytecode="1032" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    </Method>
+    <Field classname="divideconquer.ClosestPair" name="minNum" signature="D" isStatic="true">
+      <SourceLine classname="divideconquer.ClosestPair" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    </Field>
+    <SourceLine classname="divideconquer.ClosestPair" start="253" end="253" startBytecode="408" endBytecode="408" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    <SourceLine classname="divideconquer.ClosestPair" start="253" end="253" startBytecode="408" endBytecode="408" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="divideconquer.ClosestPair">
+      <SourceLine classname="divideconquer.ClosestPair" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    </Class>
+    <Method classname="divideconquer.ClosestPair" name="closestPair" signature="([Ldivideconquer/ClosestPair$Location;I)D" isStatic="false">
+      <SourceLine classname="divideconquer.ClosestPair" start="186" end="264" startBytecode="0" endBytecode="1032" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    </Method>
+    <Field classname="divideconquer.ClosestPair" name="secondCount" signature="I" isStatic="true">
+      <SourceLine classname="divideconquer.ClosestPair" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    </Field>
+    <SourceLine classname="divideconquer.ClosestPair" start="216" end="216" startBytecode="153" endBytecode="153" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+    <SourceLine classname="divideconquer.ClosestPair" start="216" end="216" startBytecode="153" endBytecode="153" sourcefile="ClosestPair.java" sourcepath="divideconquer/ClosestPair.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="divideconquer.SkylineAlgorithm$XComparator">
+      <SourceLine classname="divideconquer.SkylineAlgorithm$XComparator" start="1" end="183" sourcefile="SkylineAlgorithm.java" sourcepath="divideconquer/SkylineAlgorithm.java"/>
+    </Class>
+    <SourceLine classname="divideconquer.SkylineAlgorithm$XComparator" start="180" end="180" startBytecode="0" endBytecode="0" sourcefile="XComparator.java" sourcepath="divideconquer/XComparator.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 8 Jul 2019 22:39:55 +0200" total_classes="196" referenced_classes="342" total_bugs="143" total_size="6222" num_packages="17" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="51.38" clock_seconds="55.44" peak_mbytes="702.01" alloc_mbytes="1024.00" gc_seconds="0.29" priority_2="78" priority_1="65">
+    <PackageStats package="" total_bugs="23" total_types="22" total_size="443" priority_2="20" priority_1="3">
+      <ClassStats class="AdjacencyListGraph" sourceFile="Graphs.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="AdjacencyListGraph$Vertex" sourceFile="Graphs.java" interface="false" size="10" bugs="2" priority_2="2"/>
+      <ClassStats class="AdjacencyMatrixGraph" sourceFile="MatrixGraphs.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="BalancedBrackets" sourceFile="BalancedBrackets.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="BellmanFord" sourceFile="BellmanFord.java" interface="false" size="91" bugs="1" priority_1="1"/>
+      <ClassStats class="BellmanFord$Edge" sourceFile="BellmanFord.java" interface="false" size="12" bugs="1" priority_2="1"/>
+      <ClassStats class="ConnectedComponent" sourceFile="ConnectedComponent.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="Cycle" sourceFile="Cycles.java" interface="false" size="15" bugs="6" priority_2="6"/>
+      <ClassStats class="Cycles" sourceFile="Cycles.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="FloydWarshall" sourceFile="FloydWarshall.java" interface="false" size="10" bugs="2" priority_2="2"/>
+      <ClassStats class="Graph" sourceFile="ConnectedComponent.java" interface="false" size="11" bugs="2" priority_2="2"/>
+      <ClassStats class="Graph$Edge" sourceFile="ConnectedComponent.java" interface="false" size="6" bugs="2" priority_2="2"/>
+      <ClassStats class="Graph$Node" sourceFile="ConnectedComponent.java" interface="false" size="5" bugs="1" priority_2="1"/>
+      <ClassStats class="Graphs" sourceFile="Graphs.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="LinkedListStack" sourceFile="StackOfLinkedList.java" interface="false" size="16" bugs="1" priority_2="1"/>
+      <ClassStats class="MatrixGraphs" sourceFile="MatrixGraphs.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="Node" sourceFile="StackOfLinkedList.java" interface="false" size="5" bugs="2" priority_2="2"/>
+      <ClassStats class="NodeStack" sourceFile="NodeStack.java" interface="false" size="85" bugs="2" priority_1="2"/>
+      <ClassStats class="PrimMST" sourceFile="PrimMST.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="StackArray" sourceFile="StackArray.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="StackArrayList" sourceFile="StackArrayList.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="StackOfLinkedList" sourceFile="StackOfLinkedList.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="Conversions" total_bugs="20" total_types="18" total_size="430" priority_2="6" priority_1="14">
+      <ClassStats class="Conversions.AnyBaseToAnyBase" sourceFile="AnyBaseToAnyBase.java" interface="false" size="55" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.AnyBaseToDecimal" sourceFile="AnyBaseToDecimal.java" interface="false" size="25" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="Conversions.AnytoAny" sourceFile="AnytoAny.java" interface="false" size="20" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.BinaryToDecimal" sourceFile="BinaryToDecimal.java" interface="false" size="16" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.BinaryToHexadecimal" sourceFile="BinaryToHexadecimal.java" interface="false" size="25" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.BinaryToOctal" sourceFile="BinaryToOctal.java" interface="false" size="17" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.DecimalToAnyBase" sourceFile="DecimalToAnyBase.java" interface="false" size="28" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.DecimalToBinary" sourceFile="DecimalToBinary.java" interface="false" size="29" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="Conversions.DecimalToHexaDecimal" sourceFile="DecimalToHexaDecimal.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="Conversions.DecimalToOctal" sourceFile="DecimalToOctal.java" interface="false" size="16" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.HexToOct" sourceFile="HexToOct.java" interface="false" size="30" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.HexaDecimalToBinary" sourceFile="HexaDecimalToBinary.java" interface="false" size="21" bugs="1" priority_2="1"/>
+      <ClassStats class="Conversions.HexaDecimalToDecimal" sourceFile="HexaDecimalToDecimal.java" interface="false" size="18" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.IntegerToRoman" sourceFile="IntegerToRoman.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="Conversions.OctalToDecimal" sourceFile="OctalToDecimal.java" interface="false" size="18" bugs="1" priority_1="1"/>
+      <ClassStats class="Conversions.OctalToHexadecimal" sourceFile="OctalToHexadecimal.java" interface="false" size="29" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="Conversions.RomanToInteger" sourceFile="RomanToInteger.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="Conversions.RomanToInteger$1" sourceFile="RomanToInteger.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="DataStructures.Bags" total_bugs="0" total_types="3" total_size="68">
+      <ClassStats class="DataStructures.Bags.Bag" sourceFile="Bag.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="DataStructures.Bags.Bag$ListIterator" sourceFile="Bag.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="DataStructures.Bags.Bag$Node" sourceFile="Bag.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="DataStructures.Buffers" total_bugs="1" total_types="3" total_size="85" priority_2="1">
+      <ClassStats class="DataStructures.Buffers.CircularBuffer" sourceFile="CircularBuffer.java" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Buffers.CircularBuffer$TestReadWorker" sourceFile="CircularBuffer.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="DataStructures.Buffers.CircularBuffer$TestWriteWorker" sourceFile="CircularBuffer.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="DataStructures.HashMap.Hashing" total_bugs="1" total_types="4" total_size="102" priority_1="1">
+      <ClassStats class="DataStructures.HashMap.Hashing.HashMap" sourceFile="HashMap.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="DataStructures.HashMap.Hashing.LinkedList" sourceFile="LinkedList.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="DataStructures.HashMap.Hashing.Main" sourceFile="Main.java" interface="false" size="26" bugs="1" priority_1="1"/>
+      <ClassStats class="DataStructures.HashMap.Hashing.Node" sourceFile="Node.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="DataStructures.Heaps" total_bugs="6" total_types="6" total_size="272" priority_2="6">
+      <ClassStats class="DataStructures.Heaps.EmptyHeapException" sourceFile="EmptyHeapException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="DataStructures.Heaps.Heap" sourceFile="Heap.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="DataStructures.Heaps.HeapElement" sourceFile="HeapElement.java" interface="false" size="51" bugs="2" priority_2="2"/>
+      <ClassStats class="DataStructures.Heaps.MaxHeap" sourceFile="MaxHeap.java" interface="false" size="65" bugs="2" priority_2="2"/>
+      <ClassStats class="DataStructures.Heaps.MinHeap" sourceFile="MinHeap.java" interface="false" size="65" bugs="2" priority_2="2"/>
+      <ClassStats class="DataStructures.Heaps.MinPriorityQueue" sourceFile="MinPriorityQueue.java" interface="false" size="83" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="DataStructures.Lists" total_bugs="4" total_types="10" total_size="365" priority_2="2" priority_1="2">
+      <ClassStats class="DataStructures.Lists.CircleLinkedList" sourceFile="CircleLinkedList.java" interface="false" size="29" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Lists.CircleLinkedList$Node" sourceFile="CircleLinkedList.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="DataStructures.Lists.CursorLinkedList" sourceFile="CursorLinkedList.java" interface="false" size="96" bugs="0"/>
+      <ClassStats class="DataStructures.Lists.CursorLinkedList$Node" sourceFile="CursorLinkedList.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="DataStructures.Lists.DoublyLinkedList" sourceFile="DoublyLinkedList.java" interface="false" size="84" bugs="2" priority_1="2"/>
+      <ClassStats class="DataStructures.Lists.Link" sourceFile="DoublyLinkedList.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="DataStructures.Lists.Merge_K_SortedLinkedlist" sourceFile="Merge_K_SortedLinkedlist.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="DataStructures.Lists.Merge_K_SortedLinkedlist$Node" sourceFile="Merge_K_SortedLinkedlist.java" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Lists.Node" sourceFile="SinglyLinkedList.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="DataStructures.Lists.SinglyLinkedList" sourceFile="SinglyLinkedList.java" interface="false" size="70" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="DataStructures.Queues" total_bugs="0" total_types="5" total_size="138">
+      <ClassStats class="DataStructures.Queues.GenericArrayListQueue" sourceFile="GenericArrayListQueue.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="DataStructures.Queues.PriorityQueue" sourceFile="PriorityQueues.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="DataStructures.Queues.PriorityQueues" sourceFile="PriorityQueues.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="DataStructures.Queues.Queue" sourceFile="Queues.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="DataStructures.Queues.Queues" sourceFile="Queues.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="DataStructures.Trees" total_bugs="18" total_types="22" total_size="983" priority_2="14" priority_1="4">
+      <ClassStats class="DataStructures.Trees.AVLTree" sourceFile="AVLTree.java" interface="false" size="133" bugs="0"/>
+      <ClassStats class="DataStructures.Trees.AVLTree$Node" sourceFile="AVLTree.java" interface="false" size="29" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Trees.BinaryTree" sourceFile="BinaryTree.java" interface="false" size="108" bugs="0"/>
+      <ClassStats class="DataStructures.Trees.BinaryTree$Node" sourceFile="BinaryTree.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Trees.GenericTree" sourceFile="GenericTree.java" interface="false" size="119" bugs="1" priority_1="1"/>
+      <ClassStats class="DataStructures.Trees.GenericTree$Node" sourceFile="GenericTree.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Trees.LevelOrderTraversal" sourceFile="LevelOrderTraversal.java" interface="false" size="24" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Trees.LevelOrderTraversal$Node" sourceFile="LevelOrderTraversal.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Trees.LevelOrderTraversalQueue" sourceFile="LevelOrderTraversalQueue.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Trees.LevelOrderTraversalQueue$Node" sourceFile="LevelOrderTraversalQueue.java" interface="false" size="11" bugs="3" priority_2="3"/>
+      <ClassStats class="DataStructures.Trees.Node" sourceFile="TreeTraversal.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="DataStructures.Trees.PrintTopViewofTree" sourceFile="PrintTopViewofTree.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="DataStructures.Trees.QItem" sourceFile="PrintTopViewofTree.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="DataStructures.Trees.RedBlackBST" sourceFile="RedBlackBST.java" interface="false" size="251" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="DataStructures.Trees.RedBlackBST$Node" sourceFile="RedBlackBST.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="DataStructures.Trees.Tree" sourceFile="PrintTopViewofTree.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="DataStructures.Trees.TreeNode" sourceFile="PrintTopViewofTree.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="DataStructures.Trees.TreeTraversal" sourceFile="TreeTraversal.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="DataStructures.Trees.TrieImp" sourceFile="TrieImp.java" interface="false" size="81" bugs="1" priority_1="1"/>
+      <ClassStats class="DataStructures.Trees.TrieImp$TrieNode" sourceFile="TrieImp.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Trees.ValidBSTOrNot" sourceFile="ValidBSTOrNot.java" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="DataStructures.Trees.ValidBSTOrNot$Node" sourceFile="ValidBSTOrNot.java" interface="false" size="10" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="DynamicProgramming" total_bugs="8" total_types="14" total_size="484" priority_2="2" priority_1="6">
+      <ClassStats class="DynamicProgramming.CoinChange" sourceFile="CoinChange.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="DynamicProgramming.EditDistance" sourceFile="EditDistance.java" interface="false" size="34" bugs="1" priority_1="1"/>
+      <ClassStats class="DynamicProgramming.EggDropping" sourceFile="EggDropping.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="DynamicProgramming.Fibonacci" sourceFile="Fibonacci.java" interface="false" size="39" bugs="1" priority_1="1"/>
+      <ClassStats class="DynamicProgramming.FordFulkerson" sourceFile="FordFulkerson.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="DynamicProgramming.KadaneAlgorithm" sourceFile="KadaneAlgorithm.java" interface="false" size="24" bugs="1" priority_1="1"/>
+      <ClassStats class="DynamicProgramming.Knapsack" sourceFile="Knapsack.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="DynamicProgramming.LevenshteinDistance" sourceFile="LevenshteinDistance.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="DynamicProgramming.LongestCommonSubsequence" sourceFile="LongestCommonSubsequence.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="DynamicProgramming.LongestIncreasingSubsequence" sourceFile="LongestIncreasingSubsequence.java" interface="false" size="32" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="DynamicProgramming.LongestValidParentheses" sourceFile="LongestValidParentheses.java" interface="false" size="32" bugs="1" priority_1="1"/>
+      <ClassStats class="DynamicProgramming.Matrix" sourceFile="MatrixChainMultiplication.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DynamicProgramming.MatrixChainMultiplication" sourceFile="MatrixChainMultiplication.java" interface="false" size="81" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="DynamicProgramming.RodCutting" sourceFile="RodCutting.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="MinimizingLateness" total_bugs="3" total_types="2" total_size="43" priority_2="2" priority_1="1">
+      <ClassStats class="MinimizingLateness.MinimizingLateness" sourceFile="MinimizingLateness.java" interface="false" size="29" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="MinimizingLateness.MinimizingLateness$Schedule" sourceFile="MinimizingLateness.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="Misc" total_bugs="2" total_types="3" total_size="97" priority_2="1" priority_1="1">
+      <ClassStats class="Misc.MedianOfRunningArray" sourceFile="MedianOfRunningArray.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="Misc.PalindromePrime" sourceFile="PalindromePrime.java" interface="false" size="32" bugs="1" priority_1="1"/>
+      <ClassStats class="Misc.heap_sort" sourceFile="heap_sort.java" interface="false" size="41" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="Others" total_bugs="34" total_types="47" total_size="1242" priority_2="11" priority_1="23">
+      <ClassStats class="Others.Abecedarian" sourceFile="Abecedarian.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Others.Armstrong" sourceFile="Armstrong.java" interface="false" size="26" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.BrianKernighanAlgorithm" sourceFile="BrianKernighanAlgorithm.java" interface="false" size="16" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.CRC32" sourceFile="CRC32.java" interface="false" size="17" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.CRCAlgorithm" sourceFile="CRCAlgorithm.java" interface="false" size="90" bugs="0"/>
+      <ClassStats class="Others.CountChar" sourceFile="CountChar.java" interface="false" size="18" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="Others.CountWords" sourceFile="CountWords.java" interface="false" size="14" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.Dijkshtra" sourceFile="Dijkshtra.java" interface="false" size="41" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.Dijkstra" sourceFile="Dijkstra.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="Others.EulersFunction" sourceFile="EulersFunction.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="Others.Factorial" sourceFile="Factorial.java" interface="false" size="18" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.FibToN" sourceFile="FibToN.java" interface="false" size="14" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.FloydTriangle" sourceFile="FloydTriangle.java" interface="false" size="13" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.GCD" sourceFile="GCD.java" interface="false" size="21" bugs="1" priority_2="1"/>
+      <ClassStats class="Others.Graph" sourceFile="Dijkstra.java" interface="false" size="49" bugs="2" priority_2="2"/>
+      <ClassStats class="Others.Graph$Edge" sourceFile="Dijkstra.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="Others.Graph$Vertex" sourceFile="Dijkstra.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="Others.GuassLegendre" sourceFile="GuassLegendre.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="Others.InsertDeleteInArray" sourceFile="InsertDeleteInArray.java" interface="false" size="32" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.KMP" sourceFile="KMP.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="Others.Krishnamurthy" sourceFile="Krishnamurthy.java" interface="false" size="23" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.LinearCongruentialGenerator" sourceFile="LinearCongruentialGenerator.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="Others.LowestBasePalindrome" sourceFile="LowestBasePalindrome.java" interface="false" size="58" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="Others.Palindrome" sourceFile="Palindrome.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="Others.PasswordGen" sourceFile="PasswordGen.java" interface="false" size="22" bugs="1" priority_2="1"/>
+      <ClassStats class="Others.PerlinNoise" sourceFile="PerlinNoise.java" interface="false" size="72" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.PowerOfTwoOrNot" sourceFile="PowerOfTwoOrNot.java" interface="false" size="15" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.Process" sourceFile="SJF.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="Others.QueueUsingTwoStacks" sourceFile="QueueUsingTwoStacks.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="Others.QueueWithStack" sourceFile="QueueUsingTwoStacks.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="Others.RemoveDuplicateFromString" sourceFile="RemoveDuplicateFromString.java" interface="false" size="19" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.ReturnSubsequence" sourceFile="ReturnSubsequence.java" interface="false" size="25" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.ReverseStackUsingRecursion" sourceFile="ReverseStackUsingRecursion.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="Others.ReverseString" sourceFile="ReverseString.java" interface="false" size="18" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.RootPrecision" sourceFile="RootPrecision.java" interface="false" size="15" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.SJF" sourceFile="SJF.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="Others.Schedule" sourceFile="SJF.java" interface="false" size="85" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.Schedule$1" sourceFile="SJF.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="Others.Schedule$2" sourceFile="SJF.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="Others.SieveOfEratosthenes" sourceFile="SieveOfEratosthenes.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="Others.SkylineProblem" sourceFile="SkylineProblem.java" interface="false" size="73" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.SkylineProblem$Building" sourceFile="SkylineProblem.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="Others.SkylineProblem$Skyline" sourceFile="SkylineProblem.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="Others.StackPostfixNotation" sourceFile="StackPostfixNotation.java" interface="false" size="27" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.TopKWords" sourceFile="TopKWords.java" interface="false" size="19" bugs="1" priority_1="1"/>
+      <ClassStats class="Others.TopKWords$CountWords" sourceFile="TopKWords.java" interface="false" size="33" bugs="1" priority_2="1"/>
+      <ClassStats class="Others.TowerOfHanoi" sourceFile="TowerOfHanoi.java" interface="false" size="16" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="Searches" total_bugs="2" total_types="8" total_size="213" priority_2="1" priority_1="1">
+      <ClassStats class="Searches.BinarySearch" sourceFile="BinarySearch.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="Searches.InterpolationSearch" sourceFile="InterpolationSearch.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="Searches.IterativeBinarySearch" sourceFile="IterativeBinarySearch.java" interface="false" size="32" bugs="1" priority_2="1"/>
+      <ClassStats class="Searches.IterativeTernarySearch" sourceFile="IterativeTernarySearch.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="Searches.LinearSearch" sourceFile="LinearSearch.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="Searches.SaddlebackSearch" sourceFile="SaddlebackSearch.java" interface="false" size="26" bugs="1" priority_1="1"/>
+      <ClassStats class="Searches.SearchAlgorithm" sourceFile="SearchAlgorithm.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="Searches.TernarySearch" sourceFile="TernarySearch.java" interface="false" size="35" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="Sorts" total_bugs="1" total_types="18" total_size="493" priority_2="1">
+      <ClassStats class="Sorts.BogoSort" sourceFile="BogoSort.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="Sorts.BubbleSort" sourceFile="BubbleSort.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="Sorts.CocktailShakerSort" sourceFile="CocktailShakerSort.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="Sorts.CombSort" sourceFile="CombSort.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="Sorts.CountingSort" sourceFile="CountingSort.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="Sorts.CycleSort" sourceFile="CycleSort.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="Sorts.GnomeSort" sourceFile="GnomeSort.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="Sorts.HeapSort" sourceFile="HeapSort.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="Sorts.HeapSort$Heap" sourceFile="HeapSort.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="Sorts.InsertionSort" sourceFile="InsertionSort.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="Sorts.MergeSort" sourceFile="MergeSort.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="Sorts.PancakeSort" sourceFile="PancakeSort.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="Sorts.QuickSort" sourceFile="QuickSort.java" interface="false" size="38" bugs="1" priority_2="1"/>
+      <ClassStats class="Sorts.RadixSort" sourceFile="RadixSort.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="Sorts.SelectionSort" sourceFile="SelectionSort.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="Sorts.ShellSort" sourceFile="ShellSort.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="Sorts.SortAlgorithm" sourceFile="SortAlgorithm.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="Sorts.SortUtils" sourceFile="SortUtils.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ciphers" total_bugs="16" total_types="6" total_size="512" priority_2="10" priority_1="6">
+      <ClassStats class="ciphers.AES" sourceFile="AES.java" interface="false" size="327" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="ciphers.AESEncryption" sourceFile="AESEncryption.java" interface="false" size="30" bugs="2" priority_1="2"/>
+      <ClassStats class="ciphers.Caesar" sourceFile="Caesar.java" interface="false" size="51" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="ciphers.ColumnarTranspositionCipher" sourceFile="ColumnarTranspositionCipher.java" interface="false" size="33" bugs="4" priority_2="4"/>
+      <ClassStats class="ciphers.RSA" sourceFile="RSA.java" interface="false" size="34" bugs="2" priority_1="2"/>
+      <ClassStats class="ciphers.Vigenere" sourceFile="Vigenere.java" interface="false" size="37" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="divideconquer" total_bugs="4" total_types="5" total_size="252" priority_2="1" priority_1="3">
+      <ClassStats class="divideconquer.ClosestPair" sourceFile="ClosestPair.java" interface="false" size="170" bugs="3" priority_1="3"/>
+      <ClassStats class="divideconquer.ClosestPair$Location" sourceFile="ClosestPair.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="divideconquer.SkylineAlgorithm" sourceFile="SkylineAlgorithm.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="divideconquer.SkylineAlgorithm$Point" sourceFile="SkylineAlgorithm.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="divideconquer.SkylineAlgorithm$XComparator" sourceFile="SkylineAlgorithm.java" interface="false" size="8" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="973" invocations="2" avgMicrosecondsPerInvocation="486932" maxMicrosecondsPerInvocation="610563" standardDeviationMicrosecondsPerInvocation="123631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="848" invocations="1208" avgMicrosecondsPerInvocation="702" maxMicrosecondsPerInvocation="75573" standardDeviationMicrosecondsPerInvocation="3402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="643" invocations="884" avgMicrosecondsPerInvocation="727" maxMicrosecondsPerInvocation="20344" standardDeviationMicrosecondsPerInvocation="1902"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="619" invocations="852" avgMicrosecondsPerInvocation="727" maxMicrosecondsPerInvocation="48812" standardDeviationMicrosecondsPerInvocation="2220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="584" invocations="852" avgMicrosecondsPerInvocation="685" maxMicrosecondsPerInvocation="20755" standardDeviationMicrosecondsPerInvocation="1590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="557" invocations="848" avgMicrosecondsPerInvocation="657" maxMicrosecondsPerInvocation="46930" standardDeviationMicrosecondsPerInvocation="1908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="478" invocations="342" avgMicrosecondsPerInvocation="1398" maxMicrosecondsPerInvocation="32272" standardDeviationMicrosecondsPerInvocation="3404"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="463" invocations="857" avgMicrosecondsPerInvocation="541" maxMicrosecondsPerInvocation="21363" standardDeviationMicrosecondsPerInvocation="1505"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="455" invocations="1565" avgMicrosecondsPerInvocation="290" maxMicrosecondsPerInvocation="7795" standardDeviationMicrosecondsPerInvocation="457"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="398" invocations="342" avgMicrosecondsPerInvocation="1165" maxMicrosecondsPerInvocation="32901" standardDeviationMicrosecondsPerInvocation="2764"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="352" invocations="853" avgMicrosecondsPerInvocation="413" maxMicrosecondsPerInvocation="46905" standardDeviationMicrosecondsPerInvocation="1888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="331" invocations="196" avgMicrosecondsPerInvocation="1692" maxMicrosecondsPerInvocation="148431" standardDeviationMicrosecondsPerInvocation="10685"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="297" invocations="1210" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="16225" standardDeviationMicrosecondsPerInvocation="471"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="287" invocations="730" avgMicrosecondsPerInvocation="393" maxMicrosecondsPerInvocation="8072" standardDeviationMicrosecondsPerInvocation="717"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="194" invocations="342" avgMicrosecondsPerInvocation="569" maxMicrosecondsPerInvocation="17629" standardDeviationMicrosecondsPerInvocation="1628"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="193" invocations="342" avgMicrosecondsPerInvocation="566" maxMicrosecondsPerInvocation="120769" standardDeviationMicrosecondsPerInvocation="6535"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="192" invocations="852" avgMicrosecondsPerInvocation="225" maxMicrosecondsPerInvocation="8821" standardDeviationMicrosecondsPerInvocation="575"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="168" invocations="196" avgMicrosecondsPerInvocation="860" maxMicrosecondsPerInvocation="36421" standardDeviationMicrosecondsPerInvocation="3023"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="166" invocations="437" avgMicrosecondsPerInvocation="381" maxMicrosecondsPerInvocation="3198" standardDeviationMicrosecondsPerInvocation="425"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="160" invocations="858" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="74982" standardDeviationMicrosecondsPerInvocation="2578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="133" invocations="342" avgMicrosecondsPerInvocation="389" maxMicrosecondsPerInvocation="35857" standardDeviationMicrosecondsPerInvocation="2526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="119" invocations="342" avgMicrosecondsPerInvocation="350" maxMicrosecondsPerInvocation="21800" standardDeviationMicrosecondsPerInvocation="1433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="115" invocations="800" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="11748" standardDeviationMicrosecondsPerInvocation="469"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="113" invocations="342" avgMicrosecondsPerInvocation="332" maxMicrosecondsPerInvocation="20143" standardDeviationMicrosecondsPerInvocation="1490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="106" invocations="400" avgMicrosecondsPerInvocation="265" maxMicrosecondsPerInvocation="25836" standardDeviationMicrosecondsPerInvocation="1575"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="104" invocations="196" avgMicrosecondsPerInvocation="532" maxMicrosecondsPerInvocation="17604" standardDeviationMicrosecondsPerInvocation="1448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="99" invocations="227" avgMicrosecondsPerInvocation="437" maxMicrosecondsPerInvocation="14072" standardDeviationMicrosecondsPerInvocation="1121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="88" invocations="342" avgMicrosecondsPerInvocation="259" maxMicrosecondsPerInvocation="9137" standardDeviationMicrosecondsPerInvocation="744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="87" invocations="342" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="13368" standardDeviationMicrosecondsPerInvocation="1089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="85" invocations="196" avgMicrosecondsPerInvocation="438" maxMicrosecondsPerInvocation="6962" standardDeviationMicrosecondsPerInvocation="600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="81" invocations="196" avgMicrosecondsPerInvocation="414" maxMicrosecondsPerInvocation="22542" standardDeviationMicrosecondsPerInvocation="1779"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="81" invocations="196" avgMicrosecondsPerInvocation="413" maxMicrosecondsPerInvocation="16625" standardDeviationMicrosecondsPerInvocation="1698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="80" invocations="196" avgMicrosecondsPerInvocation="411" maxMicrosecondsPerInvocation="16988" standardDeviationMicrosecondsPerInvocation="1645"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1562618431402" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
