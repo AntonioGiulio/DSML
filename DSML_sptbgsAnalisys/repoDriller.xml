@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1562666169829" analysisTimestamp="1562666163079" release="">
+  <Project projectName="repodriller-master">
+    <Jar>C:\Users\Antonio\eclipse-workspace\repodriller-master.zip_expanded\repodriller-master\target\classes</Jar>
+    <Jar>C:\Users\Antonio\eclipse-workspace\repodriller-master.zip_expanded\repodriller-master\target\test-classes</Jar>
+    <AuxClasspathEntry>C:\Users\Antonio\eclipse-workspace\repodriller-master.zip_expanded\repodriller-master\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\eclipse-workspace\repodriller-master.zip_expanded\repodriller-master\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\mockito\mockito-all\1.10.8\mockito-all-1.10.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.10.0\log4j-slf4j-impl-2.10.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\apache\logging\log4j\log4j-core\2.10.0\log4j-core-2.10.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\eclipse\jgit\org.eclipse.jgit\4.8.0.201706111038-r\org.eclipse.jgit-4.8.0.201706111038-r.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\jcraft\jsch\0.1.54\jsch-0.1.54.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\googlecode\javaewah\JavaEWAH\1.1.6\JavaEWAH-1.1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\apache\httpcomponents\httpclient\4.3.6\httpclient-4.3.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\apache\httpcomponents\httpcore\4.3.3\httpcore-4.3.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\commons-codec\commons-codec\1.6\commons-codec-1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\thoughtworks\xstream\xstream\1.4.7\xstream-1.4.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\junit\junit\4.12-beta-3\junit-4.12-beta-3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\tmatesoft\svnkit\svnkit\1.8.10\svnkit-1.8.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\jcraft\jsch.agentproxy.svnkit-trilead-ssh2\0.0.7\jsch.agentproxy.svnkit-trilead-ssh2-0.0.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\jcraft\jsch.agentproxy.core\0.0.7\jsch.agentproxy.core-0.0.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\trilead\trilead-ssh2\1.0.0-build219\trilead-ssh2-1.0.0-build219.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\jcraft\jsch.agentproxy.connector-factory\0.0.7\jsch.agentproxy.connector-factory-0.0.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\jcraft\jsch.agentproxy.usocket-jna\0.0.7\jsch.agentproxy.usocket-jna-0.0.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\jcraft\jsch.agentproxy.usocket-nc\0.0.7\jsch.agentproxy.usocket-nc-0.0.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\jcraft\jsch.agentproxy.sshagent\0.0.7\jsch.agentproxy.sshagent-0.0.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\com\jcraft\jsch.agentproxy.pageant\0.0.7\jsch.agentproxy.pageant-0.0.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\de\regnis\q\sequence\sequence-library\1.0.3\sequence-library-1.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\tmatesoft\sqljet\sqljet\1.1.10\sqljet-1.1.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\.m2\repository\org\antlr\antlr-runtime\3.4\antlr-runtime-3.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\repodriller-master.zip_expanded\repodriller-master\src\main\java</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\repodriller-master.zip_expanded\repodriller-master\src\test\java</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\repodriller-master.zip_expanded\repodriller-master\src\test\resources</SrcDir>
+  </Project>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.RepoVisitor">
+      <SourceLine classname="org.repodriller.RepoVisitor" sourcefile="RepoVisitor.java" sourcepath="org/repodriller/RepoVisitor.java"/>
+    </Class>
+    <Method classname="org.repodriller.RepoVisitor" name="visitCommit" signature="(Lorg/repodriller/domain/Commit;)V" isStatic="false">
+      <SourceLine classname="org.repodriller.RepoVisitor" start="170" end="196" startBytecode="0" endBytecode="770" sourcefile="RepoVisitor.java" sourcepath="org/repodriller/RepoVisitor.java"/>
+    </Method>
+    <SourceLine classname="org.repodriller.RepoVisitor" start="184" end="184" startBytecode="229" endBytecode="229" sourcefile="RepoVisitor.java" sourcepath="org/repodriller/RepoVisitor.java"/>
+    <SourceLine classname="org.repodriller.RepoVisitor" start="184" end="184" startBytecode="229" endBytecode="229" sourcefile="RepoVisitor.java" sourcepath="org/repodriller/RepoVisitor.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="org.repodriller.RepoVisitor$CVPM">
+      <SourceLine classname="org.repodriller.RepoVisitor$CVPM" start="42" end="45" sourcefile="RepoVisitor.java" sourcepath="org/repodriller/RepoVisitor.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="org.repodriller.RepoVisitor$SCMRepositoryClone">
+      <SourceLine classname="org.repodriller.RepoVisitor$SCMRepositoryClone" start="51" end="54" sourcefile="RepoVisitor.java" sourcepath="org/repodriller/RepoVisitor.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.RepositoryMining">
+      <SourceLine classname="org.repodriller.RepositoryMining" sourcefile="RepositoryMining.java" sourcepath="org/repodriller/RepositoryMining.java"/>
+    </Class>
+    <Method classname="org.repodriller.RepositoryMining" name="lambda$0" signature="(Ljava/util/Queue;Lorg/repodriller/scm/SCMRepository;)Ljava/lang/Integer;" isStatic="false">
+      <SourceLine classname="org.repodriller.RepositoryMining" start="369" end="396" startBytecode="0" endBytecode="458" sourcefile="RepositoryMining.java" sourcepath="org/repodriller/RepositoryMining.java"/>
+    </Method>
+    <SourceLine classname="org.repodriller.RepositoryMining" start="389" end="389" startBytecode="127" endBytecode="127" sourcefile="RepositoryMining.java" sourcepath="org/repodriller/RepositoryMining.java"/>
+    <SourceLine classname="org.repodriller.RepositoryMining" start="389" end="389" startBytecode="127" endBytecode="127" sourcefile="RepositoryMining.java" sourcepath="org/repodriller/RepositoryMining.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.RepositoryMining">
+      <SourceLine classname="org.repodriller.RepositoryMining" sourcefile="RepositoryMining.java" sourcepath="org/repodriller/RepositoryMining.java"/>
+    </Class>
+    <Method classname="org.repodriller.RepositoryMining" name="processRepo" signature="(Lorg/repodriller/scm/SCMRepository;)V" isStatic="false">
+      <SourceLine classname="org.repodriller.RepositoryMining" start="354" end="415" startBytecode="0" endBytecode="671" sourcefile="RepositoryMining.java" sourcepath="org/repodriller/RepositoryMining.java"/>
+    </Method>
+    <SourceLine classname="org.repodriller.RepositoryMining" start="413" end="413" startBytecode="276" endBytecode="276" sourcefile="RepositoryMining.java" sourcepath="org/repodriller/RepositoryMining.java"/>
+    <SourceLine classname="org.repodriller.RepositoryMining" start="413" end="413" startBytecode="276" endBytecode="276" sourcefile="RepositoryMining.java" sourcepath="org/repodriller/RepositoryMining.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" rank="9" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="org.repodriller.domain.Commit">
+      <SourceLine classname="org.repodriller.domain.Commit" sourcefile="Commit.java" sourcepath="org/repodriller/domain/Commit.java"/>
+    </Class>
+    <Method classname="org.repodriller.domain.Commit" name="&lt;init&gt;" signature="(Ljava/lang/String;Lorg/repodriller/domain/Developer;Lorg/repodriller/domain/Developer;Ljava/util/Calendar;Ljava/util/TimeZone;Ljava/util/Calendar;Ljava/util/TimeZone;Ljava/lang/String;Ljava/util/List;ZLjava/util/Set;Z)V" isStatic="false">
+      <SourceLine classname="org.repodriller.domain.Commit" start="48" end="64" startBytecode="0" endBytecode="50" sourcefile="Commit.java" sourcepath="org/repodriller/domain/Commit.java"/>
+    </Method>
+    <LocalVariable name="parents" register="9" pc="59" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="org.repodriller.domain.Commit" name="parents" signature="Ljava/util/List;" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="org.repodriller.domain.Commit" sourcefile="Commit.java" sourcepath="org/repodriller/domain/Commit.java"/>
+    </Field>
+    <SourceLine classname="org.repodriller.domain.Commit" start="57" end="57" startBytecode="57" endBytecode="57" sourcefile="Commit.java" sourcepath="org/repodriller/domain/Commit.java"/>
+    <SourceLine classname="org.repodriller.domain.Commit" start="57" end="57" startBytecode="57" endBytecode="57" sourcefile="Commit.java" sourcepath="org/repodriller/domain/Commit.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="parents"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.domain.Commit">
+      <SourceLine classname="org.repodriller.domain.Commit" sourcefile="Commit.java" sourcepath="org/repodriller/domain/Commit.java"/>
+    </Class>
+    <Method classname="org.repodriller.domain.Commit" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="org.repodriller.domain.Commit" start="131" end="137" startBytecode="0" endBytecode="129" sourcefile="Commit.java" sourcepath="org/repodriller/domain/Commit.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="org.repodriller.domain.DiffBlock">
+      <SourceLine classname="org.repodriller.domain.DiffBlock" sourcefile="DiffBlock.java" sourcepath="org/repodriller/domain/DiffBlock.java"/>
+    </Class>
+    <Method classname="org.repodriller.domain.DiffBlock" name="getLines" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.repodriller.domain.DiffBlock" start="44" end="44" startBytecode="0" endBytecode="46" sourcefile="DiffBlock.java" sourcepath="org/repodriller/domain/DiffBlock.java"/>
+    </Method>
+    <Field classname="org.repodriller.domain.DiffBlock" name="lines" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.repodriller.domain.DiffBlock" sourcefile="DiffBlock.java" sourcepath="org/repodriller/domain/DiffBlock.java"/>
+    </Field>
+    <SourceLine classname="org.repodriller.domain.DiffBlock" start="44" end="44" startBytecode="4" endBytecode="4" sourcefile="DiffBlock.java" sourcepath="org/repodriller/domain/DiffBlock.java"/>
+    <SourceLine classname="org.repodriller.domain.DiffBlock" start="44" end="44" startBytecode="4" endBytecode="4" sourcefile="DiffBlock.java" sourcepath="org/repodriller/domain/DiffBlock.java"/>
+  </BugInstance>
+  <BugInstance type="RE_CANT_USE_FILE_SEPARATOR_AS_REGULAR_EXPRESSION" priority="1" rank="5" abbrev="RE" category="CORRECTNESS" first="1">
+    <Class classname="org.repodriller.domain.Modification">
+      <SourceLine classname="org.repodriller.domain.Modification" sourcefile="Modification.java" sourcepath="org/repodriller/domain/Modification.java"/>
+    </Class>
+    <Method classname="org.repodriller.domain.Modification" name="getFileName" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.repodriller.domain.Modification" start="84" end="88" startBytecode="0" endBytecode="150" sourcefile="Modification.java" sourcepath="org/repodriller/domain/Modification.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="split" signature="(Ljava/lang/String;)[Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="org.repodriller.domain.Modification" start="87" end="87" startBytecode="47" endBytecode="47" sourcefile="Modification.java" sourcepath="org/repodriller/domain/Modification.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="org.repodriller.memory.MemoryConsumptionTest">
+      <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+    </Class>
+    <Method classname="org.repodriller.memory.MemoryConsumptionTest" name="postGithub" signature="(Lorg/repodriller/memory/MemoryConsumptionTest$MemoryVisitor;DLorg/repodriller/memory/MemoryConsumptionTest$MemoryVisitor;D)V" isStatic="false">
+      <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" start="87" end="136" startBytecode="0" endBytecode="842" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" start="127" end="127" startBytecode="367" endBytecode="367" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+    <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" start="127" end="127" startBytecode="367" endBytecode="367" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" rank="11" abbrev="RCN" category="CORRECTNESS" first="1">
+    <Class classname="org.repodriller.memory.MemoryConsumptionTest">
+      <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+    </Class>
+    <Method classname="org.repodriller.memory.MemoryConsumptionTest" name="postGithub" signature="(Lorg/repodriller/memory/MemoryConsumptionTest$MemoryVisitor;DLorg/repodriller/memory/MemoryConsumptionTest$MemoryVisitor;D)V" isStatic="false">
+      <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" start="87" end="136" startBytecode="0" endBytecode="842" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+    </Method>
+    <LocalVariable name="instream" register="13" pc="425" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="org.apache.http.HttpEntity" name="getContent" signature="()Ljava/io/InputStream;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.apache.http.HttpEntity" sourcefile="HttpEntity.java" sourcepath="org/apache/http/HttpEntity.java"/>
+    </Method>
+    <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" start="127" end="127" startBytecode="367" endBytecode="367" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+    <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" start="130" end="130" startBytecode="427" endBytecode="427" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+    <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" start="130" end="130" startBytecode="427" endBytecode="427" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.memory.MemoryConsumptionTest">
+      <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+    </Class>
+    <Method classname="org.repodriller.memory.MemoryConsumptionTest" name="postGithub" signature="(Lorg/repodriller/memory/MemoryConsumptionTest$MemoryVisitor;DLorg/repodriller/memory/MemoryConsumptionTest$MemoryVisitor;D)V" isStatic="false">
+      <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" start="87" end="136" startBytecode="0" endBytecode="842" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <String value="{\n&quot;body&quot;: &quot;Performance stats of your PR:\\n\\nWhen collecting everything:\\nMin memory used    : %.2f MB\\nMax memory used    : %.2f MB\\nMedian free memory : %.2f MB\\nCommits per second : %.2f\\n\\nWhen collecting nothing:\\nMin memory used    : %.2f MB\\nMax memory used    : %.2f MB\\nMedian free memory : %.2f MB\\nCommits per second : %.2f\\n\\n&quot;\n}" role="STRING_FORMAT_STRING"/>
+    <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest" start="92" end="92" startBytecode="270" endBytecode="270" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="org.repodriller.memory.MemoryConsumptionTest$MemoryVisitor">
+      <SourceLine classname="org.repodriller.memory.MemoryConsumptionTest$MemoryVisitor" start="143" end="162" sourcefile="MemoryConsumptionTest.java" sourcepath="org/repodriller/memory/MemoryConsumptionTest.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="org.repodriller.persistence.csv.CSVFile">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Class>
+    <Method classname="org.repodriller.persistence.csv.CSVFile" name="open" signature="(Ljava/lang/String;Z)V" isStatic="false">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="173" end="179" startBytecode="0" endBytecode="156" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream"/>
+    </Method>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="174" end="174" startBytecode="19" endBytecode="19" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="174" end="174" startBytecode="19" endBytecode="19" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="org.repodriller.persistence.csv.CSVFile">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Class>
+    <Method classname="org.repodriller.persistence.csv.CSVFile" name="&lt;init&gt;" signature="(Ljava/lang/String;Z[Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="77" end="90" startBytecode="0" endBytecode="218" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Method>
+    <Field classname="org.repodriller.persistence.csv.CSVFile" name="header" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Field>
+    <LocalVariable name="header" register="3" pc="22" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="81" end="81" startBytecode="22" endBytecode="22" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="81" end="81" startBytecode="22" endBytecode="22" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="org.repodriller.persistence.csv.CSVFile">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Class>
+    <Field classname="org.repodriller.persistence.csv.CSVFile" name="isOpen" signature="Z" isStatic="false">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="175" end="175" startBytecode="27" endBytecode="27" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="128" end="128" startBytecode="1" endBytecode="1" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="org.repodriller.persistence.csv.CSVFile">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Class>
+    <Field classname="org.repodriller.persistence.csv.CSVFile" name="ps" signature="Ljava/io/PrintStream;" isStatic="false">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Field>
+    <Int value="66" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="174" end="174" startBytecode="22" endBytecode="22" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="150" end="150" startBytecode="137" endBytecode="137" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="152" end="152" startBytecode="145" endBytecode="145" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE" first="1">
+    <Class classname="org.repodriller.persistence.csv.CSVFile">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Class>
+    <Method classname="org.repodriller.persistence.csv.CSVFile" name="lambda$0" signature="(Ljava/lang/Object;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="136" end="142" startBytecode="0" endBytecode="110" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java"/>
+    </Method>
+    <LocalVariable name="raw" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="java.lang.Object" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.Object"/>
+    </Method>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="140" end="140" startBytecode="13" endBytecode="13" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+    <SourceLine classname="org.repodriller.persistence.csv.CSVFile" start="140" end="140" startBytecode="13" endBytecode="13" sourcefile="CSVFile.java" sourcepath="org/repodriller/persistence/csv/CSVFile.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="CN_IMPLEMENTS_CLONE_BUT_NOT_CLONEABLE" priority="1" rank="14" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.scm.FirstParentFilter">
+      <SourceLine classname="org.repodriller.scm.FirstParentFilter" sourcefile="FirstParentFilter.java" sourcepath="org/repodriller/scm/FirstParentFilter.java"/>
+    </Class>
+    <Method classname="org.repodriller.scm.FirstParentFilter" name="clone" signature="()Lorg/eclipse/jgit/revwalk/filter/RevFilter;" isStatic="false">
+      <SourceLine classname="org.repodriller.scm.FirstParentFilter" start="29" end="29" startBytecode="0" endBytecode="49" sourcefile="FirstParentFilter.java" sourcepath="org/repodriller/scm/FirstParentFilter.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="1" rank="14" abbrev="DE" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.scm.GitRepository">
+      <SourceLine classname="org.repodriller.scm.GitRepository" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    </Class>
+    <Method classname="org.repodriller.scm.GitRepository" name="setContext" signature="(Lorg/eclipse/jgit/diff/DiffFormatter;)V" isStatic="false">
+      <SourceLine classname="org.repodriller.scm.GitRepository" start="395" end="400" startBytecode="0" endBytecode="127" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception"/>
+    </Class>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="397" end="397" startBytecode="16" endBytecode="16" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="397" end="397" startBytecode="16" endBytecode="16" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="397" end="397" startBytecode="16" endBytecode="16" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="org.repodriller.scm.GitRepository">
+      <SourceLine classname="org.repodriller.scm.GitRepository" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    </Class>
+    <Method classname="org.repodriller.scm.GitRepository" name="firstParentsOnly" signature="(Lorg/eclipse/jgit/api/Git;)Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.repodriller.scm.GitRepository" start="182" end="202" startBytecode="0" endBytecode="429" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    </Method>
+    <LocalVariable name="revWalk" register="2" pc="5" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="201" end="201" startBytecode="137" endBytecode="137" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="182" end="182" startBytecode="0" endBytecode="0" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="184" end="184" startBytecode="6" endBytecode="6" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.DoomedCodeWarningProperty.DOOMED_CODE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_ARE_CLONED" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" first="1">
+    <Class classname="org.repodriller.scm.GitRepository">
+      <SourceLine classname="org.repodriller.scm.GitRepository" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    </Class>
+    <Method classname="org.repodriller.scm.GitRepository" name="getCommit" signature="(Ljava/lang/String;)Lorg/repodriller/domain/Commit;" isStatic="false">
+      <SourceLine classname="org.repodriller.scm.GitRepository" start="240" end="295" startBytecode="0" endBytecode="1590" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    </Method>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="293" end="293" startBytecode="548" endBytecode="548" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="293" end="293" startBytecode="548" endBytecode="548" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" first="1">
+    <Class classname="org.repodriller.scm.GitRepository">
+      <SourceLine classname="org.repodriller.scm.GitRepository" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    </Class>
+    <Method classname="org.repodriller.scm.GitRepository" name="info" signature="()Lorg/repodriller/scm/SCMRepository;" isStatic="false">
+      <SourceLine classname="org.repodriller.scm.GitRepository" start="124" end="136" startBytecode="0" endBytecode="534" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    </Method>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="135" end="135" startBytecode="190" endBytecode="190" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+    <SourceLine classname="org.repodriller.scm.GitRepository" start="135" end="135" startBytecode="190" endBytecode="190" sourcefile="GitRepository.java" sourcepath="org/repodriller/scm/GitRepository.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" first="1">
+    <Class classname="org.repodriller.scm.SubversionRepository">
+      <SourceLine classname="org.repodriller.scm.SubversionRepository" sourcefile="SubversionRepository.java" sourcepath="org/repodriller/scm/SubversionRepository.java"/>
+    </Class>
+    <Method classname="org.repodriller.scm.SubversionRepository" name="getDiffText" signature="(Lorg/tmatesoft/svn/core/io/SVNRepository;Lorg/tmatesoft/svn/core/SVNURL;Lorg/tmatesoft/svn/core/SVNLogEntryPath;J)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.repodriller.scm.SubversionRepository" start="257" end="275" startBytecode="0" endBytecode="403" sourcefile="SubversionRepository.java" sourcepath="org/repodriller/scm/SubversionRepository.java"/>
+    </Method>
+    <SourceLine classname="org.repodriller.scm.SubversionRepository" start="274" end="274" startBytecode="122" endBytecode="122" sourcefile="SubversionRepository.java" sourcepath="org/repodriller/scm/SubversionRepository.java"/>
+    <SourceLine classname="org.repodriller.scm.SubversionRepository" start="274" end="274" startBytecode="122" endBytecode="122" sourcefile="SubversionRepository.java" sourcepath="org/repodriller/scm/SubversionRepository.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE" first="1">
+    <Class classname="org.repodriller.util.RDFileUtils">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Class>
+    <Method classname="org.repodriller.util.RDFileUtils" name="getAllDirsIn" signature="(Ljava/lang/String;)Ljava/util/List;" isStatic="true">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" start="33" end="44" startBytecode="0" endBytecode="262" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Method>
+    <LocalVariable name="files" register="2" pc="24" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="37" end="37" startBytecode="26" endBytecode="26" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="34" end="34" startBytecode="10" endBytecode="10" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE" first="1">
+    <Class classname="org.repodriller.util.RDFileUtils">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Class>
+    <Method classname="org.repodriller.util.RDFileUtils" name="getAllFilesInPath" signature="(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;" isStatic="true">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" start="68" end="74" startBytecode="0" endBytecode="240" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Method>
+    <LocalVariable name="?" register="5" pc="14" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="68" end="68" startBytecode="14" endBytecode="14" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="68" end="68" startBytecode="8" endBytecode="8" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.util.RDFileUtils">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Class>
+    <Method classname="org.repodriller.util.RDFileUtils" name="getTempPath" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" start="113" end="124" startBytecode="0" endBytecode="215" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Method>
+    <Method classname="java.io.File" name="delete" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File"/>
+    </Method>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="121" end="121" startBytecode="37" endBytecode="37" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="121" end="121" startBytecode="37" endBytecode="37" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.util.RDFileUtils">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Class>
+    <Method classname="org.repodriller.util.RDFileUtils" name="getTempPath" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" start="113" end="124" startBytecode="0" endBytecode="215" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Method>
+    <Method classname="java.io.File" name="mkdirs" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File"/>
+    </Method>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="117" end="117" startBytecode="18" endBytecode="18" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="117" end="117" startBytecode="18" endBytecode="18" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" first="1">
+    <Class classname="org.repodriller.util.RDFileUtils">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Class>
+    <Method classname="org.repodriller.util.RDFileUtils" name="mkdir" signature="(Ljava/nio/file/Path;)Z" isStatic="true">
+      <SourceLine classname="org.repodriller.util.RDFileUtils" start="157" end="159" startBytecode="0" endBytecode="76" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    </Method>
+    <Method classname="java.io.File" name="mkdirs" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File"/>
+    </Method>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="158" end="158" startBytecode="8" endBytecode="8" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+    <SourceLine classname="org.repodriller.util.RDFileUtils" start="158" end="158" startBytecode="8" endBytecode="8" sourcefile="RDFileUtils.java" sourcepath="org/repodriller/util/RDFileUtils.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="org.repodriller.util.SimpleCommandExecutor">
+      <SourceLine classname="org.repodriller.util.SimpleCommandExecutor" sourcefile="SimpleCommandExecutor.java" sourcepath="org/repodriller/util/SimpleCommandExecutor.java"/>
+    </Class>
+    <Method classname="org.repodriller.util.SimpleCommandExecutor" name="execute" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.repodriller.util.SimpleCommandExecutor" start="74" end="90" startBytecode="0" endBytecode="360" sourcefile="SimpleCommandExecutor.java" sourcepath="org/repodriller/util/SimpleCommandExecutor.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="org.repodriller.util.SimpleCommandExecutor" start="84" end="84" startBytecode="98" endBytecode="98" sourcefile="SimpleCommandExecutor.java" sourcepath="org/repodriller/util/SimpleCommandExecutor.java"/>
+    <SourceLine classname="org.repodriller.util.SimpleCommandExecutor" start="84" end="84" startBytecode="98" endBytecode="98" sourcefile="SimpleCommandExecutor.java" sourcepath="org/repodriller/util/SimpleCommandExecutor.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 9 Jul 2019 11:54:15 +0200" total_classes="97" referenced_classes="294" total_bugs="30" total_size="3696" num_packages="13" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="29.08" clock_seconds="119.87" peak_mbytes="1058.56" alloc_mbytes="1024.00" gc_seconds="0.31" priority_2="22" priority_1="8">
+    <PackageStats package="org.repodriller" total_bugs="5" total_types="7" total_size="344" priority_2="5">
+      <ClassStats class="org.repodriller.RepoDriller" sourceFile="RepoDriller.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.repodriller.RepoDrillerException" sourceFile="RepoDrillerException.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.repodriller.RepoVisitor" sourceFile="RepoVisitor.java" interface="false" size="103" bugs="1" priority_2="1"/>
+      <ClassStats class="org.repodriller.RepoVisitor$CVPM" sourceFile="RepoVisitor.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="org.repodriller.RepoVisitor$SCMRepositoryClone" sourceFile="RepoVisitor.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="org.repodriller.RepositoryMining" sourceFile="RepositoryMining.java" interface="false" size="183" bugs="2" priority_2="2"/>
+      <ClassStats class="org.repodriller.Study" sourceFile="Study.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.domain" total_bugs="4" total_types="12" total_size="553" priority_2="1" priority_1="3">
+      <ClassStats class="org.repodriller.domain.ChangeSet" sourceFile="ChangeSet.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.repodriller.domain.Commit" sourceFile="Commit.java" interface="false" size="79" bugs="2" priority_1="2"/>
+      <ClassStats class="org.repodriller.domain.CommitTest" sourceFile="CommitTest.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.repodriller.domain.Developer" sourceFile="Developer.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.repodriller.domain.DiffBlock" sourceFile="DiffBlock.java" interface="false" size="53" bugs="1" priority_2="1"/>
+      <ClassStats class="org.repodriller.domain.DiffLine" sourceFile="DiffLine.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.repodriller.domain.DiffLineType" sourceFile="DiffLineType.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.repodriller.domain.DiffParser" sourceFile="DiffParser.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.repodriller.domain.DiffParserTest" sourceFile="DiffParserTest.java" interface="false" size="173" bugs="0"/>
+      <ClassStats class="org.repodriller.domain.Modification" sourceFile="Modification.java" interface="false" size="47" bugs="1" priority_1="1"/>
+      <ClassStats class="org.repodriller.domain.ModificationTest" sourceFile="ModificationTest.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.repodriller.domain.ModificationType" sourceFile="ModificationType.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.filter.commit" total_bugs="0" total_types="10" total_size="93">
+      <ClassStats class="org.repodriller.filter.commit.CommitFilter" sourceFile="CommitFilter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.commit.NoFilter" sourceFile="NoFilter.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.commit.OnlyInBranches" sourceFile="OnlyInBranches.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.commit.OnlyInBranchesTest" sourceFile="OnlyInBranchesTest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.commit.OnlyInMainBranch" sourceFile="OnlyInMainBranch.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.commit.OnlyInMainBranchTest" sourceFile="OnlyInMainBranchTest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.commit.OnlyModificationsWithFileTypes" sourceFile="OnlyModificationsWithFileTypes.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.commit.OnlyModificationsWithFileTypesTest" sourceFile="OnlyModificationsWithFileTypesTest.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.commit.OnlyNoMerge" sourceFile="OnlyNoMerge.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.commit.OnlyNoMergeTest" sourceFile="OnlyNoMergeTest.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.filter.diff" total_bugs="0" total_types="6" total_size="47">
+      <ClassStats class="org.repodriller.filter.diff.DiffFilter" sourceFile="DiffFilter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.diff.NoDiffFilter" sourceFile="NoDiffFilter.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.diff.OnlyDiffsWithFileTypes" sourceFile="OnlyDiffsWithFileTypes.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.diff.OnlyDiffsWithFileTypesTest" sourceFile="OnlyDiffsWithFileTypesTest.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.diff.OnlyDiffsWithoutFileTypes" sourceFile="OnlyDiffsWithoutFileTypes.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.diff.OnlyDiffsWithoutFileTypesTest" sourceFile="OnlyDiffsWithoutFileTypesTest.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.filter.range" total_bugs="0" total_types="19" total_size="340">
+      <ClassStats class="org.repodriller.filter.range.AllCommits" sourceFile="AllCommits.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.BetweenDates" sourceFile="BetweenDates.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.BetweenDatesTest" sourceFile="BetweenDatesTest.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.BetweenTags" sourceFile="BetweenTags.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.CommitRange" sourceFile="CommitRange.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.Commits" sourceFile="Commits.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.DailyCommits" sourceFile="DailyCommits.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.LastMonths" sourceFile="LastMonths.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.LastMonthsTest" sourceFile="LastMonthsTest.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.ListOfCommits" sourceFile="ListOfCommits.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.ListOfCommitsTest" sourceFile="ListOfCommitsTest.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.MonthlyCommits" sourceFile="MonthlyCommits.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.OnlyInHead" sourceFile="OnlyInHead.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.Range" sourceFile="Range.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.RangeTest" sourceFile="RangeTest.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.SinceCommit" sourceFile="SinceCommit.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.SinceCommitTest" sourceFile="SinceCommitTest.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.SingleCommit" sourceFile="SingleCommit.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.repodriller.filter.range.SingleCommitTest" sourceFile="SingleCommitTest.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.integration" total_bugs="0" total_types="13" total_size="485">
+      <ClassStats class="org.repodriller.integration.BetweenDatesTest" sourceFile="BetweenDatesTest.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.BetweenTagsTest" sourceFile="BetweenTagsTest.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.CommitFilterIntegrationTest" sourceFile="CommitFilterIntegrationTest.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.ConcurrencyTest" sourceFile="ConcurrencyTest.java" interface="false" size="124" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.DatesAndTimezonesTest" sourceFile="DatesAndTimezonesTest.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.FirstParentOnlyTest" sourceFile="FirstParentOnlyTest.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.OnlyModificationsWithFileTypeTest" sourceFile="OnlyModificationsWithFileTypeTest.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.ReverseOrderTest" sourceFile="ReverseOrderTest.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.TSCheckoutTestVisitor" sourceFile="TSCheckoutTestVisitor.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.TSTestVisitor" sourceFile="TSTestVisitor.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.TestVisitor" sourceFile="TestVisitor.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.ThrowingTest" sourceFile="ThrowingTest.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.repodriller.integration.ThrowingTestVisitor" sourceFile="ThrowingTestVisitor.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.memory" total_bugs="4" total_types="2" total_size="101" priority_2="3" priority_1="1">
+      <ClassStats class="org.repodriller.memory.MemoryConsumptionTest" sourceFile="MemoryConsumptionTest.java" interface="false" size="80" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="org.repodriller.memory.MemoryConsumptionTest$MemoryVisitor" sourceFile="MemoryConsumptionTest.java" interface="false" size="21" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.persistence" total_bugs="0" total_types="3" total_size="15">
+      <ClassStats class="org.repodriller.persistence.NoPersistence" sourceFile="NoPersistence.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.repodriller.persistence.PersistenceMechanism" sourceFile="PersistenceMechanism.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.repodriller.persistence.PersistenceMechanismException" sourceFile="PersistenceMechanismException.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.persistence.csv" total_bugs="5" total_types="3" total_size="153" priority_2="4" priority_1="1">
+      <ClassStats class="org.repodriller.persistence.csv.CSVFile" sourceFile="CSVFile.java" interface="false" size="76" bugs="5" priority_2="4" priority_1="1"/>
+      <ClassStats class="org.repodriller.persistence.csv.CSVFileFormatException" sourceFile="CSVFileFormatException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.repodriller.persistence.csv.CSVFileTest" sourceFile="CSVFileTest.java" interface="false" size="72" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.scm" total_bugs="6" total_types="13" total_size="950" priority_2="4" priority_1="2">
+      <ClassStats class="org.repodriller.scm.BlamedLine" sourceFile="BlamedLine.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.CollectConfiguration" sourceFile="CollectConfiguration.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.CommitVisitor" sourceFile="CommitVisitor.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.FirstParentFilter" sourceFile="FirstParentFilter.java" interface="false" size="17" bugs="1" priority_1="1"/>
+      <ClassStats class="org.repodriller.scm.GitRemoteRepository" sourceFile="GitRemoteRepository.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.GitRemoteRepositoryBuilder" sourceFile="GitRemoteRepositoryBuilder.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.GitRepository" sourceFile="GitRepository.java" interface="false" size="349" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="org.repodriller.scm.MultipleGitRemoteRepositoryBuilder" sourceFile="MultipleGitRemoteRepositoryBuilder.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.RepositoryFile" sourceFile="RepositoryFile.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.SCM" sourceFile="SCM.java" interface="true" size="16" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.SCMRepository" sourceFile="SCMRepository.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.SingleGitRemoteRepositoryBuilder" sourceFile="SingleGitRemoteRepositoryBuilder.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.SubversionRepository" sourceFile="SubversionRepository.java" interface="false" size="272" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.scm.git" total_bugs="0" total_types="3" total_size="345">
+      <ClassStats class="org.repodriller.scm.git.GitRemoteRepositoryTest" sourceFile="GitRemoteRepositoryTest.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.git.GitRepoWithCollectConfigurationTest" sourceFile="GitRepoWithCollectConfigurationTest.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.repodriller.scm.git.GitRepositoryTest" sourceFile="GitRepositoryTest.java" interface="false" size="251" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.scm.subversion" total_bugs="0" total_types="1" total_size="118">
+      <ClassStats class="org.repodriller.scm.subversion.SubversionRepositoryTest" sourceFile="SubversionRepositoryTest.java" interface="false" size="118" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.repodriller.util" total_bugs="6" total_types="5" total_size="152" priority_2="5" priority_1="1">
+      <ClassStats class="org.repodriller.util.EnvironmentVar" sourceFile="SimpleCommandExecutor.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.repodriller.util.PathUtils" sourceFile="PathUtils.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.repodriller.util.RDFileUtils" sourceFile="RDFileUtils.java" interface="false" size="68" bugs="5" priority_2="5"/>
+      <ClassStats class="org.repodriller.util.RDFileUtils$1" sourceFile="RDFileUtils.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.repodriller.util.SimpleCommandExecutor" sourceFile="SimpleCommandExecutor.java" interface="false" size="46" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="611" invocations="1601" avgMicrosecondsPerInvocation="382" maxMicrosecondsPerInvocation="76364" standardDeviationMicrosecondsPerInvocation="2069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="513" invocations="1605" avgMicrosecondsPerInvocation="320" maxMicrosecondsPerInvocation="16496" standardDeviationMicrosecondsPerInvocation="479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="360" invocations="583" avgMicrosecondsPerInvocation="618" maxMicrosecondsPerInvocation="75609" standardDeviationMicrosecondsPerInvocation="4368"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="354" invocations="2" avgMicrosecondsPerInvocation="177024" maxMicrosecondsPerInvocation="291443" standardDeviationMicrosecondsPerInvocation="114419"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="314" invocations="294" avgMicrosecondsPerInvocation="1070" maxMicrosecondsPerInvocation="28588" standardDeviationMicrosecondsPerInvocation="2345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="307" invocations="579" avgMicrosecondsPerInvocation="531" maxMicrosecondsPerInvocation="14484" standardDeviationMicrosecondsPerInvocation="1051"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="289" invocations="294" avgMicrosecondsPerInvocation="985" maxMicrosecondsPerInvocation="12067" standardDeviationMicrosecondsPerInvocation="1759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="280" invocations="584" avgMicrosecondsPerInvocation="479" maxMicrosecondsPerInvocation="16530" standardDeviationMicrosecondsPerInvocation="1172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="244" invocations="1136" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="16093" standardDeviationMicrosecondsPerInvocation="606"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="237" invocations="639" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="20092" standardDeviationMicrosecondsPerInvocation="1086"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="214" invocations="294" avgMicrosecondsPerInvocation="730" maxMicrosecondsPerInvocation="168647" standardDeviationMicrosecondsPerInvocation="9858"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="206" invocations="608" avgMicrosecondsPerInvocation="340" maxMicrosecondsPerInvocation="6006" standardDeviationMicrosecondsPerInvocation="624"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="163" invocations="584" avgMicrosecondsPerInvocation="279" maxMicrosecondsPerInvocation="14316" standardDeviationMicrosecondsPerInvocation="827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="137" invocations="501" avgMicrosecondsPerInvocation="274" maxMicrosecondsPerInvocation="6003" standardDeviationMicrosecondsPerInvocation="527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="85" invocations="294" avgMicrosecondsPerInvocation="290" maxMicrosecondsPerInvocation="16268" standardDeviationMicrosecondsPerInvocation="1325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="85" invocations="294" avgMicrosecondsPerInvocation="289" maxMicrosecondsPerInvocation="2691" standardDeviationMicrosecondsPerInvocation="444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="84" invocations="97" avgMicrosecondsPerInvocation="872" maxMicrosecondsPerInvocation="22145" standardDeviationMicrosecondsPerInvocation="2675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="77" invocations="97" avgMicrosecondsPerInvocation="802" maxMicrosecondsPerInvocation="22071" standardDeviationMicrosecondsPerInvocation="2971"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="65" invocations="97" avgMicrosecondsPerInvocation="673" maxMicrosecondsPerInvocation="13567" standardDeviationMicrosecondsPerInvocation="1547"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="63" invocations="1545" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="1198" standardDeviationMicrosecondsPerInvocation="77"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="60" invocations="294" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="4326" standardDeviationMicrosecondsPerInvocation="477"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="59" invocations="294" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="2060" standardDeviationMicrosecondsPerInvocation="337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="58" invocations="132" avgMicrosecondsPerInvocation="445" maxMicrosecondsPerInvocation="13710" standardDeviationMicrosecondsPerInvocation="1233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="57" invocations="584" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="2923" standardDeviationMicrosecondsPerInvocation="209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="49" invocations="97" avgMicrosecondsPerInvocation="515" maxMicrosecondsPerInvocation="4898" standardDeviationMicrosecondsPerInvocation="785"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="48" invocations="294" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="2237" standardDeviationMicrosecondsPerInvocation="277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="47" invocations="579" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="10370" standardDeviationMicrosecondsPerInvocation="441"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1562666169828" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

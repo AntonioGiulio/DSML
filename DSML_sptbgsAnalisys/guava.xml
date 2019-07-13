@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1562663450219" analysisTimestamp="1562663448919" release="">
+  <Project projectName="guava-retrying-master.zip_expanded">
+    <Jar>C:\Users\Antonio\eclipse-workspace\guava-retrying-master.zip_expanded\bin</Jar>
+    <AuxClasspathEntry>C:\Users\Antonio\eclipse-workspace\guava-retrying-master.zip_expanded\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Antonio\eclipse-workspace\guava-retrying-master.zip_expanded\guava-retrying-master\gradle\wrapper\gradle-wrapper.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_201\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\guava-retrying-master.zip_expanded\guava-retrying-master\src\test\java</SrcDir>
+    <SrcDir>C:\Users\Antonio\eclipse-workspace\guava-retrying-master.zip_expanded\guava-retrying-master\src\main\java</SrcDir>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.AttemptTimeLimiterTest">
+      <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiterTest" sourcefile="AttemptTimeLimiterTest.java" sourcepath="com/github/rholder/retry/AttemptTimeLimiterTest.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.AttemptTimeLimiterTest" name="r" signature="Lcom/github/rholder/retry/Retryer;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiterTest" sourcefile="AttemptTimeLimiterTest.java" sourcepath="com/github/rholder/retry/AttemptTimeLimiterTest.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiterTest" start="34" end="34" startBytecode="21" endBytecode="21" sourcefile="AttemptTimeLimiterTest.java" sourcepath="com/github/rholder/retry/AttemptTimeLimiterTest.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit">
+      <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" sourcefile="AttemptTimeLimiters.java" sourcepath="com/github/rholder/retry/AttemptTimeLimiters.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" name="duration" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" sourcefile="AttemptTimeLimiters.java" sourcepath="com/github/rholder/retry/AttemptTimeLimiters.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" start="83" end="83" startBytecode="0" endBytecode="0" sourcefile="FixedAttemptTimeLimit.java" sourcepath="com/github/rholder/retry/FixedAttemptTimeLimit.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit">
+      <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" sourcefile="AttemptTimeLimiters.java" sourcepath="com/github/rholder/retry/AttemptTimeLimiters.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" name="timeLimiter" signature="LTimeLimiter;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" sourcefile="AttemptTimeLimiters.java" sourcepath="com/github/rholder/retry/AttemptTimeLimiters.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" start="83" end="83" startBytecode="0" endBytecode="0" sourcefile="FixedAttemptTimeLimit.java" sourcepath="com/github/rholder/retry/FixedAttemptTimeLimit.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit">
+      <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" sourcefile="AttemptTimeLimiters.java" sourcepath="com/github/rholder/retry/AttemptTimeLimiters.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" name="timeUnit" signature="Ljava/util/concurrent/TimeUnit;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" sourcefile="AttemptTimeLimiters.java" sourcepath="com/github/rholder/retry/AttemptTimeLimiters.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" start="83" end="83" startBytecode="0" endBytecode="0" sourcefile="FixedAttemptTimeLimit.java" sourcepath="com/github/rholder/retry/FixedAttemptTimeLimit.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer">
+      <SourceLine classname="com.github.rholder.retry.Retryer" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer" name="attemptTimeLimiter" signature="Lcom/github/rholder/retry/AttemptTimeLimiter;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer" start="50" end="50" startBytecode="0" endBytecode="0" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer">
+      <SourceLine classname="com.github.rholder.retry.Retryer" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer" name="blockStrategy" signature="Lcom/github/rholder/retry/BlockStrategy;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer" start="49" end="49" startBytecode="0" endBytecode="0" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer">
+      <SourceLine classname="com.github.rholder.retry.Retryer" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer" name="listeners" signature="Ljava/util/Collection;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer" start="52" end="52" startBytecode="0" endBytecode="0" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer">
+      <SourceLine classname="com.github.rholder.retry.Retryer" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer" name="rejectionPredicate" signature="LPredicate;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer" start="51" end="51" startBytecode="0" endBytecode="0" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer">
+      <SourceLine classname="com.github.rholder.retry.Retryer" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer" name="stopStrategy" signature="Lcom/github/rholder/retry/StopStrategy;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer" start="47" end="47" startBytecode="0" endBytecode="0" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer">
+      <SourceLine classname="com.github.rholder.retry.Retryer" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer" name="waitStrategy" signature="Lcom/github/rholder/retry/WaitStrategy;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer" start="48" end="48" startBytecode="0" endBytecode="0" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer$ExceptionAttempt">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ExceptionAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer$ExceptionAttempt" name="attemptNumber" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ExceptionAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.Retryer$ExceptionAttempt" start="248" end="248" startBytecode="0" endBytecode="0" sourcefile="ExceptionAttempt.java" sourcepath="com/github/rholder/retry/ExceptionAttempt.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer$ExceptionAttempt">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ExceptionAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer$ExceptionAttempt" name="delaySinceFirstAttempt" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ExceptionAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.Retryer$ExceptionAttempt" start="248" end="248" startBytecode="0" endBytecode="0" sourcefile="ExceptionAttempt.java" sourcepath="com/github/rholder/retry/ExceptionAttempt.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer$ExceptionAttempt">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ExceptionAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer$ExceptionAttempt" name="e" signature="Ljava/util/concurrent/ExecutionException;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ExceptionAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.Retryer$ExceptionAttempt" start="248" end="248" startBytecode="0" endBytecode="0" sourcefile="ExceptionAttempt.java" sourcepath="com/github/rholder/retry/ExceptionAttempt.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer$ResultAttempt">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ResultAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer$ResultAttempt" name="attemptNumber" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ResultAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.Retryer$ResultAttempt" start="200" end="200" startBytecode="0" endBytecode="0" sourcefile="ResultAttempt.java" sourcepath="com/github/rholder/retry/ResultAttempt.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer$ResultAttempt">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ResultAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer$ResultAttempt" name="delaySinceFirstAttempt" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ResultAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.Retryer$ResultAttempt" start="200" end="200" startBytecode="0" endBytecode="0" sourcefile="ResultAttempt.java" sourcepath="com/github/rholder/retry/ResultAttempt.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer$ResultAttempt">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ResultAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer$ResultAttempt" name="result" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer$ResultAttempt" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.Retryer$ResultAttempt" start="200" end="200" startBytecode="0" endBytecode="0" sourcefile="ResultAttempt.java" sourcepath="com/github/rholder/retry/ResultAttempt.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer$RetryerCallable">
+      <SourceLine classname="com.github.rholder.retry.Retryer$RetryerCallable" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer$RetryerCallable" name="callable" signature="Ljava/util/concurrent/Callable;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer$RetryerCallable" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.Retryer$RetryerCallable" start="301" end="301" startBytecode="0" endBytecode="0" sourcefile="RetryerCallable.java" sourcepath="com/github/rholder/retry/RetryerCallable.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.Retryer$RetryerCallable">
+      <SourceLine classname="com.github.rholder.retry.Retryer$RetryerCallable" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.Retryer$RetryerCallable" name="retryer" signature="Lcom/github/rholder/retry/Retryer;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.Retryer$RetryerCallable" sourcefile="Retryer.java" sourcepath="com/github/rholder/retry/Retryer.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.Retryer$RetryerCallable" start="301" end="301" startBytecode="0" endBytecode="0" sourcefile="RetryerCallable.java" sourcepath="com/github/rholder/retry/RetryerCallable.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilder">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.RetryerBuilder" name="attemptTimeLimiter" signature="Lcom/github/rholder/retry/AttemptTimeLimiter;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" start="35" end="35" startBytecode="0" endBytecode="0" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilder">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.RetryerBuilder" name="blockStrategy" signature="Lcom/github/rholder/retry/BlockStrategy;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" start="38" end="38" startBytecode="0" endBytecode="0" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilder">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.RetryerBuilder" name="listeners" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" start="40" end="40" startBytecode="0" endBytecode="0" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilder">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.RetryerBuilder" name="rejectionPredicate" signature="LPredicate;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" start="39" end="39" startBytecode="0" endBytecode="0" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilder">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.RetryerBuilder" name="stopStrategy" signature="Lcom/github/rholder/retry/StopStrategy;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" start="36" end="36" startBytecode="0" endBytecode="0" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilder">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.RetryerBuilder" name="waitStrategy" signature="Lcom/github/rholder/retry/WaitStrategy;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder" start="37" end="37" startBytecode="0" endBytecode="0" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilder$ExceptionClassPredicate">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder$ExceptionClassPredicate" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.RetryerBuilder$ExceptionClassPredicate" name="exceptionClass" signature="Ljava/lang/Class;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder$ExceptionClassPredicate" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.RetryerBuilder$ExceptionClassPredicate" start="199" end="199" startBytecode="0" endBytecode="0" sourcefile="ExceptionClassPredicate.java" sourcepath="com/github/rholder/retry/ExceptionClassPredicate.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilder$ExceptionPredicate">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder$ExceptionPredicate" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.RetryerBuilder$ExceptionPredicate" name="delegate" signature="LPredicate;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder$ExceptionPredicate" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.RetryerBuilder$ExceptionPredicate" start="234" end="234" startBytecode="0" endBytecode="0" sourcefile="ExceptionPredicate.java" sourcepath="com/github/rholder/retry/ExceptionPredicate.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilder$ResultPredicate">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder$ResultPredicate" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.RetryerBuilder$ResultPredicate" name="delegate" signature="LPredicate;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilder$ResultPredicate" sourcefile="RetryerBuilder.java" sourcepath="com/github/rholder/retry/RetryerBuilder.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.RetryerBuilder$ResultPredicate" start="216" end="216" startBytecode="0" endBytecode="0" sourcefile="ResultPredicate.java" sourcepath="com/github/rholder/retry/ResultPredicate.java"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilderTest$1">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$1" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+    </Class>
+    <Method classname="com.github.rholder.retry.RetryerBuilderTest$1" name="call" signature="()Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$1" start="91" end="95" startBytecode="0" endBytecode="87" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+    </Method>
+    <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$1" start="93" end="93" startBytecode="19" endBytecode="19" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+    <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$1" start="93" end="93" startBytecode="19" endBytecode="19" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilderTest$4">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$4" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+    </Class>
+    <Method classname="com.github.rholder.retry.RetryerBuilderTest$4" name="call" signature="()Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$4" start="369" end="379" startBytecode="0" endBytecode="165" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+    </Method>
+    <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$4" start="371" end="371" startBytecode="19" endBytecode="19" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+    <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$4" start="371" end="371" startBytecode="19" endBytecode="19" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="1">
+    <Class classname="com.github.rholder.retry.RetryerBuilderTest$5">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$5" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+    </Class>
+    <Method classname="com.github.rholder.retry.RetryerBuilderTest$5" name="call" signature="()Ljava/lang/Boolean;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$5" start="569" end="570" startBytecode="0" endBytecode="54" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+    </Method>
+    <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$5" start="570" end="570" startBytecode="8" endBytecode="8" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+    <SourceLine classname="com.github.rholder.retry.RetryerBuilderTest$5" start="570" end="570" startBytecode="8" endBytecode="8" sourcefile="RetryerBuilderTest.java" sourcepath="com/github/rholder/retry/RetryerBuilderTest.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.StopStrategies$StopAfterAttemptStrategy">
+      <SourceLine classname="com.github.rholder.retry.StopStrategies$StopAfterAttemptStrategy" sourcefile="StopStrategies.java" sourcepath="com/github/rholder/retry/StopStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.StopStrategies$StopAfterAttemptStrategy" name="maxAttemptNumber" signature="I" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.StopStrategies$StopAfterAttemptStrategy" sourcefile="StopStrategies.java" sourcepath="com/github/rholder/retry/StopStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.StopStrategies$StopAfterAttemptStrategy" start="99" end="99" startBytecode="0" endBytecode="0" sourcefile="StopAfterAttemptStrategy.java" sourcepath="com/github/rholder/retry/StopAfterAttemptStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.StopStrategies$StopAfterDelayStrategy">
+      <SourceLine classname="com.github.rholder.retry.StopStrategies$StopAfterDelayStrategy" sourcefile="StopStrategies.java" sourcepath="com/github/rholder/retry/StopStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.StopStrategies$StopAfterDelayStrategy" name="maxDelay" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.StopStrategies$StopAfterDelayStrategy" sourcefile="StopStrategies.java" sourcepath="com/github/rholder/retry/StopStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.StopStrategies$StopAfterDelayStrategy" start="114" end="114" startBytecode="0" endBytecode="0" sourcefile="StopAfterDelayStrategy.java" sourcepath="com/github/rholder/retry/StopAfterDelayStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$CompositeWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$CompositeWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$CompositeWaitStrategy" name="waitStrategies" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$CompositeWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$CompositeWaitStrategy" start="356" end="356" startBytecode="0" endBytecode="0" sourcefile="CompositeWaitStrategy.java" sourcepath="com/github/rholder/retry/CompositeWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy" name="exceptionClass" signature="Ljava/lang/Class;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy" start="375" end="375" startBytecode="0" endBytecode="0" sourcefile="ExceptionWaitStrategy.java" sourcepath="com/github/rholder/retry/ExceptionWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy" name="function" signature="LFunction;" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy" start="375" end="375" startBytecode="0" endBytecode="0" sourcefile="ExceptionWaitStrategy.java" sourcepath="com/github/rholder/retry/ExceptionWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy" name="maximumWait" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy" start="288" end="288" startBytecode="0" endBytecode="0" sourcefile="ExponentialWaitStrategy.java" sourcepath="com/github/rholder/retry/ExponentialWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy" name="multiplier" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy" start="288" end="288" startBytecode="0" endBytecode="0" sourcefile="ExponentialWaitStrategy.java" sourcepath="com/github/rholder/retry/ExponentialWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy" name="maximumWait" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy" start="313" end="313" startBytecode="0" endBytecode="0" sourcefile="FibonacciWaitStrategy.java" sourcepath="com/github/rholder/retry/FibonacciWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy" name="multiplier" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy" start="313" end="313" startBytecode="0" endBytecode="0" sourcefile="FibonacciWaitStrategy.java" sourcepath="com/github/rholder/retry/FibonacciWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$FixedWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$FixedWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$FixedWaitStrategy" name="sleepTime" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$FixedWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$FixedWaitStrategy" start="233" end="233" startBytecode="0" endBytecode="0" sourcefile="FixedWaitStrategy.java" sourcepath="com/github/rholder/retry/FixedWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy" name="increment" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy" start="269" end="269" startBytecode="0" endBytecode="0" sourcefile="IncrementingWaitStrategy.java" sourcepath="com/github/rholder/retry/IncrementingWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy" name="initialSleepTime" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy" start="269" end="269" startBytecode="0" endBytecode="0" sourcefile="IncrementingWaitStrategy.java" sourcepath="com/github/rholder/retry/IncrementingWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" name="RANDOM" signature="Ljava/util/Random;" isStatic="true">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" start="248" end="248" startBytecode="0" endBytecode="0" sourcefile="RandomWaitStrategy.java" sourcepath="com/github/rholder/retry/RandomWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" name="maximum" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" start="248" end="248" startBytecode="0" endBytecode="0" sourcefile="RandomWaitStrategy.java" sourcepath="com/github/rholder/retry/RandomWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" name="minimum" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" sourcefile="WaitStrategies.java" sourcepath="com/github/rholder/retry/WaitStrategies.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" start="248" end="248" startBytecode="0" endBytecode="0" sourcefile="RandomWaitStrategy.java" sourcepath="com/github/rholder/retry/RandomWaitStrategy.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategiesTest$RetryAfterException">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategiesTest$RetryAfterException" start="206" end="210" sourcefile="WaitStrategiesTest.java" sourcepath="com/github/rholder/retry/WaitStrategiesTest.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="com.github.rholder.retry.WaitStrategiesTest$RetryAfterException">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategiesTest$RetryAfterException" sourcefile="WaitStrategiesTest.java" sourcepath="com/github/rholder/retry/WaitStrategiesTest.java"/>
+    </Class>
+    <Field classname="com.github.rholder.retry.WaitStrategiesTest$RetryAfterException" name="retryAfter" signature="J" isStatic="false">
+      <SourceLine classname="com.github.rholder.retry.WaitStrategiesTest$RetryAfterException" sourcefile="WaitStrategiesTest.java" sourcepath="com/github/rholder/retry/WaitStrategiesTest.java"/>
+    </Field>
+    <SourceLine classname="com.github.rholder.retry.WaitStrategiesTest$RetryAfterException" start="207" end="207" startBytecode="13" endBytecode="13" sourcefile="WaitStrategiesTest.java" sourcepath="com/github/rholder/retry/WaitStrategiesTest.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 9 Jul 2019 11:10:32 +0200" total_classes="43" referenced_classes="87" total_bugs="47" total_size="500" num_packages="1" java_version="1.8.0_201" vm_version="25.201-b09" cpu_seconds="7.75" clock_seconds="31.87" peak_mbytes="731.66" alloc_mbytes="1024.00" gc_seconds="0.03" priority_2="47">
+    <PackageStats package="com.github.rholder.retry" total_bugs="47" total_types="43" total_size="500" priority_2="47">
+      <ClassStats class="com.github.rholder.retry.Attempt" sourceFile="Attempt.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.AttemptTimeLimiter" sourceFile="AttemptTimeLimiter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.AttemptTimeLimiterTest" sourceFile="AttemptTimeLimiterTest.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.AttemptTimeLimiterTest$SleepyOut" sourceFile="AttemptTimeLimiterTest.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.AttemptTimeLimiters" sourceFile="AttemptTimeLimiters.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.AttemptTimeLimiters$FixedAttemptTimeLimit" sourceFile="AttemptTimeLimiters.java" interface="false" size="10" bugs="3" priority_2="3"/>
+      <ClassStats class="com.github.rholder.retry.AttemptTimeLimiters$NoAttemptTimeLimit" sourceFile="AttemptTimeLimiters.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.BlockStrategies" sourceFile="BlockStrategies.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.BlockStrategies$ThreadSleepStrategy" sourceFile="BlockStrategies.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.BlockStrategy" sourceFile="BlockStrategy.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.RetryException" sourceFile="RetryException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.RetryListener" sourceFile="RetryListener.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.Retryer" sourceFile="Retryer.java" interface="false" size="16" bugs="6" priority_2="6"/>
+      <ClassStats class="com.github.rholder.retry.Retryer$ExceptionAttempt" sourceFile="Retryer.java" interface="false" size="20" bugs="3" priority_2="3"/>
+      <ClassStats class="com.github.rholder.retry.Retryer$ResultAttempt" sourceFile="Retryer.java" interface="false" size="20" bugs="3" priority_2="3"/>
+      <ClassStats class="com.github.rholder.retry.Retryer$RetryerCallable" sourceFile="Retryer.java" interface="false" size="7" bugs="2" priority_2="2"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilder" sourceFile="RetryerBuilder.java" interface="false" size="33" bugs="6" priority_2="6"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilder$ExceptionClassPredicate" sourceFile="RetryerBuilder.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilder$ExceptionPredicate" sourceFile="RetryerBuilder.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilder$ResultPredicate" sourceFile="RetryerBuilder.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilderTest" sourceFile="RetryerBuilderTest.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilderTest$1" sourceFile="RetryerBuilderTest.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilderTest$2" sourceFile="RetryerBuilderTest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilderTest$3" sourceFile="RetryerBuilderTest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilderTest$4" sourceFile="RetryerBuilderTest.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.RetryerBuilderTest$5" sourceFile="RetryerBuilderTest.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.StopStrategies" sourceFile="StopStrategies.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.StopStrategies$NeverStopStrategy" sourceFile="StopStrategies.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.StopStrategies$StopAfterAttemptStrategy" sourceFile="StopStrategies.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.StopStrategies$StopAfterDelayStrategy" sourceFile="StopStrategies.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.StopStrategiesTest" sourceFile="StopStrategiesTest.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.StopStrategy" sourceFile="StopStrategy.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategies" sourceFile="WaitStrategies.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategies$CompositeWaitStrategy" sourceFile="WaitStrategies.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategies$ExceptionWaitStrategy" sourceFile="WaitStrategies.java" interface="false" size="7" bugs="2" priority_2="2"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategies$ExponentialWaitStrategy" sourceFile="WaitStrategies.java" interface="false" size="7" bugs="2" priority_2="2"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategies$FibonacciWaitStrategy" sourceFile="WaitStrategies.java" interface="false" size="9" bugs="2" priority_2="2"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategies$FixedWaitStrategy" sourceFile="WaitStrategies.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategies$IncrementingWaitStrategy" sourceFile="WaitStrategies.java" interface="false" size="7" bugs="2" priority_2="2"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategies$RandomWaitStrategy" sourceFile="WaitStrategies.java" interface="false" size="8" bugs="3" priority_2="3"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategiesTest" sourceFile="WaitStrategiesTest.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategiesTest$RetryAfterException" sourceFile="WaitStrategiesTest.java" interface="false" size="8" bugs="2" priority_2="2"/>
+      <ClassStats class="com.github.rholder.retry.WaitStrategy" sourceFile="WaitStrategy.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="327" invocations="2" avgMicrosecondsPerInvocation="163631" maxMicrosecondsPerInvocation="182255" standardDeviationMicrosecondsPerInvocation="18627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="234" invocations="533" avgMicrosecondsPerInvocation="440" maxMicrosecondsPerInvocation="22654" standardDeviationMicrosecondsPerInvocation="1267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="97" invocations="535" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="648" standardDeviationMicrosecondsPerInvocation="76"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="64" invocations="304" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="33456" standardDeviationMicrosecondsPerInvocation="1918"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="55" invocations="87" avgMicrosecondsPerInvocation="632" maxMicrosecondsPerInvocation="10580" standardDeviationMicrosecondsPerInvocation="1606"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="37" invocations="87" avgMicrosecondsPerInvocation="426" maxMicrosecondsPerInvocation="5977" standardDeviationMicrosecondsPerInvocation="989"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="31" invocations="87" avgMicrosecondsPerInvocation="361" maxMicrosecondsPerInvocation="14552" standardDeviationMicrosecondsPerInvocation="1884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="26" invocations="486" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="1111" standardDeviationMicrosecondsPerInvocation="93"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="25" invocations="172" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="14185" standardDeviationMicrosecondsPerInvocation="1074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="23" invocations="174" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="15963" standardDeviationMicrosecondsPerInvocation="1203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="18" invocations="178" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="730" standardDeviationMicrosecondsPerInvocation="81"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="16" invocations="178" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="813" standardDeviationMicrosecondsPerInvocation="76"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="15" invocations="87" avgMicrosecondsPerInvocation="173" maxMicrosecondsPerInvocation="1721" standardDeviationMicrosecondsPerInvocation="314"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1562663450217" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

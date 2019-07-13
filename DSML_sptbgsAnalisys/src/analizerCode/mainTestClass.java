@@ -32,7 +32,7 @@ public class mainTestClass {
 		
 		
 		
-		Final_Parser parser = new Final_Parser("gaopu.xml");
+		Final_Parser parser = new Final_Parser("repoDriller.xml");
 		ArrayList<Element> bugList = parser.findBugInstance();
 		File file = new File("mycsv.csv");
 		FileWriter outputFile = new FileWriter(file);

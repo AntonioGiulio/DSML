@@ -76,37 +76,9 @@ public class Final_Parser {
 	public String printBugMethod(String classPath, String methodName) throws IOException {
 		BufferedReader reader;
 		try {
-			reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\"+classPath));
+			reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\elasticsearch-master.zip_expanded\\elasticsearch-master\\benchmarks\\src\\main\\java\\"+classPath));
 		}catch(FileNotFoundException e) {
-			try {
-				reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\CrawlDouyuDanmu\\src\\main\\java\\"+classPath));
-			}catch (FileNotFoundException e2){
-				try {
-					reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\CrawlPandaDanmu\\src\\main\\java\\"+classPath));
-				}catch (FileNotFoundException e3){
-					try {
-						reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\InsulinPump\\"+classPath));
-					}catch (FileNotFoundException e4){
-						try {
-							reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\medical_question\\"+classPath));
-						}catch (FileNotFoundException e5){
-							try {
-								reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\MicroWave\\"+classPath));
-							}catch (FileNotFoundException e6){
-								try {
-									reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\PullBookinfo\\"+classPath));
-								}catch (FileNotFoundException e7){
-									try {
-										reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\Struts2FileUpAndDown\\src\\"+classPath));
-									}catch (FileNotFoundException e8){
-										reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\gaopu.zip_expanded\\Java-master\\西邮导游系统源码\\源码\\"+classPath));
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+			reader = new BufferedReader(new FileReader("C:\\Users\\Antonio\\eclipse-workspace\\elasticsearch-master.zip_expanded\\elasticsearch-master\\benchmarks\\src\\main\\java\\"+classPath));
 		}		
 		
 		String retString = "";
@@ -120,7 +92,6 @@ public class Final_Parser {
 			while (!(line.contains(methodName) && line.contains("{") && line.contains("(") && line.contains(")") && !line.contains("*") && line.contains("public"))) {
 				line = reader.readLine();
 			}
-			System.out.println(line);
 			retString = line +  "\n";
 			count++;
 			
@@ -139,7 +110,6 @@ public class Final_Parser {
 		}catch(NullPointerException e) {
 			retString += null;
 		}
-		System.out.println(line);
 		retString += line;
 		reader.close();
 		System.out.println("ho finito");
